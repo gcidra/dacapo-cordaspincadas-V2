@@ -13,91 +13,73 @@
 
   %% CAVAQUINHO - BANJO
   \tag #'cv {
-
+    
     d4 d d d
-    R1
-    d4 d d d
-    R1
-    d4 d d2
-    R1
-    R
+    d d d d
+    b b d d
+    b b d d
     d2 d
+    d d
+    b b
+    d d
     
   }
 
   %% BANDOLIM
   \tag #'bd {
 
-    R1
-    e4 e e e
-    R1
-    e4 e e e
-    R1
-    e4 e e2
-    e4 e e e
-    R1
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
 
   }
 
   %% VIOLA
   \tag #'va {
+    R1 R
+    gis,2^\markup {\small {"i"}} b^\markup {\small {"m"}}
+    gis^\markup {\small {"i"}} b^\markup {\small {"m"}}
 
     R1
-    e4 e e e
-    R1
-    e4 e e e
-    R1
-    e4 e e2
-    e4 e e e
-    R1
+    gis4 b gis b
+    <gis b>2 <gis b>
 
+    R1
   }
 
   %% VIOLÃO TENOR
   \tag #'vt {
 
-    \clef "G_8"
-    
-    R1
-    a,4 a a a
-    R1
-    a4 a a a
-    R1
-    a4 a a2
-    a4 a a a
-    R1
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
 
   }
 
   %% VIOLÃO
   \tag #'vi {
     \clef "G_8"
+    
+    g,2^\markup {\small {"i"}} b^\markup {\small {"m"}}
+    g^\markup {\small {"i"}} b^\markup {\small {"m"}}
 
-    R1
-    e4^\markup {\small {"i"}} e^\markup {\small {"m"}} e^\markup {\small {"i"}} e^\markup {\small {"m"}}
-    R1
-    e4^\markup {\small {"Simile"}} e e e
-    R1
-    e4 e e2
-    e4 e e e
-    R1
+    R1 R
+    g4 b g b
 
+    R1 R
+    <g b>2 <g b>
   }
 
 
   %% BAIXO - BAIXOLÃO
   \tag #'bx {
 
-    \clef bass
-
-    g,4 g g g
-    R1
-    g4 g g g
-    R1
-    g4 g g2
-    R1
-    R
-    g2 g
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
 
   }
 

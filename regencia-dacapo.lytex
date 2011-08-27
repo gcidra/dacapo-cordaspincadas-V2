@@ -1,0 +1,7790 @@
+% -*- latex -*-
+% -*- coding: latin-1 -*-
+
+\documentclass[twoside,12pt]{article}
+\usepackage{graphicx}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}              % Acrescentado por Givaldo de Cidra
+\usepackage{url}
+%% \usepackage{makeidx}                    % pkg para índice
+\usepackage{setspace}
+\usepackage{titletoc}
+
+%% novos pacotes
+\usepackage{lastpage}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{tabularx}
+
+
+\titlecontents{section}
+[2 em]
+{}
+{\contentslabel{2em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
+
+
+\newcommand{\instrumento}[1]{ \textbf{#1} }
+
+%\setlength\@tempdima{1.5em}%
+
+\pagestyle{fancy}                       % Sets fancy header and footer
+\fancyhf{}
+\fancyfoot[RLOEF]{\bfseries\rightmark}     % Oculta o nome das seções
+
+%%Página Ímpar
+\fancyfoot[LO]{\textit{Da Capo Cordas Dedilhadas - \instrumento{Rodape}}}
+\fancyfoot[RO]{\thepage}
+
+%%Página Par
+\fancyfoot[LE]{\textit{Joel Barbosa}}
+\fancyfoot[RE]{\thepage}
+
+\renewcommand{\headrulewidth}{0.0pt}    % Width of head rule
+\renewcommand{\footrulewidth}{0.0pt}    % Width of foot rule
+
+
+% HOME colocar nos arquivos lytex ============================================
+\newcommand{\letraquadrada}[1]{ \Large{\framebox[1.1\width]{#1} }}
+\newcommand{\quadtitulo}[1]{ \large{\textbf{#1} }}
+\newcommand{\quadtexto}[1]{\small{\textbf{#1}}}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+% END colocar nos arquivos lytex ============================================
+
+
+% não espaçar pra encher as páginas:
+\raggedbottom
+
+\begin{document}
+
+\graphicspath{
+  {../figs/}
+  {../figs/jogos/}
+  {../figs/posicoes/}
+  {../figs/quadro/}
+}
+
+
+% \instrumento{Original}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO CAPAS
+
+
+%%%%%%%%%%%% FOLHA DE ROSTO
+\thispagestyle{empty}
+
+\begin{flushleft}
+  \textbf{\huge{\instrumento{InstrCapa}}}
+\end{flushleft}
+
+\vspace*{30ex}
+
+\begin{center}
+\textbf{\huge{DA CAPO CORDAS DEDILHADAS}}
+\vspace*{4ex}
+
+\textbf{\Large{Método Elementar para o Ensino Coletivo
+    de Instrumentos de Cordas Dedilhadas}}
+\vspace*{14ex}
+
+\textbf{\Large{Edição Incompleta}}
+\vspace*{15ex}
+
+\textbf{\huge{Joel Barbosa}}
+\vspace*{25ex}
+
+% \includegraphics[scale=0.5]{logo-keyboard}
+% \vspace*{2ex}
+
+\textbf{\Large{ANO 2011}}
+\vspace*{4ex}
+
+\textbf{Copyright by Joel L. da Silva Barbosa \\
+Todos os direitos reservados \\
+IMPRESSO NO BRASIL \\
+% KEYBOARD EDITORA MUSICAL LTDA. \\
+% CAIXA POSTAL 300 \\
+% JUNDIAÍ  -  SP  -  CEP 13201-970 \\
+% E-mail: contato@keyboard.art.br \\
+% site: www.keyboard.art.br 
+}
+\end{center}
+\vspace*{2ex}
+
+
+% \begin{flushright}
+%   \includegraphics[scale=0.7]{%#ISBN-V1-fig#%}
+% \end{flushright}
+
+
+%%%%%%%%%%%% VERSO-FOLHA DE ROSTO
+\newpage
+\thispagestyle{empty}
+
+Nenhuma parte deste livro poderá ser reproduzida ou transmitida sejam
+quais forem os meios: eletrônicos, fotográfico, gravação ou quaisquer
+outros sem a permissão explícita por escrito do autor:
+\textbf{JOEL L. da SILVA BARBOSA}
+\vspace*{20ex}
+
+\begin{tabular}{|p{15cm}|}
+\hline
+\\
+BARBOSA, J. L. da Silva \\
+\\
+DA CAPO CORDAS DEDILHADAS \instrumento{Original} % Jundiaí, São Paulo: \\
+% Keyboard Editora Musical Ltda. 
+2011, p. \pageref{LastPage} \\
+\\
+Didático/Pedagógico \\
+% ISBN nº %#ISBN-V1#% \\
+\\
+% Copyright 2011 by Keyboard Editora Musical Ltda. \_Todos os direitos reservado\_ \\
+% R: Rangel Pestana 1044 - Jundiaí - São Paulo - CEP 13201-000 \\
+% e-mail: contato@keyboard.art.br \\
+\\
+\hline
+\end{tabular}
+\vspace*{30ex}
+
+\begin{flushleft}
+  Editoração: Givaldo de Cidra\\
+  % Capa: Reprodução da Colagem de Silvio Alvarez\\
+\end{flushleft}
+
+% \begin{flushleft}
+%   Editado e Impresso por Keyboard Editora Musical Ltda\\
+% \end{flushleft}
+
+\begin{flushleft}
+  Registro na Fundação Biblioteca Nacional\\
+  Ministério da Cultura\\
+  Escritório de Direitos Autorais\\
+\end{flushleft}
+
+\begin{flushleft}
+  % Nº %#ISBN-V1#% \\
+  Autor: Joel L da Silva Barbosa \\
+  Título da Obra: DA CAPO CORDAS DEDILHADAS \instrumento{Original}\\
+\end{flushleft}
+
+% %%%%%%%%%%%% FOLHA DO MAESTRO MARCELO
+% \newpage
+\pagenumbering{roman}
+% \section*{Aos Leitores}
+% \label{sec:maestro-marcelo}
+% \addcontentsline{toc}{section}{Aos Leitores}
+
+% \input {maestro-marcelo}
+
+
+% %%%%%%%%%%%% FOLHA DA BIOGRAFIA
+% \newpage
+% \section*{Sobre o Autor}
+% \addcontentsline{toc}{section}{Sobre o Autor}
+
+% \input {biografia-joel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL CAPAS
+
+
+\newpage
+\section*{Agradecimentos}
+\addcontentsline{toc}{section}{Agradecimentos}
+
+A Pedro Kroeger pela consultoria e apoio computacional,\\
+A Givaldo de Cidra pela editoração,\\
+A Bertalan Fodor pelas dicas com o programa Lilypond,\\
+Aos colegas que trocaram idéias comigo sobre este trabalho,\\
+A UFBA pelo apoio institucional e\\
+Aos cooperadores do programa Lilypond (\url{http://www.lilypond.org}),
+através do qual as partes musicais foram digitalizadas.\\
+
+
+\section*{Palavras aos alunos e ao professor/regente}
+\addcontentsline{toc}{section}{Palavras aos alunos e ao professor/regente}
+
+O livro Da Capo Criatividade para cordas dedilhadas é para o ensino
+coletivo de instrumentos heterogêneos. Os instrumentos que o compõem
+são: Cavaquinho e Banjo, Bandolim, Viola, Violão Tenor, Violão, Baixo
+e Baixolão. Ele pode ser usado em aulas individuais, em aulas de
+pequenos grupos de instrumentos semelhantes ou variados e com todos os
+instrumentos propostos. Por exemplo, pode-se trabalhar apenas com
+violão ou, mesmo, cavaquinho e bandolim.
+
+Ele inclui atividades de teoria, leitura, percepção, apreciação
+musical, performance, prática de conjunto, técnica instrumental,
+imitação e criatividade. Conteúdos de teoria e leitura musical são
+expostos por meio de quadros e, em seguida, colocados em
+prática. Também há letras que dividem as melodias em frases e
+semi-frases, auxiliando sua compreensão e, conseqüentemente, sua
+interpetação. A imitação amplia a capacidade de percepção e apreciação
+musical assim como a audição da execução dos colegas. A performance e
+a prática de conjunto serão instrumental e cantada, compreendendo o
+centro das atividades cotidianas. Elas mediarão o processo de
+compreensão e desenvolvimento das habilidades de leitura musical e
+técnica instrumental. Finalmente, a criatividade, habilidade
+fundamental na formação do músico, é desenvolvida por meio de
+improvisação, arranjos e composição.
+
+Para maiores explicações e dicas, além das contidas abaixo, indicamos
+o site: 
+
+\url{http://www.dacapo.mus.br.}
+
+
+\subsection*{I - Explicações e dicas}
+\addcontentsline{toc}{section}{Explicações e dicas}
+
+\begin{enumerate}
+
+
+\item As cabeças de mínimas e semínimas desacompanhadas de hastes indicam
+  notas que devem ser usadas para improvisação. As cabeças de mínimas
+  são notas pertencentes ao acorde, consonantes, enquanto as de
+  semínimas são notas que causam dissonâncias; notas de passagem, por
+  exemplo.
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-ex1.ly"
+    }
+  \end{lilypond}
+
+\break
+
+\item As cabeças de notas em formato de barra indicam atividades de
+  imitação (atividades de se tocar ``de ouvido''). Elas são notas que
+  servem de dicas para se imitar um improviso realizado. Informam o
+  conjunto de notas que o improvisador fez uso. As notas do exemplo abaixo
+  indicam as notas que podem ter sido utilizadas pelo improvisador do
+  exemplo anterior:
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-ex2.ly"
+    }
+  \end{lilypond}
+
+
+\item Nas músicas com mais de uma voz, defina diferentes grupos
+  instrumentais para cada voz, escolhendo, por exemplo, os de registro
+  agudo para a voz superior (melodia), os de registro médio para as
+  vozes intermediárias (harmonia) e os de registro mais grave para a
+  inferior (baixo). Porém, experimente outras distribuições dos
+  instrumentos por vozes, utilizando apenas violões, por
+  exemplo. Também utilize, algumas vezes, apenas um instrumentista por
+  voz, formando trios, quartetos, quintetos etc.
+
+\item Há letras e números sobre os compassos e semi-frases
+  dos exercícios e das melodias para facilitar as atividades. Nas
+  letras ou números que não são de improvisação e imitação, pode-se
+  usar: a) a banda toda, b) diferentes grupos instrumentais e/ou c) um
+  instrumentista, mudando-o ou não a cada letra.
+
+\item Os exercícios de improvisação sobre melodias têm na
+  \textbf{Parte 1} a melodia, com a letra da música, e nas
+  \textbf{Parte 2} e \textbf{Parte 3} improvisação ou melodia e
+  improvisação. Repita as Partes 2 e 3 várias vezes, até que todos
+  improvisem.
+
+
+\item Sobre as notas de improvisação aparecem, em algumas atividades,
+  os acordes (C, F, G7 etc). Eles indicam os acordes a que
+  pertencem as notas da improvisação.
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-ex3.ly"
+    }
+  \end{lilypond}
+
+\end{enumerate}
+
+\subsection*{II - Quanto a improvisação}
+\addcontentsline{toc}{section}{Quanto a improvisação}
+
+\begin{enumerate}
+
+\item Quem deve improvisar no Método? 
+
+  O professor, os alunos e/ou convidados.
+
+\item Quem escolhe os improvisadores e sua ordem ou seqüência? 
+
+  O professor e/ou aluno(s).
+
+\item Como determinar a ordem dos improvisadores?  
+
+  Pela ordem que estão sentados, por nomes (João, Maria etc) ou por
+  instrumentos. A ordem pode ser comunicada antes de iniciar a música
+  ou ir sendo anunciada durante a improvisação. Neste último caso, o
+  professor, um aluno ou o improvisador anterior diz o nome ou aponta
+  gestualmente o próximo improvisador, enquanto o grupo continua
+  tocando. Para que o improvisador anterior indique o próximo, ele
+  deve deixar, obviamente, uma pausa no fim do improviso.
+
+
+\item A fim de ganhar tempo, pode-se criar ordens fixas de
+  improvisadores, seqüências padronizadas, e nomeá-las. Por exemplo:
+
+  \textbf { Padrão de Improvisação 1 }:
+
+  Primeiro improvisador: Maria do cavaquinho, 
+
+  Segundo: João do bandolim, 
+
+  Terceiro: José do violão e
+
+  Quarto: Luiza da viola.
+
+  Assim, em vez de criar e explicar uma diferente ordem cada vez que for
+  tocar um dado exercicío, basta dizer com que Padrão ele será
+  tocado.
+
+\item Com que acompanhamento improvisar? 
+
+  Mude o acompanhamento rítmico proposto nas lições que têm
+  improvisação, variando, de acordo com as possibilidades da
+  melodia. Utilize, por exemplo, ritmos de samba, marcha, baião,
+  xaxado, maracatu, coco etc.
+  %% se colocar o apendice de ritmos, explicar aqui.
+
+
+\end{enumerate}
+
+\subsection* {III - Quanto a imitação}
+\addcontentsline{toc}{section}{Quanto a imitação}
+
+\begin{enumerate}
+
+\item Quem faz imitações no Método? 
+
+  Um aluno, um grupo (cavaquinho, bandolim, violão, meninas, meninos
+  etc) ou todos.
+
+
+\item Quem escolhe os imitadores e sua ordem ou sequência? 
+
+  O professor, um aluno e/ou um grupo de alunos.
+
+\item Como determinar a ordem dos imitadores? 
+
+  Da mesma forma que se faz com a improvisação. Por nomes (João,
+  Maria etc), gêneros (meninos, meninas),
+  instrumentos, naipes (viola, baixo) ou pela ordem que estão
+  sentados (linha da frente, primeiro da linha etc). A ordem pode
+  ser definida antes de iniciar a música ou ir sendo comunicada
+  durante a improvisação. Neste último caso, o professor, um aluno ou
+  o improvisador diz o nome ou aponta gestualmente quem, ou que grupo,
+  imitará o improvisador. Isto desenvolve a concentação dos participantes.
+
+\item A fim de ganhar tempo, pode-se criar também ordens fixas de
+  imitadores, sequências padronizadas, e nomeá-las. Por exemplo:
+
+  \textbf {Padrão de Imitação A}:
+
+  Primeiros imitadores: Cavaquinho e Banjo,
+
+  Segundos: Bandolim e Violão Tenor, 
+
+  Terceiros: Viola e Violão,
+
+  Quartos: Baixo.
+
+\item Utilize as letras ou números colocados sobre os compassos e
+  semi-frases das melodias para distribuir a ordem dos alunos que
+  farão a imitação.
+
+\end{enumerate}
+
+
+
+%% BRAÇOS DOS INSTRUMENTOS
+\section*{Notas nos Braços dos Instrumentos}
+\label{sec:braço-instrumento}
+\addcontentsline{toc}{section}{Notas nos Braços dos Instrumentos}
+
+\subsection*{Cavaquinho e Banjo}
+\begin{center}
+  \includegraphics[scale=1]{braco-cavaquinho}
+\end{center}
+
+
+\subsection*{Bandolim}
+\begin{center}
+  \includegraphics[scale=1]{braco-bandolim}
+\end{center}
+
+
+\subsection*{Viola}
+\begin{center}
+  \includegraphics[scale=1]{braco-viola}
+\end{center}
+
+
+\subsection*{Violão Tenor}
+\begin{center}
+  \includegraphics[scale=1]{braco-violaotenor}
+\end{center}
+
+\break
+\subsection*{Violão}
+\begin{center}
+  \includegraphics[scale=1]{braco-violao}
+\end{center}
+
+
+\subsection*{Baixo e Baixolão}
+\begin{center}
+  \includegraphics[scale=1]{braco-baixo}
+\end{center}
+
+
+
+\newpage
+%% LISTA DE ACORDES
+\section*{Acordes}
+\label{sec:quadro-acordes}
+\addcontentsline{toc}{section}{Acordes}
+
+\subsection*{Cavaquinho e Banjo}
+
+\begin{center}
+  \begin{tabular}[t]{*{4}{l}}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-C.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Cm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-D.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Dm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Em.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Fism.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-G7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-A.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-A7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Am.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-B7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    \\
+  \end{tabular}
+\end{center}
+
+\subsection*{Bula}
+\begin{center}
+  \begin{tabular}[t]{|p{2cm}p{12cm}|}
+    \hline
+    
+    \includegraphics[scale=1]{bula-ponto} & = Corda e casa a ser pressionada com o dedo sugerido
+    \\
+    \includegraphics[scale=1]{bula-ponto-pestana} & = Cordas e casa a serem pressionadas com pestana
+    \\
+    \includegraphics[scale=1]{bula-ponto-aberto} & = Corda solta que deve ser tocada
+    \\
+    \includegraphics[scale=1]{bula-x} & = Corda solta à ser evitada
+    \\
+    1 & = Dedo indicador
+    \\
+    2 & = Dedo médio
+    \\
+    3 & = Dedo anular
+    \\
+    4 & = Dedo mínimo
+    \\
+    i, ii, iii etc & = Casas do braço
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{center}
+
+
+\newpage
+\subsection*{Bandolim}
+
+\begin{center}
+  \begin{tabular}[t]{*{4}{l}}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-C.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Cm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-D.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Dm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Em.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Fism.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-G7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-A.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-A7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Am.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-B7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    \\
+  \end{tabular}
+\end{center}
+
+
+\newpage
+\subsection*{Viola}
+
+\begin{center}
+  \begin{tabular}[t]{*{4}{l}}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-C.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Cm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-D.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Dm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Em.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Fism.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-G7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-A.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-A7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Am.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-B7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    \\
+  \end{tabular}
+\end{center}
+
+
+\newpage
+\subsection*{Violão Tenor}
+
+\begin{center}
+  \begin{tabular}[t]{*{4}{l}}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-C.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Cm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-D.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Dm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Em.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Fism.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-G7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-A.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-A7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Am.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-B7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    \\
+  \end{tabular}
+\end{center}
+
+
+\newpage
+\subsection*{Violão}
+
+\begin{center}
+  \begin{tabular}[t]{*{4}{l}}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-C.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Cm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-D.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Dm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Em.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Fism.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-G7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-A.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-A7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Am.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-B7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    \\
+  \end{tabular}
+\end{center}
+
+\newpage
+\subsection*{Baixo e Baixolão}
+
+\begin{center}
+  \begin{tabular}[t]{*{4}{l}}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-C.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Cm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-D.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Dm.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Em.ly"
+      }
+    \end{lilypond}
+    & 
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Fism.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-G7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-A.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-A7.ly"
+      }
+    \end{lilypond}
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Am.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-B7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    \\
+  \end{tabular}
+\end{center}
+
+
+
+\break
+
+\pagenumbering{arabic}  % fim da numeração das páginas em algarismos romanos
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO DO LIVRO
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_01}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-01#%}
+    &
+    \quadtexto{%#cv-nota-02#%}
+    &
+    \quadtexto{%#bd-nota-01#%}
+    &
+    \quadtexto{%#bd-nota-02#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-01#%}
+    &
+    \quadtexto{%#va-nota-02#%}
+    &
+    \quadtexto{%#vt-nota-01#%}
+    &
+    \quadtexto{%#vt-nota-02#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-01#%}
+    &
+    \quadtexto{%#vi-nota-02#%}
+    &
+    \quadtexto{%#bx-nota-01#%}
+    &
+    \quadtexto{%#bx-nota-02#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \letraquadrada{B}}  &  \multicolumn{2}{l|}{ \letraquadrada{C}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Compasso}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Fórmula de Compasso}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \includegraphics[scale=1]{compasso-vazio}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \includegraphics[scale=1]{formula-4tempos-por-compasso}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{D}  & \multicolumn{2}{|l|}{ \letraquadrada{E}} & \letraquadrada{F}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Barra de Compasso}
+    &
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Barra Final}
+    }
+    &
+    \quadtitulo{Sinal de Repetição}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{barra-compasso}
+    &
+    \multicolumn{2}{|l|}{
+      \includegraphics[scale=1]{barra-final}
+    }
+    &
+    \includegraphics[scale=1]{sinal-repeticao}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{G}  & \multicolumn{2}{|l|}{ \letraquadrada{H}} & \letraquadrada{I}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Mínima}
+    &
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Semínima}
+    }
+    &
+    \quadtitulo{Pausa de semibreve}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{minima}
+    &
+    \multicolumn{2}{|l|}{
+      \includegraphics[scale=1]{seminima}
+    }
+    &
+    \includegraphics[scale=1]{semibreve-pausa}
+
+    %%% FINAL DAS LINHAS
+  \\
+  \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%% CONTINUAÇÃO
+\begin{tabular}[t]{|ll|ll|ll|}
+  \hline
+
+  %%% PRÓXIMA LINHA
+  \multicolumn{6}{|l|}{ \letraquadrada{J} Acordes }
+  
+  %%% PRÓXIMA LINHA
+  \\
+  \multicolumn{2}{|l|}{
+    \quadtitulo{Cavaquinho}
+  }
+  &
+  \multicolumn{2}{l|}{
+    \quadtitulo{Bandolim}
+  }
+  &
+  \multicolumn{2}{|l|}{
+    \quadtitulo{Viola}
+  }
+  %%% PRÓXIMA LINHA
+  \\
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'cv
+      \include "acorde-Em.ly" 
+    }
+  \end{lilypond}
+
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'cv
+      \include "acorde-Am.ly" 
+    }
+  \end{lilypond}
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'bd
+      \include "acorde-Em.ly" 
+    }
+  \end{lilypond}
+
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'bd
+      \include "acorde-Am.ly" 
+    }
+  \end{lilypond}
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'va
+      \include "acorde-Em.ly" 
+    }
+  \end{lilypond}
+
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'va
+      \include "acorde-Am.ly" 
+    }
+  \end{lilypond}
+
+  %%% PRÓXIMA LINHA
+  \\
+  \hline
+  \multicolumn{2}{|l}{
+    \quadtitulo{Violão Tenor}
+  }
+  &
+  \multicolumn{2}{|l|}{
+    \quadtitulo{Violão}
+  }
+  &
+  \multicolumn{2}{l|}{
+    \quadtitulo{Baixo}
+  }
+
+  %%% PRÓXIMA LINHA
+  \\
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'vt
+      \include "acorde-Em.ly" 
+    }
+  \end{lilypond}
+
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'vt
+      \include "acorde-Am.ly" 
+    }
+  \end{lilypond}
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'vi
+      \include "acorde-Em.ly" 
+    }
+  \end{lilypond}
+
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'vi
+      \include "acorde-Am.ly" 
+    }
+  \end{lilypond}
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'bx
+      \include "acorde-Em.ly" 
+    }
+  \end{lilypond}
+
+  &
+  \begin[fragment]{lilypond}
+    \transpose c c { 
+      \keepWithTag #'bx
+      \include "acorde-Am.ly" 
+    }
+  \end{lilypond}
+
+
+  %%% PRÓXIMA LINHA
+  \\
+  \hline
+  \multicolumn{3}{|l|}{\letraquadrada{L}} & \multicolumn{3}{l|}{\letraquadrada{M}}
+
+  %%% PRÓXIMA LINHA
+  \\
+  \multicolumn{3}{|l|}{
+    \quadtitulo{Técnica}
+  }
+  &
+  \multicolumn{3}{l|}{
+    \quadtitulo{Da Capo al Fine}
+  }
+
+  
+  %%% PRÓXIMA LINHA
+  \\
+  \multicolumn{3}{|l|}{
+    \includegraphics[scale=0.7]{mao-i-m}
+  }
+  &
+  \multicolumn{3}{l|}{
+    \textit{D.C. al Fine}
+  }
+
+
+  %%% FINAL DAS LINHAS
+  \\
+  \hline
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Primeira nota}
+\label{sec:primeira-nota}
+
+\lilypondfile{reg-01.ly}
+
+
+\section{Segunda nota}
+\label{sec:seminimas}
+
+\lilypondfile{reg-02.ly}
+
+
+\section{Mínimas e semínimas}
+\label{sec:minimas}
+
+\lilypondfile{reg-03.ly}
+
+
+Algumas maneiras de se tocar este número e os semelhantes a ele: 
+
+\begin{enumerate}
+
+\item Toque cada uma das duas notas da melodia com um grupo diferente de
+  instrumentos, um para a nota mais aguda e outro para a
+  mais grave.
+  
+\item Toque cada uma das duas notas da melodia com um instrumentista
+  diferente, um para a nota mais aguda e outro para a
+  mais grave.
+  
+\end{enumerate}
+
+
+\section{Maquinista}
+\label{sec:maquinista}
+
+\lilypondfile{reg-04.ly}
+
+
+\begin{enumerate}
+
+\item Os compassos de improvisação devem ser tocados por apenas um
+  aluno.
+  
+\item Varie o ritmo de acompanhamento, experimentando diferentes
+  gêneros musicais.
+
+\item Repita a atividade diversas vezes, sem interrupção para que
+  todos possam improvisar.
+
+\item Aplique essas indicações em outras melodias com improvisação.
+  
+\end{enumerate}
+
+\section{Relógio}
+\label{sec:relogio}
+
+\lilypondfile{reg-05.ly}
+
+\break
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_02}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-03#%}
+    &
+    \quadtexto{%#cv-nota-04#%}
+    &
+    \quadtexto{%#bd-nota-03#%}
+    &
+    \quadtexto{%#bd-nota-04#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-04.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-04.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-03#%}
+    &
+    \quadtexto{%#va-nota-04#%}
+    &
+    \quadtexto{%#vt-nota-03#%}
+    &
+    \quadtexto{%#vt-nota-04#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-04.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-04.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-03#%}
+    &
+    \quadtexto{%#vi-nota-04#%}
+    &
+    \quadtexto{%#bx-nota-03#%}
+    &
+    \quadtexto{%#bx-nota-04#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-04.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-04.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{B} & \multicolumn{3}{|l|}{ \letraquadrada{C} Acordes }
+  
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Pausa de Mínima}
+    &
+    \multicolumn{1}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{1}{l|}{
+      \quadtitulo{Bandolim}
+    }
+    &
+    \quadtitulo{Viola}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{minima-pausa}
+    &
+    \multicolumn{1}{|l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'cv
+          \include "acorde-G.ly" 
+        }
+      \end{lilypond}
+    }
+
+    &
+    \multicolumn{1}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'bd
+          \include "acorde-G.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-G.ly" 
+      }
+    \end{lilypond}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{ \em } & \letraquadrada{D}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão Tenor}
+    &
+    \multicolumn{1}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{1}{l|}{
+      \quadtitulo{Baixo}
+    }
+    &
+    \quadtitulo{Pausa de Semínima}  
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-G.ly" 
+      }
+    \end{lilypond}
+    
+    &
+    \multicolumn{1}{|l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'vi
+          \include "acorde-G.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{1}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'bx
+          \include "acorde-G.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \includegraphics[scale=1]{seminima-pausa}
+    
+    
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\break
+\section{Contar pausas}
+\label{sec:contar-pausas}
+
+\lilypondfile{reg-06.ly}
+
+
+\section{Improvisando e imitando com a nota mi}
+\label{sec:impr-e-imit-nota-mi}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-007a.ly"
+  }
+\end{lilypond}
+
+Instruções para este e os demais exercícios e melodias:
+
+\begin{enumerate}
+\item As notas de improvisação, compassos ``B'', ``D'' e ``F'', devem
+  ser tocadas por diferentes instrumentistas, um por compasso. A ordem
+  dos imitadores pode ser definida antes de começar a tocar ou durante
+  a execução, por voz ou gesto, pelo professor ou pelo improvisador.
+
+\item Os compassos ``A'' e ``H'', podem ser tocados por todos ou, cada
+  um deles, por diferentes grupos de instrumentos.
+
+\item Cada compasso de imitação, ``C'', ``E'' e ``G'', pode ser
+  tocado por um instrumentista, um grupo ou todos. A ordem dos
+  imitadores pode ser definida antes de começar a tocar ou durante a
+  execução, por voz ou gesto, pelo professor ou pelo improvisador.
+
+\item Varie o ritmo do acompanhamento, experimentando diferentes
+  gêneros musicais.
+
+\item Repita o exercício diversas vezes, sem interrupção, para que
+  todos possam improvisar.  
+
+\item Ouça seus colegas tocando e observe se eles improvisam e se imitam
+  dentro do compasso.
+
+\end{enumerate}
+
+
+\section{Semitom}
+\label{sec:semitom}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-007.ly"
+  }
+\end{lilypond}
+
+\section{Primeiro dueto}
+\label{sec:primeiro-dueto}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-008.ly"
+  }
+\end{lilypond}
+
+\section{Conversando}
+\label{sec:conversando}
+
+\lilypondfile{reg-09.ly}
+
+
+\section{Improvisando e imitando com duas notas}
+\label{sec:impr-e-imit-duas-notas}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-011.ly"
+  }
+\end{lilypond}
+
+\break
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_03}
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    &
+    \quadtitulo{Violão Tenor}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-05#%}
+    &
+    \quadtexto{%#bd-nota-05#%}
+    &
+    \quadtexto{%#va-nota-05#%}
+    &
+    \quadtexto{%#vt-nota-05#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-05.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-05.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-05.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-05.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \em } &  \letraquadrada{B}    &   \letraquadrada{C}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+    &
+    \quadtitulo{Andamento}
+    &
+    \quadtitulo{Dinâmica}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-05.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-05.ly"
+      }
+    \end{lilypond}
+    &
+    \textit{Allegro}
+    &
+    \textbf{\textit{f}} = forte
+
+    %%% PRÓXIMA LINHA
+    \\
+    &
+    &
+    \textit{Andante}
+    &
+    \textbf{\textit{p}} = piano
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{D} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{E}}  & \multicolumn{2}{|l|}{\letraquadrada{F}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Barra Dupla}
+    }
+    &
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Teoria}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \includegraphics[scale=1]{barra-dupla}
+    }
+    &
+    \multicolumn{2}{|l|}{
+      Variação
+    }
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Variações sobre Dlim-dlim-dlão}
+\label{sec:variacoes-sobre-dlim}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-010a.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-010b.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-010c.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-010d.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 4 - Esta você escreve!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-010e.ly"
+  }
+\end{lilypond}
+
+
+\break
+\section{Berimbau}
+\label{sec:berimbau}
+Aprenda ``de ouvido'' a introdução instrumental da música
+\textit{\nameref{sec:berimbau}} de Baden Powell e Vinícius de Moraes,
+no Álbum: \textit{Baden Powell - E-Collection Baden Powell} (disc
+1). Use as notas fá e sol. Decore-a, improvise e depois escreva uma
+variação para ela.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-pauta.ly"
+  }
+\end{lilypond}
+
+
+\section{Improvisando com Dlim-dlim-dlão}
+\label{sec:impr-com-dlim}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-010.ly"
+  }
+\end{lilypond}
+
+\section{Que belos castelos}
+\label{sec:que-belos-castelos}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-015.ly"}
+\end{lilypond}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 04 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_04}
+  \begin{tabular}[t]{|l|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{\letraquadrada{A} Notas} 
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    &
+    \quadtitulo{Violão Tenor}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-06#%}
+    &
+    \quadtexto{%#bd-nota-06#%}
+    &
+    \quadtexto{%#va-nota-06#%}
+    &
+    \quadtexto{%#vt-nota-06#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-06.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-06.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-06.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-06.ly"
+      }
+    \end{lilypond}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \em}  & \multicolumn{2}{l|}{\letraquadrada{B}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Fórmula de compasso}
+    }
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-06#%}
+    &
+    \quadtexto{%#bx-nota-06#%}
+    &
+    \multicolumn{2}{l|}{ \em }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-06.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-06.ly" 
+      }
+    \end{lilypond}
+    & 
+    \multicolumn{2}{l|}{ 
+      \includegraphics[scale=1]{formula-3tempos-por-compasso}
+    }
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{C} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-A7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Dm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Em.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Dm.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-A7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Dm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-A7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Dm.ly" 
+      }
+    \end{lilypond}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-A7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Dm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-A7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Dm.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Variações sobre Bambalalão}
+\label{sec:var-sobre-bambalalão}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-016-1.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-016-1a.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-016-1b.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-016-1c.ly"
+  }
+\end{lilypond}
+
+\subsection*{Variação 4 - Esta você escreve!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-016-1d.ly"
+  }
+\end{lilypond}
+
+\section{Bambaleando}
+\label{sec:bambaleando}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-017a.ly"
+  }
+\end{lilypond}
+
+\section{Improvisando e imitando com três notas}
+\label{sec:impr-e-imit-tres-notas}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-016.ly"}
+\end{lilypond}
+
+\break
+\section{Perguntas e respostas}
+\label{sec:perguntas-respostas}
+A sequência 1-2-3 está harmonizada.  Harmonize as outras e escolha
+suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
+
+\begin{tabular}{lll}
+  \em & \em &\em \\
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-01.ly" }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-02.ly" 
+}
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-03.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-04.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-05.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-06.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-07.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-08.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-09.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-10.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-11.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-12.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-13.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-14.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-15.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-16.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-17.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-18.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-19.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-20.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-21.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-22.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-23.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-24.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-25.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-26.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-27.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-28.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-29.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-30.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-31.ly" 
+    }
+  \end{lilypond}
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-32.ly" 
+    }
+  \end{lilypond}
+
+  & 
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "cp-017-33.ly" 
+    }
+  \end{lilypond}
+
+  \\
+
+
+\end{tabular}
+
+
+\textbf{Três Brincadeiras:}
+
+\begin{enumerate}
+
+\item Um instrumentista toca qualquer um dos trechos da primeira
+  coluna (pergunta), em seguida, um outro executa qualquer um dos
+  trechos da segunda coluna, finalmente, outro encerra tocando um
+  trecho qualquer da terceira (resposta). Repete-se isso até que
+  todos os participantes da brincadeira toquem, enquanto a percussão e
+  outros instrumentos escolhidos tocam, continuamente, um
+  acompanhamento combinado.
+
+\item Uma outra brincadeira é fazer a seqüência proposta no item
+  anterior, enquanto os instrumentistas que não tocam anotam quais
+  números foram tocados pelos colegas. Cada acerto marca um
+  ponto. Vence, obviamente, quem marcar mais pontos.
+
+\item Um instrumentista ``pergunta'', tocando um trecho da primeira
+  coluna. Outro dá continuidade ao diálogo, mas tem que tocar o trecho
+  correspondente da segunda coluna, ou seja, o trecho da mesma
+  sequência.  
+
+  Ele tem que descobrir, certamente, qual foi o número tocado pelo
+  anterior para poder tocar o seu. E outro finaliza, respondendo com o
+  trecho da mesma sequência da terceira coluna.
+
+\end{enumerate}
+
+
+
+\section{Samba de uma nota só}
+\label{sec:samba-de-uma-nota-so}
+Aprenda ``de ouvido'' a primeira parte do
+\textit{\nameref{sec:samba-de-uma-nota-so}} de Tom Jobim e Newton
+Mendonça. Comece com a nota Ré. Decore-a, improvise e escreva uma
+variação para ela.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-pauta.ly"
+  }
+\end{lilypond}
+
+\break
+\section{Criando suas respostas}
+\label{sec:criando-perguntas-respostas}
+Harmonize as outras sequências e escolha suas dinâmincas.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-019.ly"
+  }
+\end{lilypond}
+
+\section{Encontrando as notas erradas e harmonizando}
+\label{sec:encontrando-notas-erradas}
+Harmonize a melodia.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-014.ly"
+  }
+\end{lilypond}
+
+\textbf{Duas Brincadeiras:}
+
+\begin{enumerate}
+
+\item Depois de todos tocarem a melodia algumas vezes, alguém deve
+  tocá-la trocando uma ou mais notas, enquanto os demais dizem quais
+  notas foram trocadas. 
+
+\item Também pode-se brincar de seguir o líder: Um estudante (o líder)
+  toca a melodia, com ou sem notas erradas, e os outros tocam-na como
+  ele o fez, logo em seguida.  Comece brincando de dois em dois
+  compassos. Faça essa atividade com outras melodias deste livro.
+
+\end{enumerate}
+
+\section{Vamos completar a melodia e harmonizá-la?}
+\label{sec:vamos-completar-a-melodia}
+Coloque as dinâmicas, \textit{\textbf{f}} e \textbf{\textit{p}}, e o
+andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-021.ly"
+  }
+\end{lilypond}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_05}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-07#%}
+    &
+    \quadtexto{%#bd-nota-07#%}
+    &
+    \quadtexto{%#va-nota-07#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-07.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vt-nota-07#%}
+    &
+    \quadtexto{%#vi-nota-07#%}
+    &
+    \quadtexto{%#bx-nota-07#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-07.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{B} & \letraquadrada{C} & \letraquadrada{D} 
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Crescendo}
+    &
+    \quadtitulo{Decrescendo}
+    &
+    \quadtitulo{Fórmula de Compasso}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{crescendo}
+    &
+    \includegraphics[scale=1]{decrescendo}
+    &
+    \includegraphics[scale=1]{formula-2tempos-por-compasso}
+
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{E}} & \letraquadrada{F}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Ligadura de Frase}
+    }
+    &
+    \quadtitulo{Colcheias}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \includegraphics[scale=1]{ligadura-frase}
+    }
+    &
+    \includegraphics[scale=1]{duas-colcheias}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{G}} & \letraquadrada{H} 
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\quadtitulo{Anacruse}}
+    &
+    \quadtitulo{Escrita de Acordes}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \parbox[b][1cm]{9cm}{
+        Note que a lição \textit{``\nameref{sec:impr-em-margarida}''} na
+        página \pageref{sec:impr-em-margarida} começa no 4º
+        tempo do compasso.
+      }
+    }
+    &
+    \includegraphics[scale=1]{escrita-acordes}
+    
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\break
+\section{Aquecendo os dedos}
+\label{sec:aquecendo-banda}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-022.ly"}
+\end{lilypond}
+
+\section{Divertindo-se com cinco notas}
+\label{sec:divertindo-se-com}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-023.ly"}
+\end{lilypond}
+
+
+\section{Improvisando em A Margarida}
+\label{sec:impr-em-margarida}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-024.ly"}
+\end{lilypond}
+
+\begin{enumerate}
+
+\item Toque a \textbf {Parte 1} (Melodia) uma vez, repita a \textbf
+  {Parte 2} (Improvisação) diversas vezes, de acordo com o número de
+  improvisadores, e termine no \textbf{\textit{Fim}}.
+
+\item Toque a melodia com um mesmo grupo de instrumentos ou defina um
+  diferente instrumentista, ou grupo deles, para cada uma de duas
+  letras.
+
+\item Determine um único improvisador para todas as letras da \textbf
+  {Parte 2} ou um diferente improvisador para cada letra.
+
+\item Aplique essas indicaçoes em outras melodias com improvisação.
+
+\end{enumerate}
+
+
+\section{A Barquinha}
+\label{sec:barquinha}
+
+\lilypondfile{reg-025.ly}
+
+
+\break
+\section{Jingle Bells}
+\label{sec:jingle-bells}
+Faça a brincadeira de descobrir a nota errada.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-026.ly"}
+\end{lilypond}
+
+\section{Deus é tão bom}
+\label{sec:deus-e-tao-bom}
+Aprenda ``de ouvido'' a música
+\textit{\nameref{sec:deus-e-tao-bom}}. Comece com a nota
+Dó. Escreva-a, decore-a, improvise e depois escreva uma
+variação para ela.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-pauta-melodia-variacao.ly"
+  }
+\end{lilypond}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_06}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-08#%}
+    &
+    \quadtexto{%#bd-nota-08#%}
+    &
+    \quadtexto{%#va-nota-08#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-08.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-08.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-08.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vt-nota-08#%}
+    &
+    \quadtexto{%#vi-nota-08#%}
+    &
+    \quadtexto{%#bx-nota-08#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-08.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-08.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-08.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{B} & \letraquadrada{C} & \letraquadrada{D}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Mínima Pontuada}
+    &
+    \quadtitulo{Andamento}
+    &
+    \quadtitulo{Ligadura de Prolongamento}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{minima-pontuada}
+    &
+    \textit{Moderado}
+    &
+    \includegraphics[scale=1]{ligadura-prolongamento}
+
+    
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\break
+\section{Divertindo-se com seis notas}
+\label{sec:divertindo-se-com-seis-notas}
+
+\subsection*{Parte 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-030a.ly"}
+\end{lilypond}
+
+
+\subsection*{Parte 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-030b.ly"}
+\end{lilypond}
+
+\subsection*{Parte 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-030c.ly"}
+\end{lilypond}
+
+\subsection*{Parte 4}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-030d.ly"}
+\end{lilypond}
+
+
+
+\section{Variações sobre A Mucama}
+\label{sec:vari-sobre-mucama}
+Harmonize a melodia e as variações.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-018.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-018a.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-018b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3}
+
+Somente Violão Tenor e Baixo
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'vt
+    \include "cp-018c.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 4 - Esta você escreve e harmoniza!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-018d.ly"}
+\end{lilypond}
+
+
+\section{Improvisando em A Mucama}
+\label{sec:impr-em-mucama}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-029.ly"}
+\end{lilypond}
+
+
+\section{Escolha um dos três finais}
+\label{sec:escolha-um-dos-tres-finais}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-031.ly"
+  }
+\end{lilypond}
+
+\break
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_07}
+  \begin{tabular}[t]{|l|l|l|l|}
+    \hline
+
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-09#%}
+    &
+    \quadtexto{%#cv-nota-10#%}
+    &
+    \quadtexto{%#bd-nota-09#%}
+    &
+    \quadtexto{%#bd-nota-10#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-10.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-10.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-09#%}
+    &
+    \quadtexto{%#va-nota-10#%}
+    &
+    \quadtexto{%#vt-nota-09#%}
+    &
+    \quadtexto{%#vt-nota-10#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-10.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-10.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-09#%}
+    &
+    \quadtexto{%#vi-nota-10#%}
+    &
+    \quadtexto{%#bx-nota-09#%}
+    &
+    \quadtexto{%#bx-nota-10#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-10.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-10.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \letraquadrada{B}} &    \multicolumn{2}{l|}{ \letraquadrada{C}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{ \quadtitulo{Dinâmica}}
+    &
+    \multicolumn{2}{l|}{ \quadtitulo{Anacruse}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \includegraphics[scale=1]{mezzo-forte}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \parbox[b]{5.5cm}{
+        Note que a lição
+        \textit{``\nameref{sec:variacoes-sobre-de-marre}''} na página
+        \pageref{sec:variacoes-sobre-de-marre} começa com
+        duas colcheias no 2º tempo do compasso.
+      }    
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{D} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    &
+    \quadtitulo{Violão Tenor}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \em
+    }
+    &
+    \multicolumn{2}{l|}{
+      \letraquadrada{E}
+    }
+
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Tonalidade de Sol Maior}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+    &
+    \multicolumn{2}{l|}{  
+      \begin[fragment]{lilypond}
+        \transpose c c {
+          \keepWithTag #'cv
+          \include "armadura-sol.ly"
+        }
+      \end{lilypond}
+    }
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Mãos e Pés + O Balão de João}
+\label{sec:maos-e-pes-balao-joao}
+Experimente outras dinâmicas.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-032.ly"}
+\end{lilypond}
+
+
+Transponha \textit{O Balão de João} para dó maior
+começando com a nota sol.
+
+
+\section{Variações sobre De Marré}
+\label{sec:variacoes-sobre-de-marre}
+Harmonize a melodia e as variações.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-020.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-020a.ly"}
+\end{lilypond}
+
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-020b.ly"}
+\end{lilypond}
+
+
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-020c.ly"}
+\end{lilypond}
+
+
+
+\subsection*{Variação 4 - Esta você escreve e harmoniza!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-020d.ly"}
+\end{lilypond}
+
+\section{Transpondo}
+\label{sec:transpondo}
+
+
+Transponha para sol maior as melodias ``\ref{sec:impr-em-margarida} -
+\textit{\nameref{sec:impr-em-margarida}}'', começando com a nota si,
+``\ref{sec:barquinha} - \textit{\nameref{sec:barquinha}}'' e
+``\ref{sec:jingle-bells} - \textit{\nameref{sec:jingle-bells}}'',
+ começando com a nota sol.
+
+
+
+\section{Marcha soldado}
+\label{sec:marcha-soldado}
+
+\lilypondfile{reg-035.ly}
+
+
+\section{Improvisando em A Manquinha}
+\label{sec:impr-em-manq}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-036.ly"}
+\end{lilypond}
+
+
+\break
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 08 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_08}
+  \begin{tabular}[t]{|l|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    &
+    \quadtitulo{Violão Tenor}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-11#%}
+    &
+    \quadtexto{%#bd-nota-11#%}
+    &
+    \quadtexto{%#va-nota-11#%}
+    &
+    \quadtexto{%#vt-nota-11#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-11.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-11.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-11.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-11.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \em } & \letraquadrada{B} & \letraquadrada{C}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+    &
+    \quadtitulo{Seminima Pontuada}
+    &
+    \quadtitulo{Andamento}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-11#%}
+    &
+    \quadtexto{%#bx-nota-11#%}
+    &
+    &
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-11.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-11.ly"
+      }
+    \end{lilypond}
+    &
+    \parbox[b][2.2cm]{3cm}{
+      \includegraphics[scale=1]{seminima-pontuada}
+    }
+    &
+    \textit{Adagio}
+
+
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \letraquadrada{D}} & \letraquadrada{E}  & \letraquadrada{F}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Anacruse}
+    }
+    &
+    \quadtitulo{Pausa de Colcheia}
+    &
+    \quadtitulo{Fermata}
+
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \parbox[b]{7cm}{
+        Note que a lição \textit{``\nameref{sec:complete-melodia}''} na
+        página \pageref{sec:complete-melodia} começa com
+        três colcheias no 3º tempo do compasso.
+      }
+    }
+    &
+    \includegraphics[scale=1]{colcheia-pausa}
+    &
+    \parbox[b][0cm]{3cm}{
+      \includegraphics[scale=1]{fermata}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{G} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    &
+    \quadtitulo{Violão Tenor}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-D.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-D.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-D.ly" 
+      }
+    \end{lilypond}
+        &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-D.ly" 
+      }
+    \end{lilypond}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \em } & \multicolumn{2}{l|}{ \letraquadrada{H}}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+    &
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Dinâmica}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{1}{|l}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'vi
+          \include "acorde-D.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{1}{|l}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'bx
+          \include "acorde-D.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{2}{|l|}{ \textit{cresc.} = crescendo }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l}{ \em }
+    &
+    \multicolumn{2}{|l|}{ \textit{decresc.} = decrescendo }
+
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 08 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Improvisando em O Balão de João}
+\label{sec:improvisando-em-o-balao-de-joao}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-033.ly"}
+\end{lilypond}
+
+Repita a \textbf{Parte 2} diversas vezes, até que todos improvisem e
+depois \textit{D.C. al fine}.
+
+
+\section{Improvisando em Três Galinhas}
+\label{sec:improvisando-em-tres}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-037.ly"}
+\end{lilypond}
+
+
+\section{A Viuvinha}
+\label{sec:viuvinha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-038.ly"}
+\end{lilypond}
+
+
+\section{Escala de sol mixolídio}
+\label{sec:escala-do-modo-mixolidio-sol}
+
+\subsection*{Parte 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-041.ly"}
+\end{lilypond}
+
+\subsection*{Parte 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-041a.ly"}
+\end{lilypond}
+
+% \subsection*{Parte 3}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-041b.ly"}
+% \end{lilypond}
+
+\section{Ao passar da barca}
+\label{sec:ao-passar-da-barca}
+Harmonize a melodia.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-039.ly"}
+\end{lilypond}
+
+\section{É Ladrão}
+\label{sec:e-ladrao}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-040.ly"}
+\end{lilypond}
+
+\section{Boiadeiro}
+\label{sec:boiadeiro}
+\subsection*{Toada dos Remeiros}
+
+Faça a brincadeira de descobrir a(s) nota(s) errada(s).
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-044-1.ly"}
+\end{lilypond}
+
+
+\section{Atirei no lírio}
+\label{sec:atirei-no-lirio}
+\subsection*{Toada dos Remeiros}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-045.ly"}
+\end{lilypond}
+
+
+\section{Abra a porta e a janela}
+\label{sec:abra-porta-e-a-janela}
+Aprenda ``de ouvido'' a música
+\textit{\nameref{sec:abra-porta-e-a-janela}}. Comece com a nota
+Sol. Decore-a, improvise e depois escreva uma variação para ela. Ela é
+uma melodia de origem tradicional e está incluída na música
+\textit{Preta Pretinha} de Moraes Moreira - Novos Baianos.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-pauta.ly"}
+\end{lilypond}
+
+
+\section{Complete a melodia}
+\label{sec:complete-melodia}
+Coloque as dinâmicas e andamento.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-043.ly"}
+\end{lilypond}
+
+
+\section{Solando com a banda}
+\label{sec:solando-com-banda}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-042.ly"}
+\end{lilypond}
+
+* Use o ritmo dado com as notas em forma de ``X'' para inventar melodias.
+
+** Toque qualquer som nas notas em forma de barra.
+
+
+\section{Boi da cara preta}
+\label{sec:boi-da-cara-preta}
+
+\lilypondfile{reg-044.ly}
+
+\break
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_09}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-12#%}
+    &
+    \quadtexto{%#bd-nota-12#%}
+    &
+    \quadtexto{%#va-nota-12#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-12.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-12.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-12.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vt-nota-12#%}
+    &
+    \quadtexto{%#vi-nota-12#%}
+    &
+    \quadtexto{%#bx-nota-12#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-12.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-12.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-12.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{B} & \letraquadrada{C} & \letraquadrada{D}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Síncopa}
+    &
+    \quadtitulo{Bequadro}
+    &
+    \quadtitulo{Anacruse}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{ritmo-848}
+    &
+    \includegraphics[scale=1]{bequadro-pre}
+    &
+    \parbox[b][1.5cm]{5.5cm}{
+      Note que a lição
+      \textit{``\nameref{sec:areia}''} na página \pageref{sec:areia}
+      começa com uma colcheia no 2º tempo do compasso.
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{E}} & \letraquadrada{F}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cânone}
+    }
+    &
+    \quadtitulo{Primeira e Segunda Vez}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \parbox[b][2.5cm]{8cm}{
+        Gênero musical a duas ou mais vozes. A segunda voz
+        deve começar a tocar quando a primeira estiver no 2. 
+        Ver lição \textit{``\nameref{sec:vari-sobre-zabelinha}''}
+        na página \pageref{sec:vari-sobre-zabelinha}.
+      }
+    }
+    &
+    \includegraphics[scale=1]{%#casa1e2#%}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Escala de sol maior}
+\label{sec:escala-sol-maior}
+
+\subsection*{Parte 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049-1.ly"}
+\end{lilypond}
+
+
+\subsection*{Parte 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049-1a.ly"}
+\end{lilypond}
+
+
+\section{Areia}
+\label{sec:areia}
+Harmonize a melodia.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-050-1.ly"}
+\end{lilypond}
+
+
+\section{Eu era assim}
+\label{sec:eu-era-assim}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-047.ly"}
+\end{lilypond}
+
+
+\section{Oh, Laura}
+\label{sec:oh-laura}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-053-1.ly"}
+\end{lilypond}
+
+\section{Improvisando em Eu Chole, Chole, Lá}
+\label{sec:impr-em-eu-chole-la}
+Explore diferentes dinâmicas.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-048.ly"}
+\end{lilypond}
+
+
+\section{Variações sobre Zabelinha}
+\label{sec:vari-sobre-zabelinha}
+Harmonize a melodia e as variações.
+
+\subsection*{Cânone}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049a.ly"}
+\end{lilypond}
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049b.ly"}
+\end{lilypond}
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049c.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 4 - Esta você escreve!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049d.ly"}
+\end{lilypond}
+
+
+\section{Sapatinho branco em trio}
+\label{sec:sapatinho-branco-trio}
+Harmonize a melodia.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-050.ly"}
+\end{lilypond}
+
+
+\section{Lê-lê-lê, Juazeiro}
+\label{sec:le-le-le-juazeiro}
+\subsection*{Samba}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-051.ly"}
+\end{lilypond}
+
+
+\section{Variações sobre Pombinha Rolinha}
+\label{sec:vari-sobre-pombinha-rolinha}
+Harmonize a melodia e as variações.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-052.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-052a.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-052b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3 - Esta você escreve!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-052c.ly"}
+\end{lilypond}
+
+
+\break
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_10}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-13#%}
+    &
+    \quadtexto{%#bd-nota-13#%}
+    &
+    \quadtexto{%#va-nota-13#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-13.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-13.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-13.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vt-nota-13#%}
+    &
+    \quadtexto{%#vi-nota-13#%}
+    &
+    \quadtexto{%#bx-nota-13#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-13.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-13.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-13.ly"
+      }
+    \end{lilypond}
+
+  \end{tabular}
+
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{B} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-A.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-E7.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-A.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-E7.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-A.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-E7.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-A.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-E7.ly" 
+      }
+    \end{lilypond}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-A.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-E7.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-A.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-E7.ly" 
+      }
+    \end{lilypond}
+    \\
+    \hline
+  \end{tabular}
+
+  %%%%%%%%%%%%%% CONTINUAÇÃO
+  \begin{tabular}[t]{|lll|}
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{C}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{3}{|l|}{\quadtitulo{Tonalidades}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{Lá maior}
+    &
+    \quadtexto{Sol lídio}
+    &
+    \quadtexto{Sol lídio-mixolídio}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-la.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-sol-lidio.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-sol-lm.ly"
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Escala de sol nos modos lídio e lídio-mixolídio}
+\label{sec:escala-do-modo-lidio-sol}
+
+\subsection*{Parte 1 - Lídio}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-056a.ly"}
+\end{lilypond}
+
+\subsection*{Parte 2 - Lídio-mixolídio}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-056b.ly"}
+\end{lilypond}
+
+
+\subsection*{Parte 3 - Improviso com gráficos}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-056c.ly"}
+\end{lilypond}
+
+\begin{enumerate}
+
+\item Pratique este número com dó natural.
+
+\item Pratique este número com dó natural e fá natural.
+
+\item Pratique este número com dó sustenido e fá natural.
+
+\end{enumerate}
+
+
+\section{Marrequinha da lagoa}
+\label{sec:marrequinha-da-lagoa}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-053.ly"}
+\end{lilypond}
+
+
+\section{Vamos escrever uma segunda voz para Ró-ró-ró}
+\label{sec:vamos-escrever-segunda-voz-ro-ro-ro}
+Harmonize a melodia.
+
+\subsection*{Cânone}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-054.ly"}
+\end{lilypond}
+
+\break
+\section{Vamos escrever uma segunda voz para Coelhinho}
+\label{sec:vamos-escrever-segunda-voz-coelhinho}
+Toque esta melodia em Sol maior também, começando com a nota si na
+primeira voz.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-055.ly"}
+\end{lilypond}
+
+
+
+\section{Não chore não, viu?}
+\label{sec:nao-chore-nao-viu}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-057.ly"}
+\end{lilypond}
+
+
+\break
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_11}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-14#%}
+    &
+    \quadtexto{%#cv-nota-15#%}
+    &
+    \quadtexto{%#bd-nota-14#%}
+    &
+    \quadtexto{%#bd-nota-15#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-14.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-15.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-14.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-15.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-14#%}
+    &
+    \quadtexto{%#va-nota-15#%}
+    &
+    \quadtexto{%#vt-nota-14#%}
+    &
+    \quadtexto{%#vt-nota-15#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-14.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-15.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-14.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-15.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-14#%}
+    &
+    \quadtexto{%#vi-nota-15#%}
+    &
+    \quadtexto{%#bx-nota-14#%}
+    &
+    \quadtexto{%#bx-nota-15#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-14.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-15.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-14.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-15.ly" 
+      }
+    \end{lilypond}
+    \\
+    \hline
+  \end{tabular}
+
+  \begin{tabular}[t]{|l|l|l|l|}
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{B} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    &
+    \quadtitulo{Violão Tenor}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-F.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-F.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-F.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-F.ly" 
+      }
+    \end{lilypond}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'vi
+          \include "acorde-F.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'bx
+          \include "acorde-F.ly" 
+        }
+      \end{lilypond}
+    }
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Palmas, pés e improviso em Carambola}
+\label{sec:palmas-pes-improviso-carambola}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-059.ly"}
+\end{lilypond}
+
+\section{A Canoa}
+\label{sec:a-canoa}
+\subsection*{Cânone - Completar a melodia}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-062.ly"}
+\end{lilypond}
+
+
+\newpage
+\section{Roda e Chicotinho Queimado}
+\label{sec:roda-e-chicotinho-queimado}
+
+\begin{center}
+  \includegraphics[scale=1]{roda-chicotinho-agudos}
+\end{center}
+
+\textbf{Roda:}
+
+Esta brincadeira consiste em tocar os números, rodando no sentido
+horário ou anti-horário, e repetindo cada um deles três vezes. Quem
+errar é eliminado. Após alguém ser eliminado, reinicia-se o
+jogo. Vencem os que conseguirem dar três rodadas sem errar.
+
+\textbf{Chicotinho queimado:}
+
+Este jogo é semelhante a brincadeira de mesmo nome. São seis
+jogadores. Cada um dos cinco números do jogo fica com um participante
+e um sexto paticipante fica livre. Os cinco iniciam tocando juntos e
+mantêm-se repetindo os trechos musicais de seu número. O sexto
+participante repete cada número duas vezes, sem interrupção, em
+sentido horário ou anti-horário como se estivesse rodando em torno dos
+cinco participantes. Se ele não tocar um dos números duas vezes, ou
+seja, tocar uma ou três vezes ou não tocá-lo, pulá-lo, o participante
+deste número deve interromper o jogo. Se ele não interromper, ele é
+eliminado. Se ele interromper, será eliminado quem estava rodando e
+ele passa a rodar no lugar do eliminado. Vencem, certamente, aqueles
+que não forem eliminados.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_12}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-16#%}
+    &
+    \quadtexto{%#cv-nota-17#%}
+    &
+    \quadtexto{%#bd-nota-16#%}
+    &
+    \quadtexto{%#bd-nota-17#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-16.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-17.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-16.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-17.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-16#%}
+    &
+    \quadtexto{%#va-nota-17#%}
+    &
+    \quadtexto{%#vt-nota-16#%}
+    &
+    \quadtexto{%#vt-nota-17#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-16.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-17.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-16.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-17.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \em
+    }
+    &
+    \multicolumn{1}{l|}{
+      \em
+    }
+    &
+    \letraquadrada{B}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{1}{l|}{
+      \quadtitulo{Baixo}
+    }
+    &
+    \quadtitulo{Tonalidade}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-16#%}
+    &
+    \quadtexto{%#vi-nota-17#%}
+    &
+    \multicolumn{1}{l|}{
+      \quadtexto{%#bx-nota-17#%}
+    }
+    &
+    \quadtexto{Ré Maior}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-16.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-17.ly" 
+      }
+    \end{lilypond}
+    &
+    \multicolumn{1}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c {
+          \keepWithTag #'bx
+          \include "nota-17.ly"
+        }
+      \end{lilypond}
+    }
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-re.ly" 
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Escalas de ré maior e ré menor}
+\label{sec:escalas-de-re-maior-menor}
+
+\subsection*{Parte 1 - Ré maior}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-060a.ly"}
+\end{lilypond}
+
+\subsection*{Parte 2 - Ré menor (primitiva)}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-060b.ly"}
+\end{lilypond}
+
+\subsection*{Parte 3 - Ré maior}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-060c.ly"}
+\end{lilypond}
+
+\subsection*{Parte 4 - Ré menor (primitiva)}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-060d.ly"}
+\end{lilypond}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_13}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{4}{|l|}{
+      \quadtitulo{Cavaquinho, Bandolim, Viola,}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{4}{|l|}{
+      \quadtitulo{Violão Tenor e Violão}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{4}{|l|}{
+      \em
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l}{
+      \em
+    }
+    &
+    \multicolumn{2}{l|}{
+      \textbf{Descanso}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{
+      \quadtitulo{Baixo}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l}{
+      \quadtexto{%#bx-nota-18#%}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtexto{%#bx-nota-19#%}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l}{
+      \begin[fragment]{lilypond}
+        \transpose c c {
+          \keepWithTag #'bx
+          \include "nota-18.ly"
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'bx
+          \include "nota-19.ly" 
+        }
+      \end{lilypond}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{B}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{4}{|l|}{\quadtitulo{Acento}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{4}{|l|}{
+      \includegraphics[scale=1]{acento}
+      \parbox[b][1.5cm]{9cm}{
+        Indica que uma nota deverá ser reproduzida com maior intensidade
+        que outras.
+      }
+    }
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Improvisando em Atirei o Pau no Gato}
+\label{sec:improvisando-atirei-pau-gato}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-071.ly"}
+\end{lilypond}
+
+
+\section{Rosa vermelha}
+\label{sec:rosa-vermelha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-058.ly"}
+\end{lilypond}
+
+\break
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_14}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-20#%}
+    &
+    \quadtexto{%#cv-nota-21#%}
+    &
+    \quadtexto{%#bd-nota-20#%}
+    &
+    \quadtexto{%#bd-nota-21#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-21.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-21.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-20#%}
+    &
+    \quadtexto{%#va-nota-21#%}
+    &
+    \quadtexto{%#vt-nota-20#%}
+    &
+    \quadtexto{%#vt-nota-21#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-21.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-21.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-20#%}
+    &
+    \quadtexto{%#vi-nota-21#%}
+    &
+    \quadtexto{%#bx-nota-20#%}
+    &
+    \quadtexto{%#bx-nota-21#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-21.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-21.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \letraquadrada{B}} 
+    &  
+    \multicolumn{2}{l|}{ \letraquadrada{C}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\quadtitulo{Repetição}} 
+    &   
+    \multicolumn{2}{l|}{\quadtitulo{Tonalidades}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\includegraphics[scale=1]{sinal-repeticao2}}
+    &
+    \quadtexto{Mi Maior}
+    &
+    \quadtexto{Mi Menor}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{ \em }
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-mi.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-mi-menor.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+  \end{tabular}
+
+%%%%%%%%%%%%%%%% CONTINUAÇÃO
+  \begin{tabular}[t]{|ll|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{6}{|l|}{ \letraquadrada{D} Acordes }
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+    &
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Bm.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-E.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Bm.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-E.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Bm.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-E.ly" 
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l}{
+      \quadtitulo{Violão Tenor}
+    }
+    &
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Bm.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-E.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Bm.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-E.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Bm.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-E.ly" 
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Escalas de mi maior e mi menor}
+\label{sec:escalas-de-mi-maior-menor}
+
+\subsection*{Parte 1 - mi maior}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-069a.ly"}
+\end{lilypond}
+
+\subsection*{Parte 2 - mi menor (primitiva)}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-069b.ly"}
+\end{lilypond}
+
+\subsection*{Parte 3 - mi maior}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-069c.ly"}
+\end{lilypond}
+
+\subsection*{Parte 4 - mi menor (primitiva)}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-069d.ly"}
+\end{lilypond}
+
+
+
+\section{Bicho Papão}
+\label{sec:bicho-papao}
+\subsection*{Dueto}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-074.ly"}
+\end{lilypond}
+
+\section{Variações sobre Ciranda, Cirandinha}
+\label{sec:variacoes-ciranda-cirandinha}
+Harmonize a melodia e as variações.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-077.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-077a.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-077b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-077c.ly"}
+\end{lilypond}
+
+\subsection*{Variação 4 - Esta você escreve e harmoniza!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-077d.ly"}
+\end{lilypond}
+
+\break
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_15}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-22#%}
+    &
+    \quadtexto{%#bd-nota-22#%}
+    &
+    \quadtexto{%#va-nota-22#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-22.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vt-nota-22#%}
+    &
+    \quadtexto{%#vi-nota-22#%}
+    &
+    \quadtexto{%#bx-nota-22#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-22.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+  \end{tabular}
+
+%%%%%%%%%%%%%% CONTINUAÇÃO
+  \begin{tabular}[t]{|l|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{2}{|l|}{ \letraquadrada{B} Tonalidade}
+    &
+    \multicolumn{2}{l|}{\letraquadrada{C}}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Fá Maior}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Divisi}
+    }
+
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'cv
+          \include "armadura-fa.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \includegraphics[scale=1]{divisi}
+    }
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{ \letraquadrada{D} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-B7.ly" 
+      }
+    \end{lilypond}
+    
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Fism.ly" 
+      }
+    \end{lilypond}
+    
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-B7.ly" 
+      }
+    \end{lilypond}
+    
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Fism.ly" 
+      }
+    \end{lilypond}
+      
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-B7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Fism.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-B7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Fism.ly" 
+      }
+    \end{lilypond}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-B7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Fism.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-B7.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Fism.ly" 
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Dorme, nenê}
+\label{sec:dorme-nene}
+Experimente outras dinâmicas
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-064.ly"}
+\end{lilypond}
+
+\section{Se esta rua fosse minha}
+\label{sec:se-esta-rua-fosse-minha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-079.ly"}
+\end{lilypond}
+
+
+\section{Escala de fá maior}
+\label{sec:escala-fa-maior}
+
+\subsection*{Parte 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049-2a.ly"}
+\end{lilypond}
+
+\subsection*{Parte 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049-2b.ly"}
+\end{lilypond}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_16}
+  \begin{tabular}[t]{|lll|}
+    \hline
+
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Acordes}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{3}{|l|}{\quadtitulo{Cavaquinho}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Bandolim}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Viola}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Violão Tenor}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Violão}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Baixo}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "acorde-Bb.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "acorde-C7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "acorde-Gm.ly"
+      }
+    \end{lilypond}
+
+
+    
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Capelinha de melão}
+\label{sec:capelinha-de-melao}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-061.ly"}
+\end{lilypond}
+
+
+\section{O pastorzinho}
+\label{sec:o-pastorzinho}
+Toque esta melodia em Dó maior também, começando com a nota sol.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-046.ly"}
+\end{lilypond}
+
+
+\section{Improvisando em Boi Barroso}
+\label{sec:improvisando-em-boi-barroso}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-065.ly"}
+\end{lilypond}
+
+
+\newpage
+\section{Balão}
+\label{sec:balao}
+
+\begin{center}
+  \includegraphics[scale=1]{balao-agudos}
+\end{center}
+
+
+\break
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_17}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A} Notas}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-23#%}
+    &
+    \quadtexto{%#bd-nota-23#%}
+    &
+    \quadtexto{%#va-nota-23#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-23.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vt-nota-23#%}
+    &
+    \quadtexto{%#vi-nota-23#%}
+    &
+    \quadtexto{%#bx-nota-23#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-23.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+  \end{tabular}
+
+%%%%%%%%%%%%%% CONTINUAÇÃO
+  \begin{tabular}[t]{|l|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{B} Tonalidade
+    &
+    \multicolumn{3}{|l|}{ \letraquadrada{C} Acordes}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Sol Menor}
+    &
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Bandolim}
+    &
+    \quadtitulo{Viola}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-sol-menor.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Cm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "acorde-Cm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "acorde-Cm.ly" 
+      }
+    \end{lilypond}
+
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{ \em } & \letraquadrada{D}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Violão}
+    &
+    \quadtitulo{Baixo}
+    &
+    \quadtitulo{Bemol}
+    
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "acorde-Cm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "acorde-Cm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "acorde-Cm.ly" 
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{bemol-pre}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Escala de sol menor}
+\label{sec:escala-sol-menor}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-049-3.ly"}
+\end{lilypond}
+
+
+\section{Variações sobre Terezinha}
+\label{sec:variacoes-sobre-terezinha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-066.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-066a.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-066b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-066c.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 4}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-066d.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 5 - Esta você escreve!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-066e.ly"}
+\end{lilypond}
+
+
+\section{Improvisando em Terezinha}
+\label{sec:improvisando-em-terezinha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-067.ly"}
+\end{lilypond}
+
+
+\section{Improvisando sobre a Canção do Cego}
+\label{sec:improvisando-cancao-cego}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-068.ly"}
+\end{lilypond}
+
+
+\section{Improvisando em A Barata}
+\label{sec:improvisando-em-a-barata}
+Acrescente suas dinâmicas.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-072.ly"}
+\end{lilypond}
+
+\section{Improvisando em Quando Eu Era Pequenino}
+\label{sec:improvisando-quando-eu-era-pequenino}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-070.ly"}
+\end{lilypond}
+
+
+\newpage
+\section{Pata Choca}
+\label{sec:pata-choca}
+
+
+%%% corrigir
+% Siga as instruções de sec:roda-e-chicotinho-queimado, número tal,
+% página tal.
+
+%% tirar barra dupla de Duo e Banda
+
+
+\begin{center}
+  \includegraphics[scale=1]{patachoca-agudos}
+\end{center}
+
+
+\section{Duo e Banda}
+\label{sec:duo-e-banda}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-085.ly"}
+\end{lilypond}
+
+* Notas em formato de ``X'' = Toque qualquer nota, mas siga o ritmo indicado.
+
+** Solo = Apenas um instrumento por voz.
+
+*** Notas em formato de barra = Toque qualquer nota grave ou aguda de
+acordo com a notação.
+
+**** Banda = Indica que a terceira voz pode ser feita por todos ou parte deles.
+
+
+\section{Cai, Cai Balão}
+\label{sec:cai-cai-balao}
+Aprenda a melodia \textit{\nameref{sec:cai-cai-balao}} de
+ouvido. Complete a partir das notas dadas. Harmonize-a e escreva uma segunda voz
+para ela.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-086.ly"}
+\end{lilypond}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_18}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-24#%}
+    &
+    \quadtexto{%#cv-nota-25#%}
+    &
+    \quadtexto{%#bd-nota-24#%}
+    &
+    \quadtexto{%#bd-nota-25#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-25.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-25.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-24#%}
+    &
+    \quadtexto{%#va-nota-25#%}
+    &
+    \quadtexto{%#vt-nota-24#%}
+    &
+    \quadtexto{%#vt-nota-25#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-25.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-25.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-24#%}
+    &
+    \quadtexto{%#vi-nota-25#%}
+    &
+    \quadtexto{%#bx-nota-24#%}
+    &
+    \quadtexto{%#bx-nota-25#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-25.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-25.ly" 
+      }
+    \end{lilypond}
+
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\break
+\section{Escalas de dó maior}
+\label{sec:escalas-do-maior}
+
+\subsection*{Parte 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-087a.ly"}
+\end{lilypond}
+
+
+\subsection*{Parte 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-087b.ly"}
+\end{lilypond}
+
+
+\section{Cromos}
+\label{sec:cromos}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-088.ly"}
+\end{lilypond}
+
+Toque esta lição também em ordem inversa (começando pela última nota).
+
+
+\section{Amarelinha}
+\label{sec:amarelinha}
+
+\begin{center}
+  \includegraphics[scale=1]{amarelinha-agudos}
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_19}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{4}{|l|}{ \letraquadrada{A} Notas }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Cavaquinho}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Bandolim}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#cv-nota-26#%}
+    &
+    \quadtexto{%#cv-nota-27#%}
+    &
+    \quadtexto{%#bd-nota-26#%}
+    &
+    \quadtexto{%#bd-nota-27#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-27.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bd
+        \include "nota-27.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Viola}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Violão Tenor}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#va-nota-26#%}
+    &
+    \quadtexto{%#va-nota-27#%}
+    &
+    \quadtexto{%#vt-nota-26#%}
+    &
+    \quadtexto{%#vt-nota-27#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'va
+        \include "nota-27.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vt
+        \include "nota-27.ly" 
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{
+      \quadtitulo{Violão}
+    }
+    &
+    \multicolumn{2}{l|}{
+      \quadtitulo{Baixo}
+    }
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtexto{%#vi-nota-26#%}
+    &
+    \quadtexto{%#vi-nota-27#%}
+    &
+    \quadtexto{%#bx-nota-26#%}
+    &
+    \quadtexto{%#bx-nota-27#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "nota-27.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "nota-27.ly" 
+      }
+    \end{lilypond}
+
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Improvisando em Cachorrinho}
+\label{sec:improvisando-em-cachorrinho}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-073.ly"}
+\end{lilypond}
+
+
+\section{Improvisando  em Na Corda da Viola}
+\label{sec:improvisando-na-corda-viola}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-075.ly"}
+\end{lilypond}
+
+
+\section{Improvisando em Engenho Novo}
+\label{sec:improvisando-engenho-novo}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-076.ly"}
+\end{lilypond}
+
+
+
+\section{Variações sobre Carneirinho, Carneirão}
+\label{sec:variacoes-carneirinho-carneirao}
+\subsection*{Cânone}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-078.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-078a.ly"}
+\end{lilypond}
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-078b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-078c.ly"}
+\end{lilypond}
+
+\subsection*{Variação 4 - Esta você escreve!}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-078d.ly"}
+\end{lilypond}
+
+\newpage
+\section{Amarelinha Espiral}
+\label{sec:amarelinha-espiral}
+
+\begin{center}
+  \includegraphics[scale=1]{espiral-agudos}
+\end{center}
+
+\newpage
+\section{Escravo de Jó}
+\label{sec:escravo-de-jo}
+Aprenda ``de ouvido'' a música
+\textit{\nameref{sec:escravo-de-jo}}. Comece com a nota sol. Depois
+harmonize-a e componha uma variação dela.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-pauta.ly"}
+\end{lilypond}
+
+\section{Escreva sua música e toque-a para seus colegas}
+\label{sec:comp-toque-colegas}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-080.ly"}
+\end{lilypond}
+
+
+
+% \newpage
+% \input{indice}
+
+\newpage
+
+  \tableofcontents
+
+
+\renewcommand\listtablename{Lista dos Quadros}
+  \listoftables
+
+\end{document}
+

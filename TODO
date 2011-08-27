@@ -1,0 +1,171 @@
+#-*- mode: org; -*-
+
+* URGENTE
+
+* dúvidas
+** DÚVIDAS GERAIS
+*** Livro do Baixo
+> Tira a terça do acode de Ré? (ainda não aprendeu a nota fá#):
+. Improvisando em O Balão de João
+. Improvisando em Três Galinhas
+
+> Nota Fá grave
+. A Canoa
+
+> Várias frases e nota Si aguda
+. Improvisando em Atirei o Pau no Gato
+
+** Outras
+- Engenho Novo - Nota lá no divisi do cavaquinho e baixo
+- Escala de sol nos modos lídio e lídio-mixolídio - parte 3 - a
+  tonalidade deveria ser sol maior?
+- Escalas menores melódicas, é para fazer as alterações ou mudar para
+  escala primitiva?
+
+* NÃO ESQUECER
+** A mucama
+- o "D.C. al Fine" está desalinhado
+* Tarefas
+** Realizadas
+*** DONE Tirar símbolo de respiração das lições
+*** DONE Improvisando e imitando com a nota MI
+- Substituir semibreves por mínimas.
+*** DONE Divertindo-se com seis notas
+- Terminar todos com a nota Dó Semibreve
+
+*** DONE Incluir Bambaleando no lugar de improvisando em bambalalão:
+\section{ Bambaleando}
+\label{sec:bambaleando}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cl
+    \include "cl-11.ly"
+  }
+\end{lilypond}
+
+*** DONE Escrever segunda voz Coelhinho
+- A última nota colocar semínima (tirar colcheias)
+*** DONE Quando eu era pequenino
+- Escalas na oitava do acorde
+
+- a partir daqui em todas as lições seguindo o acorde.
+
+*** DONE Tirar negrigo do "Fine"
+- Improvisando em Terezinha
+- Improvisando em Canção do Cego
+*** DONE Boi da Cara Preta
+A = \p
+B = \< \mf
+C = \mf \< \f \> \mf \> \p
+
+*** DONE Dorme nene
+- Colocar dinâmicas do cavaquinho nos outros instrumentos.
+
+*** DONE Atirei o pau no gato
+- A nota mais grave é o re3 em tudo.
+- Escalas de improvisação de a1 à a2
+- O contrabaixo irá tocar no compasso 7. 
+d8 d b'4 b b <\small c a>8 b a4 a a
+
+No "Fine" fazer d4 a' d,
+
+*** DONE Mudar títulos para o padrão "Pppp pppp"
+*** DONE Improvisando em Cachorrinho
+- No cavaquinho da parte C o lá é oitava abaixo e toda parte D oitava
+  baixo até o Fine
+- Verificar notas graves. A mais grave deverá ser Dó3
+*** DONE A Barquinha
+- Colocar dinamica conforme verso da página 1 do rascunho.
+
+*** DONE Engenho Novo
+- A partir da D1 colocar "divisi" e a segunda voz do cavaquinho mudar
+  para oitava acima
+
+
+
+** A FAZER
+*** Incluir notas de rodapé com fonte das músicas - FALTA FONTES
+- Areia
+- Oh, Laura
+
+*** Adaptar dacapo1
+- Cv / Bj =
+- Bd      =
+- Vla
+- Vt
+- Vlo
+- Bx
+
+*** Alterar escalas para melódica ré menor e mi menor
+*** Improvisando em Terezinha: baixo com nota muito grave Eb
+*** Improvisando em Quando eu era pequenino: baixo com nota muito grave D
+*** Improvisando em Engenho Novo: baixo com nota muito grave D
+*** Corrigir oitavas da nota C no VT e Violao na licao 84
+*** Improvisando em Cachorrinho: Baixo, consertar oitavas da melodia
+*** Improvisando em Cachorrinho 
+Escalas de improviso de dó maior na primeira inversão. e f g .....
+*** Diminuir tamanho dos jogos
+
+*** CONFERÊNCIAS
+
+* Códigos novos
+** markups
+\override TextScript #'padding = #2
+
+
+^\markup {\small {\box "A"}}
+^\markup {\italic {\bold "Allegro"}}
+^\markup {\column {\italic {\bold "Allegro"} \small \box {"A"}}}
+^\markup {\column {\bold {\line {"Parte 1"} \line {\italic "Allegro"}} \small \box {"A"}}}
+
+
+^\markup {\italic {"Fine"}}
+^\markup{\italic {"D.C. al Fine"}}
+^\markup{\italic {\column{\line {"D.C."} \line{"al Fine"}}}}
+
+** Ligaduras ()
+- Ligadura  tracejada
+\slurDashed
+
+- Ligadura pontilhada
+\slurDotted
+
+- Ligadura normal
+\slurSolid
+
+** comprimir compassos em pausa
+\set Score.skipBars = ##t
+\override MultiMeasureRest #'expand-limit = #3
+
+** Dinamicas
+\crescTextCresc
+
+\dimTextDecresc
+
+\crescHairpin
+normal cresc.
+
+\dimHairpin
+normal dim.
+
+** Key Signatures
+\set Staff.keySignature = #`(((1 . 0) . ,SHARP)  
+                             ((1 . 3) . ,FLAT)
+                             ((1 . 3) . ,NATURAL))
+
+Octave   Step      Alter
+1   .    0         ,SHARP
+** Acordes
+s^\markup \fret-diagram #"f:2;6-o;5-2-2;4-2-3;3-o;2-o;1-o;"
+s^\markup \fret-diagram #"f:2;w:4;4-2-2;3-1-1;2-o;1-o;"
+s^\markup \fret-diagram #"f:2;w:4;c:4-3-2;4-2-2;3-1-1;2-o;1-o;"
+
+f:2 = tipo de marcação para dedos
+w:4 = número de cordas
+c:4-3-2 = pestana na corda 4 até a 3 na casa 2
+** Fingers
+#(define RH rightHandFinger)
+<c-\RH #1 >4
+<e-\RH #2 >4
+<g-\RH #3 >4
+<c-\RH #4 >4

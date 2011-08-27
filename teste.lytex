@@ -1,0 +1,132 @@
+% -*- latex -*-
+% -*- coding: latin-1 -*-
+
+\documentclass[twoside,12pt]{article}
+\usepackage{graphicx}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}              % Acrescentado por Givaldo de Cidra
+\usepackage{url}
+%% \usepackage{makeidx}                    % pkg para índice
+\usepackage{setspace}
+\usepackage{titletoc}
+
+%% novos pacotes
+\usepackage{lastpage}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{multirow}
+
+\titlecontents{section}
+[2 em]
+{}
+{\contentslabel{2em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
+
+
+\newcommand{\instrumento}[1]{ \textbf{#1} }
+
+%\setlength\@tempdima{1.5em}%
+
+\pagestyle{fancy}                       % Sets fancy header and footer
+
+% \renewcommand{\sectionmark}[1]{%          % Lower case Section marker style
+%   \markright{\thesection.\ #1}}           
+%   %% \fancyhead[LE,RO]{\bfseries\thepage}    % Page number (boldface)
+% in left on even pages and right on odd pages
+% \fancyhead[LO]{\bfseries\leftmark}        % Chapter in the right on even pages
+%   %% \fancyhead[RE]{\bfseries\rightmark}     % Section in the left on odd pages
+
+\fancyhead[RLOE]{\bfseries\rightmark}     % Oculta o nome das seções
+\fancyhead[RO]{\textbf{\instrumento{Original}}}
+\fancyhead[LE]{\textbf{Da Capo Cordas Pinçadas - LIVRO TESTE}}
+
+\renewcommand{\headrulewidth}{0.3pt}    % Width of head rule
+
+% HOME colocar nos arquivos lytex ============================================
+\newcommand{\letraquadrada}[1]{ \Large{\framebox[1.1\width]{#1} }}
+\newcommand{\quadtitulo}[1]{ \large{\textbf{#1} }}
+\newcommand{\quadtexto}[1]{\small{\textbf{#1}}}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+% END colocar nos arquivos lytex ============================================
+
+% não espaçar pra encher as páginas:
+\raggedbottom
+
+\begin{document}
+\graphicspath{
+  {../figs/}
+  {../figs/jogos/}
+  {../figs/posicoes/}
+  {../figs/quadro/}
+}
+
+
+% %% begin capas
+% \input{capa}
+
+% \begin{flushright}
+% \textbf{\huge{LIVRO TESTE - \instrumento{InstrCapa}}}
+% \end{flushright}
+
+% \newpage
+% \input{contracapa}
+
+% \newpage
+% \input{direitos}
+% % %% end capas
+
+
+% \begin{flushright}
+% \textbf{\huge{LIVRO TESTE - \instrumento{InstrCapa}}}
+% \end{flushright}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% INSIRA O CÓDIGO A PARTIR DAQUI:
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\section{Rosa vermelha}
+\label{sec:rosa-vermelha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-058.ly"}
+\end{lilypond}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% FINAL DO CÓDIGO
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+
+\newpage
+
+\tableofcontents
+
+\end{document}
+
+
+
+% Número da lição:
+% \ref{sec:impr-com-dlim}
+
+% Nome da lição:
+% \nameref{sec:impr-com-dlim} 
+
+% Página da lição:
+% \pageref{sec:impr-com-dlim}
+
+
+

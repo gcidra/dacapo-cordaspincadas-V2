@@ -12,7 +12,7 @@
   \new ChoirStaff<<
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Ban."} }
+      \set Staff.instrumentName = \markup {\column { "Ban"} }
       \set Staff.shortInstrumentName = "Ban."
       \transpose c c {
         \keepWithTag #'bd
@@ -21,7 +21,7 @@
     >>
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Vlão.T."} }
+      \set Staff.instrumentName = \markup {\column { "Violão Tenor"} }
       \set Staff.shortInstrumentName = "Vlão.T."
       \transpose c c {
         \keepWithTag #'vt
@@ -30,7 +30,7 @@
     >>
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Bx."} }
+      \set Staff.instrumentName = \markup {\column { "Baixo"} }
       \set Staff.shortInstrumentName = "Bx."
       \transpose c c {
         \keepWithTag #'bx

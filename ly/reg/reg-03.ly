@@ -1,5 +1,5 @@
 % -*- coding: utf-8 -*-
-\version "2.12.3"
+\version "2.14.1"
 
 \paper{
   line-width = 15.0\cm
@@ -12,7 +12,7 @@
   \new ChoirStaff<<
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Cavaquinho"} }
+      \set Staff.instrumentName = \markup {\column { "Cav."} }
       \set Staff.shortInstrumentName = "Cav."
       \transpose c c {
         \keepWithTag #'cv
@@ -21,16 +21,7 @@
     >>
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Bandolim"} }
-      \set Staff.shortInstrumentName = "Ban."
-      \transpose c c {
-        \keepWithTag #'bd
-        \include "cp-003.reg"
-      }
-    >>
-
-    \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Viola"} }
+      \set Staff.instrumentName = \markup {\column { "Vla."} }
       \set Staff.shortInstrumentName = "Vla."
       \transpose c c {
         \keepWithTag #'va
@@ -39,33 +30,13 @@
     >>
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Violão Tenor"} }
-      \set Staff.shortInstrumentName = "Vlão.T."
-      \transpose c c {
-        \keepWithTag #'vt
-        \include "cp-003.reg"
-      }
-    >>
-
-    \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Violão"} }
+      \set Staff.instrumentName = \markup {\column { "Vlão."} }
       \set Staff.shortInstrumentName = "Vlão."
       \transpose c c {
         \keepWithTag #'vi
         \include "cp-003.reg"
       }
     >>
-
-
-    \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Baixo"} }
-      \set Staff.shortInstrumentName = "Bx."
-      \transpose c c {
-        \keepWithTag #'bx
-        \include "cp-003.reg"
-      }
-    >>
-
 
   >>
 >>

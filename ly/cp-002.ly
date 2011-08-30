@@ -1,7 +1,7 @@
 %% -*- coding: utf-8 -*-
-\version "2.12.1"
+\version "2.14.1"
 
-%%\header { texidoc="Segunda Nota"}
+%%\header { texidoc="1 - Primeira Nota"}
 
 \relative c'' {
 
@@ -13,102 +13,75 @@
 
   %% CAVAQUINHO - BANJO
   \tag #'cv {
-
-    R1
-    b4 b b b
-    R1
-    b4 b b2
-    R1
-    b4 b b b
-    b b b b
-    R1
+    
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
 
   }
 
   %% BANDOLIM
   \tag #'bd {
-
-    a4 a a a
-    R1
-    a4 a a2
-    R1
-    a4 a a a
-    R1
-    R
+    e4 e e e
+    e2 e
+    a,4 a a a
     a2 a
+    
+    e'4 e e e
+    a, a a a
+    e' e e e
+    a,2 a
 
   }
 
   %% VIOLA
   \tag #'va {
-
-    R1
-    b4 b b b
-    R1
-    b4 b b2
-    R1
-    b4 b b b
-    b b b b
-    R1
-
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
   }
 
   %% VIOLÃO TENOR
   \tag #'vt {
-
     \clef "G_8"
+
+    a4 a a a
+    a2 a
     d,4 d d d
-    R1
-    d4 d d2
-    R1
-    d4 d d d
-    R1
-    R
     d2 d
+    a'4 a a a
+    d, d d d
+    a' a a a
+    d,2 d
 
   }
 
   %% VIOLÃO
   \tag #'vi {
-
-    \relative c' {
-      \clef "G_8"
-
-      R1
-      b4 b b b
-      R1
-      b4 b b2
-      R1
-      b4 b b b
-      b b b b
-      R1
-    }
-
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
   }
 
 
   %% BAIXO - BAIXOLÃO
   \tag #'bx {
+    \clef bass
 
-    \relative c {
-      \clef bass
-
-      d4 d d d
-      R1
-      d4 d d2
-      R1
-      d4 d d d
-      R1
-      R
-      d2 d
-
-    }
+    d,4 d d d
+    d2 d
+    g4 g g g
+    g2 g
+    d4 d d d
+    g g g g
+    d d d d
+    g2 g
   }
 
 
   %% END DOCUMENT
   \bar "|."
 }
-
-
-

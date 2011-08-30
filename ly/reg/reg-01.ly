@@ -1,5 +1,5 @@
 % -*- coding: utf-8 -*-
-\version "2.12.3"
+\version "2.14.1"
 
 \paper{
   line-width = 15.0\cm
@@ -21,28 +21,10 @@
     >>
 
     \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Bandolim"} }
-      \set Staff.shortInstrumentName = "Ban."
-      \transpose c c {
-        \keepWithTag #'bd
-        \include "cp-001.reg"
-      }
-    >>
-
-    \new Staff <<
       \set Staff.instrumentName = \markup {\column { "Viola"} }
       \set Staff.shortInstrumentName = "Vla."
       \transpose c c {
         \keepWithTag #'va
-        \include "cp-001.reg"
-      }
-    >>
-
-    \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Violão Tenor"} }
-      \set Staff.shortInstrumentName = "Vlão.T."
-      \transpose c c {
-        \keepWithTag #'vt
         \include "cp-001.reg"
       }
     >>
@@ -55,17 +37,6 @@
         \include "cp-001.reg"
       }
     >>
-
-
-    \new Staff <<
-      \set Staff.instrumentName = \markup {\column { "Baixo"} }
-      \set Staff.shortInstrumentName = "Bx."
-      \transpose c c {
-        \keepWithTag #'bx
-        \include "cp-001.reg"
-      }
-    >>
-
 
   >>
 >>

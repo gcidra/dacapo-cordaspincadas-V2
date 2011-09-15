@@ -93,14 +93,43 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
+\section{Movimento Contrário}
+\label{sec:a-movimento-contrario}
 
-\section{Rosa vermelha}
-\label{sec:rosa-vermelha}
 \begin{lilypond}
   \transpose c c {
     \keepWithTag #'cv
-    \include "cp-058.ly"}
+    \include "cp-006.ly"
+  }
 \end{lilypond}
+
+
+
+
+
+
+% \section{Cordas Primas}
+% \label{sec:cordas-primas}
+
+% \lilypondfile{reg-01.ly}
+
+
+% \section{Duas Cordas Soltas}
+% \label{sec:duas-cordas-soltas}
+
+% \lilypondfile{reg-02.ly}
+
+
+% \section{Duas Cores}
+% \label{sec:duas-cores}
+
+% \lilypondfile{reg-03.ly}
+
+
+% \section{Palhetadas}
+% \label{sec:palhetadas}
+
+% \lilypondfile{reg-04.ly}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 

@@ -1807,60 +1807,31 @@ o site:
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% início das lições
 
-\section{Primeira nota}
-\label{sec:primeira-nota}
+\section{Cordas Primas}
+\label{sec:cordas-primas}
 
 \lilypondfile{reg-01.ly}
 
 
-\section{Segunda nota}
-\label{sec:seminimas}
+\section{Duas Cordas Soltas}
+\label{sec:duas-cordas-soltas}
 
 \lilypondfile{reg-02.ly}
 
 
-\section{Mínimas e semínimas}
-\label{sec:minimas}
+\section{Duas Cores}
+\label{sec:duas-cores}
 
 \lilypondfile{reg-03.ly}
 
 
-Algumas maneiras de se tocar este número e os semelhantes a ele: 
-
-\begin{enumerate}
-
-\item Toque cada uma das duas notas da melodia com um grupo diferente de
-  instrumentos, um para a nota mais aguda e outro para a
-  mais grave.
-  
-\item Toque cada uma das duas notas da melodia com um instrumentista
-  diferente, um para a nota mais aguda e outro para a
-  mais grave.
-  
-\end{enumerate}
-
-
-\section{Maquinista}
-\label{sec:maquinista}
+\section{Palhetadas}
+\label{sec:palhetadas}
 
 \lilypondfile{reg-04.ly}
 
-
-\begin{enumerate}
-
-\item Os compassos de improvisação devem ser tocados por apenas um
-  aluno.
-  
-\item Varie o ritmo de acompanhamento, experimentando diferentes
-  gêneros musicais.
-
-\item Repita a atividade diversas vezes, sem interrupção para que
-  todos possam improvisar.
-
-\item Aplique essas indicações em outras melodias com improvisação.
-  
-\end{enumerate}
 
 \section{Relógio}
 \label{sec:relogio}

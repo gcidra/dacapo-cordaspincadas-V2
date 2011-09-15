@@ -809,8 +809,7 @@ o site:
 \end{lilypond}
 
 
-%%% confirir a partir daqui
-\section{A Máquinha}
+\section{A Máquina}
 \label{sec:a-maquina}
 
 \begin{lilypond}
@@ -823,6 +822,14 @@ o site:
 
 \section{Movimento Contrário}
 \label{sec:a-movimento-contrario}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-006.ly"
+  }
+\end{lilypond}
+%%% PRONTO ATÉ AQUI
 
 
 \section{Sobe e Desce}

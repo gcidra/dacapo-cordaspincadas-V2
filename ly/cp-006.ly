@@ -3,126 +3,105 @@
 
 %%\header { texidoc="Lição 06"}
 
-<<
-  %%((
-  \chords {
-    a1:m
-    g
-    a:m
-    s2 g
-    s a:m 
-    g a:m
-    a:m g
-    a1:m
+\relative c'' {
+
+  \override Staff.TimeSignature #'style = #'()
+  \time 4/4 
+  \override Score.BarNumber #'transparent = ##t
+  \override Score.RehearsalMark #'font-size = #-2
+
+  %% CAVAQUINHO - BANJO
+  \tag #'cv {
+    d4 d d d
+    
+    \repeat volta 2 {
+      b b b b
+      g g g g
+      b b b b
+      d d d d
+    }
+
+    d d b b 
+    g g b b
+    d d b b
+    g g b b
+    g g d' d
+    g, g d' d
+
+    \arpeggioArrowUp
+    <g, b d>2\arpeggio <g b d>\arpeggio
+    <g b d>1\arpeggio
   }
-  %%))
 
+  %% BANDOLIM
+  \tag #'bd {
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
+  }
 
-  \relative c'' {
-
-    \override Staff.TimeSignature #'style = #'()
-    \time 4/4 
-    \override Score.BarNumber #'transparent = ##t
-    \override Score.RehearsalMark #'font-size = #-2
-                                %     \override TextScript #'padding = #5
-
-    %% CAVAQUINHO - BANJO
-    \tag #'cv {
-
-      e2 r
-      d r
-      e4 e e e
-      r2 d
-      r e4 e
-      d2 r
-      e4 r d r
-      e2 e
-
+  %% VIOLA
+  \tag #'va {
+    R1
+    
+    \repeat volta 2 {
+      gis4 gis gis gis
+      b b b b
+      e e e e
+      b b b b
     }
+    
+    r2 gis4 gis
+    b b e e
+    b b gis gis
+    b b e e
+    e e gis, gis
+    e' e gis, gis
+    b2 b
+    b1    
+  }
 
-    %% BANDOLIM
-    \tag #'bd {
+  %% VIOLÃO TENOR
+  \tag #'vt {
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
+  }
 
-      r2 a,
-      r b
-      R1
-      a4 a r2
-      b r
-      r a4 a
-      r4 a r b
-      a2 a
-
+  %% VIOLÃO
+  \tag #'vi {
+    \clef "G_8"
+    g,4 g g g
+    
+    \repeat volta 2 {
+      b b b b
+      e e e e
+      b b b b
+      g g g g
     }
+    
+    g g b b
+    e e b b
+    g g b b
+    e e b b
+    g g e' e
+    g, g e' e
+    g,2 g
+    g1
 
-    %% VIOLA
-    \tag #'va {
+  }
 
-      r2 e'
-      r b
-      R1
-      e4 e r2
-      b r
-      r e4 e
-      r4 e r b
-      e2 e
-
-    }
-
-    %% VIOLÃO TENOR
-    \tag #'vt {
-
-      \clef "G_8"
-      e,2 r
-      d r
-      e4 e e e
-      r2 d
-      r e4 e
-      d2 r
-      e4 r d r
-      e2 e
-
-    }
-
-    %% VIOLÃO
-    \tag #'vi {
-
-      \relative c' {
-        \clef "G_8"
-
-        r2 e
-        r b
-        R1
-        e4 e r2
-        b r
-        r e4 e
-        r4 e r b
-        e2 e
-
-      }
-    }
-
-    %% BAIXO - BAIXOLÃO
-    \tag #'bx {
-
-      \relative c {
-        \clef bass
-
-        e2 r
-        d r
-        e4 e e e
-        r2 d
-        r e4 e
-        d2 r
-        e4 r d r
-        e2 e
-
-      }
-    }
-
-
-    %% END DOCUMENT
-    \bar "|."
+  %% BAIXO - BAIXOLÃO
+  \tag #'bx {
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
   }
 
 
->>
+  %% END DOCUMENT
+  \bar "|."
+}

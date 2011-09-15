@@ -3,206 +3,172 @@
 
 %%\header { texidoc="Máquina"}
 
-<<
-%%((
-  \chords {
+\relative c'' {
+
+  \override Staff.TimeSignature #'style = #'()
+  \time 4/4 
+  \override Score.BarNumber #'transparent = ##t
+  \override Score.RehearsalMark #'font-size = #-2
+
+  %% CAVAQUINHO - BANJO
+  \tag #'cv {
+    b4 b d d 
+    b b d2
+    R1 R
+
+    b4 b d d
+    b b d2
+    R1 R
+
     \repeat volta 2 {
-      s1 s s s
-    }
-    \repeat volta 2 {
-      e1:m s a:m s
+      b4 b d d
+      b b d2
+      R1 R
+
+      \override Stem #'transparent = ##t
+      \override Beam #'transparent = ##t
+      b4 d s2
+      b4 d s2
+      R1 R       
     }
   }
-%%))
 
-  \relative c'' {
+  %% BANDOLIM
+  \tag #'bd {
+    R1 R
+    e4 e a, a
+    e'2 a,
+    R1 R
 
-    \override Staff.TimeSignature #'style = #'()
-    \time 4/4 
-    \override Score.BarNumber #'transparent = ##t
-    \override Score.RehearsalMark #'font-size = #-2
-    %% \override TextScript #'padding = #5
+    e'4 e e e
+    e2 a,
 
-    %% CAVAQUINHO - BANJO
-    \tag #'cv {
+    \repeat volta 2 {
+      R1 R
 
-      \repeat volta 2 {
-        b4 d b d
-        b d b2
-        R1
-        R^\markup {\italic {"Fine"}}
+      \override Stem #'transparent = ##t
+      \override Beam #'transparent = ##t
+      a4 e' s2
+      a,4 e' s2
+      R1 R  
 
-      }
-      
-      \repeat volta 2 {
-        \override Stem #'transparent = ##t
-        \override Voice.NoteHead #'stencil = #ly:text-interface::print
-        \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s2")
-        b2 d
-        b d
-        R1
-        R^\markup{\italic "D.C. al Fine"}
-
-      }
-
-
+      \revert Stem #'transparent 
+      \revert Beam #'transparent
+      e4 e e e
+      e2 a,
     }
-
-    %% BANDOLIM
-    \tag #'bd {
-
-      \repeat volta 2 {
-        R1
-        R       
-        e4 a, e' a,
-        e' a, a2^\markup { 
-             %%((
-                          \italic {" Fine"} 
-             %%))
-                        }
-      }
-      
-      \repeat volta 2 {
-
-        R1
-        R
-        \override Stem #'transparent = ##t
-        \override Voice.NoteHead #'stencil = #ly:text-interface::print
-        \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s2")
-        a2 e'
-        a, e'
-        %%((
-        ^\markup{\italic "D.C. al Fine"}
-        %%))
-      }
-
-    }
-
-    %% VIOLA
-    \tag #'va {
-
-      \repeat volta 2 {
-        e4 b e b
-        e b e2
-        R1
-        R
-        %%((
-        ^\markup {\italic {"Fine"}}
-        %%))
-      }
-      
-      \repeat volta 2 {
-        \override Stem #'transparent = ##t
-        \override Voice.NoteHead #'stencil = #ly:text-interface::print
-        \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s2")
-        b2 e
-        b e
-        R1
-        R
-        %%((
-        ^\markup{\italic "D.C. al Fine"}
-        %%))
-      }
-    }
-
-    %% VIOLÃO TENOR
-    \tag #'vt {
-
-      \clef "G_8"
-      \repeat volta 2 {
-        R1
-        R       
-        a,4 d, a' d,
-        a' d, a'2^\markup { 
-          %%((
-          \italic {" Fine"}
-          %%))
-        }
-      }
-      
-      \repeat volta 2 {
-
-        R1
-        R
-        \override Stem #'transparent = ##t
-        \override Voice.NoteHead #'stencil = #ly:text-interface::print
-        \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s2")
-        d,2 a'
-        d, a'
-        %%((
-        ^\markup{\italic "D.C. al Fine"}
-        %%))
-      }
-
-    }
-
-
-    %% VIOLÃO
-    \tag #'vi {
-
-      \relative c' {
-        \clef "G_8"
-
-        \repeat volta 2 {
-          e4^\markup {\small "i"} b^\markup {\small "m"} e^\markup {\small "i"} b^\markup {\small "m"}
-          e^\markup {\small "i"} b^\markup {\small "m"} e2^\markup {\small "i"}
-          R1
-          R
-          %%((
-          ^\markup {\italic {"Fine"}}
-          %%))
-        }
-        
-        \repeat volta 2 {
-          \override Stem #'transparent = ##t
-          \override Voice.NoteHead #'stencil = #ly:text-interface::print
-          \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s2")
-          b2 e
-          b e
-          R1
-          R
-          %%((
-          ^\markup{\italic "D.C. al Fine"}
-          %%))
-        }
-
-      }
-    }
-
-    %% BAIXO - BAIXOLÃO
-    \tag #'bx {
-
-      \relative c' {
-        \clef bass
-
-        \repeat volta 2 {
-          g4 d g d
-          g d g2
-          R1
-          R
-          %%((
-          ^\markup {\italic {"Fine"}}
-          %%))
-        }
-        
-        \repeat volta 2 {
-          \override Stem #'transparent = ##t
-          \override Voice.NoteHead #'stencil = #ly:text-interface::print
-          \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s2")
-          d2 g
-          d g
-          R1
-          R
-          %%((
-          ^\markup{\italic "D.C. al Fine"}
-          %%))
-        }
-
-      }
-    }
-
-
-    %% END DOCUMENT
   }
 
->>
+  %% VIOLA
+  \tag #'va {
+    e'2^\markup {"A"} b^\markup {"M"}
+    gis^\markup {"I"} b^\markup {"A"}
+    R1 R
+
+    e2 b
+    gis b
+    R1 R
+
+    \repeat volta 2 {
+      e2 b
+      gis b
+      R1 R
+
+      \override Stem #'transparent = ##t
+      \override Beam #'transparent = ##t
+      gis4 b e s
+      gis, b e s
+
+      R1 R  
+    }
+  }
+
+  %% VIOLÃO TENOR
+  \tag #'vt {
+    \clef "G_8"
+    R1 R
+    a,4 a d, d
+    a'2 d,
+    R1 R
+
+    a'4 a a a
+    a2 d,
+
+    \repeat volta 2 {
+      R1 R
+
+      \override Stem #'transparent = ##t
+      \override Beam #'transparent = ##t
+      d4 a' s2
+      d,4 a' s2
+      R1 R  
+
+      \revert Stem #'transparent 
+      \revert Beam #'transparent
+      a4 a a a
+      a2 d,
+    }
+  }
+
+
+  %% VIOLÃO
+  \tag #'vi {
+    \clef "G_8"
+
+    g,2^\markup {"I"} b^\markup {"M"}
+    e^\markup {"A"} b^\markup {"M"}
+    R1 R
+
+    g2 b
+    e b
+    R1 R
+
+    \repeat volta 2 {
+      g2 b
+      e b
+      R1 R
+
+      \override Stem #'transparent = ##t
+      \override Beam #'transparent = ##t
+      g4 b e s
+      g, b e s
+
+      R1 R  
+    }
+  }
+
+  %% BAIXO - BAIXOLÃO
+  \tag #'bx {
+    \clef bass
+
+    d,4 d g g 
+    d d g2
+    d4 d g g
+    d2 g
+
+    d4 d g g
+    d d g2
+    d4 d d d
+    d2 g
+
+    \repeat volta 2 {
+      d4 d g g
+      d d g2
+      
+      \override Stem #'transparent = ##t
+      \override Beam #'transparent = ##t
+      d4 g s2
+      d4 g s2
+      R1 R       
+
+      \revert Stem #'transparent 
+      \revert Beam #'transparent
+
+      d4 d d d
+      d2 g       
+    }
+  }
+
+
+  %% END DOCUMENT
+}

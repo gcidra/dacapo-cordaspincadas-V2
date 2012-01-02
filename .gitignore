@@ -2,5 +2,6 @@ tmp
 pdfs
 quadros.tex
 quadros-novos.tex
-./reg
+reg/
 quadros-regencia
+antigos-ly/

@@ -93,20 +93,156 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\section{Movimento Contrário}
-\label{sec:a-movimento-contrario}
+
+\section{Variações sobre A Mucama}
+\label{sec:vari-sobre-mucama}
+Harmonize a melodia e as variações.
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
-    \include "cp-006.ly"
-  }
+    \include "cp-018.ly"}
 \end{lilypond}
 
 
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018a.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018c.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 4 - Esta você escreve e harmoniza!}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018d.ly"}
+\end{lilypond}
+
+
+% \section{Improvisando em A Mucama}
+% \label{sec:impr-em-mucama}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-029.ly"}
+% \end{lilypond}
+
+
+% \section{Escolha um dos três finais}
+% \label{sec:escolha-um-dos-tres-finais}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-031.ly"
+%   }
+% \end{lilypond}
+
+
+% \section{Mãos e Pés + O Balão de João}
+% \label{sec:maos-e-pes-balao-joao}
+% Experimente outras dinâmicas.
+
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-032.ly"}
+% \end{lilypond}
+
+
+% Transponha \textit{O Balão de João} para dó maior
+% começando com a nota sol.
+
+
+% \section{Variações sobre De Marré}
+% \label{sec:variacoes-sobre-de-marre}
+% Harmonize a melodia e as variações.
+
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-020.ly"}
+% \end{lilypond}
+
+
+% \subsection*{Variação 1}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-020a.ly"}
+% \end{lilypond}
 
 
 
+% \subsection*{Variação 2}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-020b.ly"}
+% \end{lilypond}
+
+
+
+% \subsection*{Variação 3}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-020c.ly"}
+% \end{lilypond}
+
+
+
+% \subsection*{Variação 4 - Esta você escreve e harmoniza!}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-020d.ly"}
+% \end{lilypond}
+
+
+% \section{Improvisando em A Manquinha}
+% \label{sec:impr-em-manq}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-036.ly"}
+% \end{lilypond}
+
+
+% \section{Marcha soldado}
+% \label{sec:marcha-soldado}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-035.ly"}
+% \end{lilypond}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% FINAL DO CÓDIGO
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % \section{Cordas Primas}
 % \label{sec:cordas-primas}
@@ -130,13 +266,6 @@
 % \label{sec:palhetadas}
 
 % \lilypondfile{reg-04.ly}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% 
-% FINAL DO CÓDIGO
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
 

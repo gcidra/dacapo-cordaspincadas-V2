@@ -829,11 +829,17 @@ o site:
     \include "cp-006.ly"
   }
 \end{lilypond}
-%%% PRONTO ATÉ AQUI
 
 
 \section{Sobe e Desce}
 \label{sec:sobe-e-desce}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-007.ly"
+  }
+\end{lilypond}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -918,7 +924,7 @@ o site:
 \section{Bambaleando}
 \label{sec:bambaleando}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-017a.ly"
   }
@@ -928,7 +934,7 @@ o site:
 \section{Variações sobre Bambalalão}
 \label{sec:var-sobre-bambalalão}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-016-1.ly"
   }
@@ -936,7 +942,7 @@ o site:
 
 \subsection*{Variação 1}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-016-1a.ly"
   }
@@ -944,7 +950,7 @@ o site:
 
 \subsection*{Variação 2}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-016-1b.ly"
   }
@@ -952,7 +958,7 @@ o site:
 
 \subsection*{Variação 3}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-016-1c.ly"
   }
@@ -960,7 +966,7 @@ o site:
 
 \subsection*{Variação 4 - Esta você escreve!}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-016-1d.ly"
   }
@@ -976,7 +982,7 @@ o site:
 Aprenda ``de ouvido'' a introdução instrumental da música
 \textit{\nameref{sec:berimbau}} de Baden Powell e Vinícius de Moraes,
 no Álbum: \textit{Baden Powell - E-Collection Baden Powell} (disc
-1). Use as notas fá e sol. Decore-a, improvise e depois escreva uma
+1). Use as notas ré e mi. Decore-a, improvise e depois escreva uma
 variação para ela.
 
 \begin{lilypond}
@@ -1098,7 +1104,7 @@ variação para ela.
 \label{sec:variacoes-sobre-dlim}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g,{
     \keepWithTag #'cv
     \include "cp-010a.ly"
   }
@@ -1106,7 +1112,7 @@ variação para ela.
 
 \subsection*{Variação 1}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g,{
     \keepWithTag #'cv
     \include "cp-010b.ly"
   }
@@ -1114,7 +1120,7 @@ variação para ela.
 
 \subsection*{Variação 2}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g,{
     \keepWithTag #'cv
     \include "cp-010c.ly"
   }
@@ -1122,7 +1128,7 @@ variação para ela.
 
 \subsection*{Variação 3}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g,{
     \keepWithTag #'cv
     \include "cp-010d.ly"
   }
@@ -1130,7 +1136,7 @@ variação para ela.
 
 \subsection*{Variação 4 - Esta você escreve!}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g,{
     \keepWithTag #'cv
     \include "cp-010e.ly"
   }
@@ -1142,7 +1148,7 @@ variação para ela.
 \label{sec:impr-com-dlim}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g,{
     \keepWithTag #'cv
     \include "cp-010.ly"
   }
@@ -1220,7 +1226,7 @@ variação para ela.
 \label{sec:que-belos-castelos}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-015.ly"}
 \end{lilypond}
@@ -1229,7 +1235,7 @@ variação para ela.
 \label{sec:barquinha}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-025.ly"}
 \end{lilypond}
@@ -1244,23 +1250,24 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 \begin{tabular}{lll}
   \em & \em &\em \\
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
-      \include "cp-017-01.ly" }
+      \include "cp-017-01.ly" 
+    }
   \end{lilypond}
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-02.ly" 
-}
+    }
   \end{lilypond}
 
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-03.ly" 
     }
@@ -1269,7 +1276,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   \\
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-04.ly" 
     }
@@ -1277,7 +1284,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-05.ly" 
     }
@@ -1286,7 +1293,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-06.ly" 
     }
@@ -1296,7 +1303,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-07.ly" 
     }
@@ -1304,7 +1311,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-08.ly" 
     }
@@ -1313,7 +1320,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-09.ly" 
     }
@@ -1323,7 +1330,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-10.ly" 
     }
@@ -1331,7 +1338,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-11.ly" 
     }
@@ -1340,7 +1347,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-12.ly" 
     }
@@ -1350,7 +1357,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-13.ly" 
     }
@@ -1358,7 +1365,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-14.ly" 
     }
@@ -1367,7 +1374,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-15.ly" 
     }
@@ -1377,7 +1384,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-16.ly" 
     }
@@ -1385,7 +1392,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-17.ly" 
     }
@@ -1394,7 +1401,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-18.ly" 
     }
@@ -1404,7 +1411,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-19.ly" 
     }
@@ -1412,7 +1419,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-20.ly" 
     }
@@ -1421,7 +1428,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-21.ly" 
     }
@@ -1431,7 +1438,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-22.ly" 
     }
@@ -1439,7 +1446,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-23.ly" 
     }
@@ -1448,7 +1455,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-24.ly" 
     }
@@ -1458,7 +1465,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-25.ly" 
     }
@@ -1466,7 +1473,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-26.ly" 
     }
@@ -1475,7 +1482,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-27.ly" 
     }
@@ -1485,7 +1492,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-28.ly" 
     }
@@ -1493,7 +1500,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-29.ly" 
     }
@@ -1502,7 +1509,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-30.ly" 
     }
@@ -1512,7 +1519,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-31.ly" 
     }
@@ -1520,7 +1527,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-32.ly" 
     }
@@ -1529,7 +1536,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
   & 
 
   \begin[fragment]{lilypond}
-    \transpose c c {
+    \transpose c g,{
       \keepWithTag #'cv
       \include "cp-017-33.ly" 
     }
@@ -1575,7 +1582,7 @@ suas dinâmicas \textbf{\textit{f}} ou \textbf{\textit{p}}.
 \label{sec:samba-de-uma-nota-so}
 Aprenda ``de ouvido'' a primeira parte do
 \textit{\nameref{sec:samba-de-uma-nota-so}} de Tom Jobim e Newton
-Mendonça. Comece com a nota Ré. Decore-a, improvise e escreva uma
+Mendonça. Comece com a nota Lá. Decore-a, improvise e escreva uma
 variação para ela.
 
 \begin{lilypond}
@@ -1591,7 +1598,7 @@ variação para ela.
 Harmonize as outras sequências e escolha suas dinâmincas.
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-019.ly"
   }
@@ -1602,7 +1609,7 @@ Harmonize as outras sequências e escolha suas dinâmincas.
 Harmonize a melodia.
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-014.ly"
   }
@@ -1629,7 +1636,7 @@ Coloque as dinâmicas, \textit{\textbf{f}} e \textbf{\textit{p}}, e o
 andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-021.ly"
   }
@@ -1733,7 +1740,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 \label{sec:aquecendo-banda}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-022.ly"}
 \end{lilypond}
@@ -1742,7 +1749,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 \label{sec:divertindo-se-com}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-023.ly"}
 \end{lilypond}
@@ -1752,7 +1759,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 \label{sec:impr-em-margarida}
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-024.ly"}
 \end{lilypond}
@@ -1780,7 +1787,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 Faça a brincadeira de descobrir a nota errada.
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-026.ly"}
 \end{lilypond}
@@ -1790,7 +1797,7 @@ Faça a brincadeira de descobrir a nota errada.
 \label{sec:deus-e-tao-bom}
 Aprenda ``de ouvido'' a música
 \textit{\nameref{sec:deus-e-tao-bom}}. Comece com a nota
-Dó. Escreva-a, decore-a, improvise e depois escreva uma
+Sol. Escreva-a, decore-a, improvise e depois escreva uma
 variação para ela.
 
 \begin{lilypond}
@@ -1867,7 +1874,7 @@ variação para ela.
 
 \subsection*{Parte 1}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-030a.ly"}
 \end{lilypond}
@@ -1875,21 +1882,21 @@ variação para ela.
 
 \subsection*{Parte 2}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-030b.ly"}
 \end{lilypond}
 
 \subsection*{Parte 3}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-030c.ly"}
 \end{lilypond}
 
 \subsection*{Parte 4}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-030d.ly"}
 \end{lilypond}

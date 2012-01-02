@@ -21,6 +21,7 @@
 
     \override Staff.TimeSignature #'style = #'()
     \time 2/4 
+    \key c \major
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
 

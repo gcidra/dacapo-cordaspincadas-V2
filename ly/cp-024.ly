@@ -38,6 +38,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
 
               e4\f^\markup {\column {\line {\bold {Parte 1} - Melodia} \line {\italic {\bold "Allegro"}} \line {\small{\box {A}} \bold {\hspace #1.0 1 \tiny \raise #0.5 "a"  voz}}}}
@@ -90,6 +91,7 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
 
             r4^\markup {\bold {2 \tiny \raise #0.5 "a"  voz}}
@@ -118,27 +120,28 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
             
             r4^\markup {\bold {3 \tiny \raise #0.5 "a"  voz}}
-            c2\f g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\f g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
 
             r4
-            c2\p g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\p g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
           }
         >>
       >>
@@ -156,6 +159,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
 
               e4\f^\markup {\column {\line {\bold {Parte 1} - Melodia} \line {\italic {\bold "Allegro"}} \line {\small{\box {A}} \bold {\hspace #1.0 1 \tiny \raise #0.5 "a"  voz}}}}
@@ -208,6 +212,7 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
 
             r4^\markup {\bold {2 \tiny \raise #0.5 "a"  voz}}
@@ -236,27 +241,28 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
             
             r4^\markup {\bold {3 \tiny \raise #0.5 "a"  voz}}
-            c2\f g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\f g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
 
             r4
-            c2\p g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\p g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
           }
         >>
       >>    
@@ -274,6 +280,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
 
               e4\f^\markup {\column {\line {\bold {Parte 1} - Melodia} \line {\italic {\bold "Allegro"}} \line {\small{\box {A}} \bold {\hspace #1.0 1 \tiny \raise #0.5 "a"  voz}}}}
@@ -326,6 +333,7 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
 
             r4^\markup {\bold {2 \tiny \raise #0.5 "a"  voz}}
@@ -354,27 +362,28 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
             
             r4^\markup {\bold {3 \tiny \raise #0.5 "a"  voz}}
-            c2\f g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\f g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
 
             r4
-            c2\p g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\p g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
           }
         >>
       >>
@@ -393,6 +402,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
 
               e,4\f^\markup {\column {\line {\bold {Parte 1} - Melodia} \line {\italic {\bold "Allegro"}} \line {\small{\box {A}} \bold {\hspace #1.0 1 \tiny \raise #0.5 "a"  voz}}}}
@@ -447,6 +457,7 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
 
             r4^\markup {\bold {2 \tiny \raise #0.5 "a"  voz}}
@@ -476,27 +487,28 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
             
             r4^\markup {\bold {3 \tiny \raise #0.5 "a"  voz}}
-            c2\f g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\f g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
 
             r4
-            c2\p g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\p g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
           }
         >>
       >>
@@ -514,6 +526,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
 
               e4\f^\markup {\column {\line {\bold {Parte 1} - Melodia} \line {\italic {\bold "Allegro"}} \line {\small{\box {A}} \bold {\hspace #1.0 1 \tiny \raise #0.5 "a"  voz}}}}
@@ -568,6 +581,7 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
 
             r4^\markup {\bold {2 \tiny \raise #0.5 "a"  voz}}
@@ -597,27 +611,28 @@
             \override Staff.TimeSignature #'style = #'()
             \override Score.RehearsalMark #'font-size = #-2
             \time 4/4 
+            \key c \major
             \partial 4*1
             
             r4^\markup {\bold {3 \tiny \raise #0.5 "a"  voz}}
-            c2\f g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\f g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
 
             r4
-            c2\p g'2 
-            c,2 g'2 
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
-            c,2 g'2
+            c2\p g2 
+            c2 g2 
+            c2 g2
+            c2 g2
+            c2 g2
+            c2 g2
             g2 g2 
-            c,2 r4
+            c2 r4
           }
         >>
       >>
@@ -638,6 +653,7 @@
                 \override Staff.TimeSignature #'style = #'()
                 \override Score.RehearsalMark #'font-size = #-2
                 \time 4/4 
+                \key c \major
                 \partial 4*1
 
                 e4\f^\markup {\column {\line {\bold {Parte 1} - Melodia} \line {\italic {\bold "Allegro"}} \line {\small{\box {A}} \bold {\hspace #1.0 1 \tiny \raise #0.5 "a"  voz}}}}
@@ -691,6 +707,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
 
               r4^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
@@ -720,6 +737,7 @@
               \override Staff.TimeSignature #'style = #'()
               \override Score.RehearsalMark #'font-size = #-2
               \time 4/4 
+              \key c \major
               \partial 4*1
               
               r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}

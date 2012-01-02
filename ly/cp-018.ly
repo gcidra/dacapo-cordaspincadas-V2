@@ -8,9 +8,11 @@
     \override Score.BarNumber #'transparent = ##t
     \time 3/4
     \partial 4*1
-
+  
     %% CAVAQUINHO - BANJO
     \tag #'cv {
+      \key c \major
+
       \repeat volta 2 { 
         e4\f^\markup {\column {\italic {\bold "Moderato"} \small {\box {A}}}} 
         g g e 
@@ -26,6 +28,8 @@
 
     %% BANDOLIM
     \tag #'bd {
+      \key c \major
+
       \repeat volta 2 { 
         e4\f^\markup {\column {\italic {\bold "Moderato"} \small {\box {A}}}} 
         g g e 
@@ -41,6 +45,8 @@
 
     %% VIOLA
     \tag #'va {
+      \key c \major
+
       \repeat volta 2 { 
         e4\f^\markup {\column {\italic {\bold "Moderato"} \small {\box {A}}}} 
         g g e 
@@ -57,6 +63,8 @@
     %% VIOLÃO TENOR
     \tag #'vt {
       \clef "G_8"
+      \key c \major
+
       \repeat volta 2 { 
         e,4\f^\markup {\column {\italic {\bold "Moderato"} \small {\box {A}}}} 
         g g e 
@@ -73,6 +81,8 @@
     %% VIOLÃO
     \tag #'vi {
       \clef "G_8"
+      \key c \major
+
       \repeat volta 2 { 
         e4\f^\markup {\column {\italic {\bold "Moderato"} \small {\box {A}}}} 
         g g e 
@@ -90,6 +100,8 @@
     \tag #'bx {
       \relative c {
         \clef bass
+        \key c \major
+
         \repeat volta 2 { 
           e4\f^\markup {\column {\italic {\bold "Moderato"} \small {\box {A}}}} 
           g g e 

@@ -7,6 +7,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     \time 3/4 
+    \key c \major
 
     <<
       %% CAVAQUINHO - BANJO

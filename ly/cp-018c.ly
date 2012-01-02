@@ -6,6 +6,7 @@
 \relative c''{
   \time 3/4
   \partial 4*1
+  \key c \major
 
   %% CAVAQUINHO - BANJO
   \tag #'cv {

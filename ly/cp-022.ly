@@ -4,7 +4,7 @@
 %%\header { texidoc="Segunda Nota"}
 
 \relative c'' {
-
+  \key c \major
   \override Staff.TimeSignature #'style = #'()
   \time 4/4 
   \override Score.BarNumber #'transparent = ##t

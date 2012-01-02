@@ -3,7 +3,7 @@
 
 %%\header { texidoc="Lição 07"}
 
-\relative c'' {
+\relative c' {
 
   \override Staff.TimeSignature #'style = #'()
   \time 4/4 
@@ -14,95 +14,90 @@
   %% CAVAQUINHO - BANJO
   \tag #'cv {
 
-    e2 e4 e
-    f2 r
-    f e4 f
-    e2 r
-    f f4 e
-    f2 r
-    e4 f e f
-    e2 e
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
 
   }
 
   %% BANDOLIM
   \tag #'bd {
 
-    e2 e4 e
-    f2 r
-    f e4 f
-    e2 r
-    f f4 e
-    f2 r
-    e4 f e f
-    e2 e
+    d4 d d d
+    a' a a a
+    e' e e e
+    a, a a a
+    d, d a' a
+    e' e a, a
+    d, a' e' a,
+    d, a' e' a,
+    d, d e' e 
+    d, d e' e
+    
+    \arpeggioArrowUp
+    <d, a' e'>2\arpeggio <d a' e'>\arpeggio
+    <d a' e'>1\arpeggio
 
   }
 
   %% VIOLA
   \tag #'va {
 
-    e2 e4 e
-    f2 r
-    f e4 f
-    e2 r
-    f f4 e
-    f2 r
-    e4 f e f
-    e2 e
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
 
   }
 
 
   %% VIOLÃO TENOR
   \tag #'vt {
-
     \clef "G_8"
-    e,2 e4 e
-    f2 r
-    f e4 f
-    e2 r
-    f f4 e
-    f2 r
-    e4 f e f
-    e2 e
+
+    g,4 g g g
+    d' d d d
+    a' a a a
+    d, d d d
+    g, g d' d
+    a' a d, d
+    g, d' a' d,
+    g, d' a' d,
+    g, g a' a
+    g, g a' a
+    
+    \arpeggioArrowUp
+    <g, d' a'>2\arpeggio <g d' a'>\arpeggio
+    <g d' a'>1\arpeggio
 
   }
 
   %% VIOLÃO
   \tag #'vi {
-
-    \relative c' {
-      \clef "G_8"
-
-      e2 e4 e
-      f2 r
-      f e4 f
-      e2 r
-      f f4 e
-      f2 r
-      e4 f e f
-      e2 e
-
-    }
+    \override Staff.Clef #'transparent = ##t
+    \override Staff.TimeSignature #'transparent = ##t
+    \stopStaff
+    s^\markup {\hspace #-7 "Tacet"}
   }
 
   %% BAIXO - BAIXOLÃO
   \tag #'bx {
+    \clef bass
 
-    \relative c {
-      \clef bass
+    g4 g g g
+    d d d d
+    a a a a
+    d d d d
+    g g d d
+    a a d d
+    g d a d 
+    g d a d
+    g g a, a
+    g' g a, a
+    g'2 g
+    g1
 
-      e2 e4 e
-      f2 r
-      f e4 f
-      e2 r
-      f f4 e
-      f2 r
-      e4 f e f
-      e2 e
-
-    }
   }
 
 

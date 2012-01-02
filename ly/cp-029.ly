@@ -11,6 +11,7 @@
           \new Staff {
             \time 3/4
             \partial 4*1
+            \key c \major
 
             \override Score.BarNumber #'transparent = ##t
 
@@ -274,6 +275,8 @@
 
         >>
         \new Staff {
+          \key c \major
+
           e4\f^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
           c c e
           c c e
@@ -322,6 +325,8 @@
         }
 
         \new Staff {
+          \key c \major
+
           r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
           c2\f r4
           c2 r4
@@ -359,6 +364,7 @@
           \new Staff {
             \time 3/4
             \partial 4*1
+            \key c \major
 
             \override Score.BarNumber #'transparent = ##t
 
@@ -623,6 +629,8 @@
 
         >>
         \new Staff {
+          \key c \major
+
           e4\f^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
           c c e
           c c e
@@ -671,6 +679,8 @@
         }
 
         \new Staff {
+          \key c \major
+
           r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
           c2\f r4
           c2 r4
@@ -707,6 +717,7 @@
           \new Staff {
             \time 3/4
             \partial 4*1
+            \key c \major
 
             \override Score.BarNumber #'transparent = ##t
 
@@ -971,6 +982,8 @@
 
         >>
         \new Staff {
+          \key c \major
+
           e4\f^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
           c c e
           c c e
@@ -1019,6 +1032,8 @@
         }
 
         \new Staff {
+          \key c \major
+
           r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
           c2\f r4
           c2 r4
@@ -1056,6 +1071,7 @@
             \clef "G_8"
             \time 3/4
             \partial 4*1
+            \key c \major
 
             \override Score.BarNumber #'transparent = ##t
 
@@ -1329,6 +1345,8 @@
         >>
         \new Staff {
           \clef "G_8"
+          \key c \major
+
           e4\f^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
           c c e
           c c e
@@ -1378,6 +1396,8 @@
 
         \new Staff {
           \clef "G_8"
+          \key c \major
+
           r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
           c2\f r4
           c2 r4
@@ -1415,6 +1435,7 @@
             \clef "G_8"
             \time 3/4
             \partial 4*1
+            \key c \major
 
             \override Score.BarNumber #'transparent = ##t
 
@@ -1680,6 +1701,8 @@
         >>
         \new Staff {
           \clef "G_8"
+          \key c \major
+
           e4\f^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
           c c e
           c c e
@@ -1729,6 +1752,8 @@
 
         \new Staff {
           \clef "G_8"
+          \key c \major
+
           r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
           c2\f r4
           c2 r4
@@ -1767,7 +1792,8 @@
             \clef bass
             \time 3/4
             \partial 4*1
-
+            \key c \major
+            
             \override Score.BarNumber #'transparent = ##t
 
             g4\f^\markup {\column {\italic {\bold "Allegro"} \line{\bold {1 \tiny \raise #0.5 "a" voz}}}}
@@ -2030,6 +2056,8 @@
         >>
         \new Staff {
           \clef bass
+          \key c \major
+
           e4\f^\markup {\bold {2 \tiny \raise #0.5 "a" voz}}
           c c e
           c c e
@@ -2079,6 +2107,8 @@
 
         \new Staff {
           \clef bass
+          \key c \major
+
           r4^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
           c2\f r4
           c2 r4

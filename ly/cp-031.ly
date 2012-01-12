@@ -10,7 +10,7 @@
   \override Score.BarNumber #'transparent = ##t
   \override Score.RehearsalMark #'font-size = #-2
   \set Score.markFormatter = #format-mark-numbers
-
+  \key c \major
 
   %% CAVAQUINHO - BANJO
   \tag #'cv {

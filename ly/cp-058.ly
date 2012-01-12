@@ -36,7 +36,7 @@
       \repeat volta 2 {
         a a d, f a4 d8 bes~
         bes4 bes8 a g d' bes g
-        f a c bes bes a e f
+        f a c b bes a e f
       }
       \alternative {
         {
@@ -55,7 +55,7 @@
       \repeat volta 2 {
         a a d, f a4 d8 bes~
         bes4 bes8 a g d' bes g
-        f a c bes bes a e f
+        f a c b bes a e f
       }
       \alternative {
         {
@@ -74,7 +74,7 @@
       \repeat volta 2 {
         a a d, f a4 d8 bes~
         bes4 bes8 a g d' bes g
-        f a c bes bes a e f
+        f a c b bes a e f
       }
       \alternative {
         {
@@ -94,7 +94,7 @@
       \repeat volta 2 {
         a a d, f a4 d8 bes~
         bes4 bes8 a g d' bes g
-        f a c bes bes a e f
+        f a c b bes a e f
       }
       \alternative {
         {
@@ -114,7 +114,7 @@
       \repeat volta 2 {
         a a d, f a4 d8 bes~
         bes4 bes8 a g d' bes g
-        f a c bes bes a e f
+        f a c b bes a e f
       }
       \alternative {
         {
@@ -134,7 +134,7 @@
       \repeat volta 2 {
         a a d f a4 d,8 bes~
         bes4 bes8 a g d' bes g
-        f a c bes bes a e f
+        f a c b bes a e f
       }
       \alternative {
         {

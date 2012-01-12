@@ -9,8 +9,8 @@
       <<
         <<
           \new Staff {
+            \partial 4
             \time 3/4
-            \partial 4*1
             \key c \major
 
             \override Score.BarNumber #'transparent = ##t
@@ -22,6 +22,7 @@
             c r
 
             \repeat volta2 {
+              \partial 4
               e4\p^\markup {\column {\line {\bold {Parte 1} - Melodia} \small \box {A}}} 
               g g e c c 
               e^\markup {\small \box {B}} 
@@ -222,7 +223,7 @@
               \once \override Voice.NoteHead #'text = #(make-musicglyph-markup "noteheads.s1")
               \once \override TextScript #'padding = #2
 
-              d^\markup{\italic "D.C. al Fine"}
+              d
               e
 
 
@@ -239,7 +240,7 @@
 
               \revert Stem #'transparent
 
-              c,2
+              c,2^\markup{\italic "D.C. al Fine"}
             }
           }
 
@@ -283,7 +284,7 @@
           d b b
           c r
 
-          \partial 4*1
+          % \partial 4
           r4
           r <c e g>\p  <c e g>
           r4 <c e g>  <c e g>
@@ -333,7 +334,7 @@
           g'2 r4
           g4 r4
 
-          \partial 4*1
+          % \partial 4
           
           r4
           c,2.\p c2. c2.
@@ -363,7 +364,7 @@
         <<
           \new Staff {
             \time 3/4
-            \partial 4*1
+            \partial 4
             \key c \major
 
             \override Score.BarNumber #'transparent = ##t
@@ -375,6 +376,7 @@
             c r
 
             \repeat volta2 {
+              \partial 4
               e4\p^\markup {\column {\line {\bold {Parte 1} - Melodia} \small \box {A}}} 
               g g e c c 
               e^\markup {\small \box {B}} 
@@ -576,7 +578,7 @@
 
               \once \override TextScript #'padding = #2
 
-              d^\markup{\italic "D.C. al Fine"}
+              d
               e
 
 
@@ -593,7 +595,7 @@
 
               \revert Stem #'transparent
 
-              c,2
+              c,2^\markup{\italic "D.C. al Fine"}
             }
           }
 
@@ -637,7 +639,7 @@
           d b b
           c r
 
-          \partial 4*1
+          %% \partial 4
           r4
           r <c e g>\p  <c e g>
           r4 <c e g>  <c e g>
@@ -687,7 +689,7 @@
           g'2 r4
           g4 r4
 
-          \partial 4*1
+          %% \partial 4
           
           r4
           c,2.\p c2. c2.
@@ -716,7 +718,7 @@
         <<
           \new Staff {
             \time 3/4
-            \partial 4*1
+            \partial 4
             \key c \major
 
             \override Score.BarNumber #'transparent = ##t
@@ -728,6 +730,7 @@
             c r
 
             \repeat volta2 {
+              \partial 4
               e4\p^\markup {\column {\line {\bold {Parte 1} - Melodia} \small \box {A}}} 
               g g e c c 
               e^\markup {\small \box {B}} 
@@ -929,7 +932,7 @@
 
               \once \override TextScript #'padding = #2
 
-              d^\markup{\italic "D.C. al Fine"}
+              d
               e
 
 
@@ -946,7 +949,7 @@
 
               \revert Stem #'transparent
 
-              c,2
+              c,2^\markup{\italic "D.C. al Fine"}
             }
           }
 
@@ -990,7 +993,7 @@
           d b b
           c r
 
-          \partial 4*1
+          %% \partial 4
           r4
           r <c e g>\p  <c e g>
           r4 <c e g>  <c e g>
@@ -1040,7 +1043,7 @@
           g'2 r4
           g4 r4
 
-          \partial 4*1
+          %% \partial 4
           
           r4
           c,2.\p c2. c2.
@@ -1070,7 +1073,7 @@
           \new Staff {
             \clef "G_8"
             \time 3/4
-            \partial 4*1
+            \partial 4
             \key c \major
 
             \override Score.BarNumber #'transparent = ##t
@@ -1082,6 +1085,7 @@
             c r
 
             \repeat volta2 {
+              \partial 4
               e4\p^\markup {\column {\line {\bold {Parte 1} - Melodia} \small \box {A}}} 
               g g e c c 
               e^\markup {\small \box {B}} 
@@ -1353,7 +1357,7 @@
           d b b
           c r
 
-          \partial 4*1
+          %% \partial 4
           r4
           r <c e g>\p  <c e g>
           r4 <c e g>  <c e g>
@@ -1404,7 +1408,7 @@
           g'2 r4
           g4 r4
 
-          \partial 4*1
+          %% \partial 4
           
           r4
           c,2.\p c2. c2.
@@ -1434,7 +1438,7 @@
           \new Staff {
             \clef "G_8"
             \time 3/4
-            \partial 4*1
+            \partial 4
             \key c \major
 
             \override Score.BarNumber #'transparent = ##t
@@ -1446,6 +1450,7 @@
             c r
 
             \repeat volta2 {
+              \partial 4
               e4\p^\markup {\column {\line {\bold {Parte 1} - Melodia} \small \box {A}}} 
               g g e c c 
               e^\markup {\small \box {B}} 
@@ -1647,7 +1652,7 @@
 
               \once \override TextScript #'padding = #2
 
-              d^\markup{\italic "D.C. al Fine"}
+              d
               e
 
 
@@ -1664,7 +1669,7 @@
 
               \revert Stem #'transparent
 
-              c,2
+              c,2^\markup{\italic "D.C. al Fine"}
             }
           }
 
@@ -1709,7 +1714,7 @@
           d b b
           c r
 
-          \partial 4*1
+          %% \partial 4
           r4
           r <c e g>\p  <c e g>
           r4 <c e g>  <c e g>
@@ -1760,7 +1765,7 @@
           g'2 r4
           g4 r4
 
-          \partial 4*1
+          %% \partial 4
           
           r4
           c,2.\p c2. c2.
@@ -1791,7 +1796,7 @@
           \new Staff {
             \clef bass
             \time 3/4
-            \partial 4*1
+            \partial 4
             \key c \major
             
             \override Score.BarNumber #'transparent = ##t
@@ -1803,6 +1808,7 @@
             c r
 
             \repeat volta2 {
+              \partial 4
               e4\p^\markup {\column {\line {\bold {Parte 1} - Melodia} \small \box {A}}} 
               g g e c c 
               e^\markup {\small \box {B}} 
@@ -2064,7 +2070,7 @@
           d b b
           c r
 
-          \partial 4*1
+          %% \partial 4
           r4
           r <c e g>\p  <c e g>
           r4 <c e g>  <c e g>
@@ -2115,7 +2121,7 @@
           g'2 r4
           g4 r4
 
-          \partial 4*1
+          %% \partial 4
           
           r4
           c,2.\p c2. c2.

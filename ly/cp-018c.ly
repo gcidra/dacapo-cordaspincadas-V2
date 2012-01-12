@@ -6,7 +6,7 @@
 \relative c''{
   \time 3/4
   \partial 4*1
-  \key c \major
+
 
   %% CAVAQUINHO - BANJO
   \tag #'cv {
@@ -36,6 +36,8 @@
   %% VIOLÃO TENOR
   \tag #'vt {
     \clef "G_8"
+    \key c \major
+
     \repeat volta 2 { 
       e,4\p^\markup {\column {\italic {\bold "Allegro"} \small {\box{A3}}}}
       c\< e g 
@@ -61,6 +63,8 @@
   \tag #'bx {
     \relative c{
       \clef bass
+      \key c \major
+
       \repeat volta 2 { 
       e4\p^\markup {\column {\italic {\bold "Allegro"} \small {\box{A3}}}}
       c\< e g 

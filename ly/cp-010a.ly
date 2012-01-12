@@ -13,6 +13,7 @@
   \relative c'' { 
     \override Staff.TimeSignature #'style = #'()
     \time 4/4
+    \key c \major
 
 
     %% CAVAQUINHO - BANJO

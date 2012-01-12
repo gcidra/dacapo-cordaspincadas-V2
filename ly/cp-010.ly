@@ -17,6 +17,7 @@
       \new Staff {
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
+        \key c \major
         \override Score.BarNumber #'transparent = ##t
 
         g2\f^\markup {\column {\line {\bold {Parte 1} - Melodia } \line \italic {\bold "Allegro"}
@@ -62,6 +63,7 @@
       \new Staff {
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
+        \key c \major
         \override Score.BarNumber #'transparent = ##t
 
         g2\f^\markup {\column {\line {\bold {Parte 1} - Melodia } \line \italic {\bold "Allegro"}
@@ -107,6 +109,7 @@
       \new Staff {
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
+        \key c \major
         \override Score.BarNumber #'transparent = ##t
 
         g2\f^\markup {\column {\line {\bold {Parte 1} - Melodia } \line \italic {\bold "Allegro"}
@@ -152,6 +155,7 @@
       \new Staff {
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
+        \key c \major
         \override Score.BarNumber #'transparent = ##t
         \clef "G_8"
 
@@ -198,6 +202,7 @@
       \new Staff {
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
+        \key c \major
         \override Score.BarNumber #'transparent = ##t
         \clef "G_8"
 
@@ -244,6 +249,7 @@
       \new Staff {
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
+        \key c \major
         \override Score.BarNumber #'transparent = ##t
         \clef bass
 

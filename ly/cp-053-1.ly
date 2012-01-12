@@ -15,7 +15,7 @@
       b8\f^\markup {\italic {\bold "Allegro"}}
       e4. e8
       d4. d8
-      c c d c
+      c c d d
       b4. b8
       c c d d
       b b b b
@@ -28,7 +28,7 @@
       b8\f^\markup {\italic {\bold "Allegro"}}
       e4. e8
       d4. d8
-      c c d c
+      c c d d
       b4. b8
       c c d d
       b b b b
@@ -41,7 +41,7 @@
       b8\f^\markup {\italic {\bold "Allegro"}}
       e4. e8
       d4. d8
-      c c d c
+      c c d d
       b4. b8
       c c d d
       b b b b
@@ -55,7 +55,7 @@
       b,8\f^\markup {\italic {\bold "Allegro"}}
       e4. e8
       d4. d8
-      c c d c
+      c c d d
       b4. b8
       c c d d
       b b b b
@@ -69,7 +69,7 @@
       b8\f^\markup {\italic {\bold "Allegro"}}
       e4. e8
       d4. d8
-      c c d c
+      c c d d
       b4. b8
       c c d d
       b b b b
@@ -83,7 +83,7 @@
       b,8\f^\markup {\italic {\bold "Allegro"}}
       e4. e8
       d4. d8
-      c c d c
+      c c d d
       b4. b8
       c c d d
       b b b b

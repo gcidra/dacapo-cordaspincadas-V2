@@ -11,6 +11,7 @@
 {
   \override Score.BarNumber #'transparent = ##t
   \override Staff.BarLine #'transparent = ##f
+  \key g \major
 
 
   %% CAVAQUINHO - BANJO

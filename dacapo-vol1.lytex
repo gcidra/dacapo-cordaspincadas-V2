@@ -102,7 +102,7 @@
 % \includegraphics[scale=0.5]{logo-keyboard}
 % \vspace*{2ex}
 
-\textbf{\Large{ANO 2011}}
+\textbf{\Large{ANO 2012}}
 \vspace*{4ex}
 
 \textbf{Copyright by Joel L. da Silva Barbosa \\
@@ -140,7 +140,7 @@ BARBOSA, J. L. da Silva \\
 \\
 DA CAPO CORDAS DEDILHADAS \instrumento{Original} Vol. 1. % Jundiaí, São Paulo: \\
 % Keyboard Editora Musical Ltda. 
-2011, p. \pageref{LastPage} \\
+2012, p. \pageref{LastPage} \\
 \\
 Didático/Pedagógico \\
 % ISBN nº %#ISBN-V1#% \\
@@ -988,7 +988,7 @@ variação para ela.
 \begin{lilypond}
   \transpose c c {
     \keepWithTag #'cv
-    \include "cp-pauta.ly"
+    \include "cp-012.ly"
   }
 \end{lilypond}
 
@@ -1630,6 +1630,7 @@ Harmonize a melodia.
 
 \end{enumerate}
 
+%%break-bx
 \section{Vamos completar a melodia e harmonizá-la?}
 \label{sec:vamos-completar-a-melodia}
 Coloque as dinâmicas, \textit{\textbf{f}} e \textbf{\textit{p}}, e o
@@ -1735,7 +1736,8 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%%break-vt
+%%break-vi
 \section{Aquecendo os dedos}
 \label{sec:aquecendo-banda}
 
@@ -1745,6 +1747,9 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
     \include "cp-022.ly"}
 \end{lilypond}
 
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Divertindo-se com cinco notas}
 \label{sec:divertindo-se-com}
 
@@ -1781,7 +1786,8 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 
 \end{enumerate}
 
-
+%%break-vt
+%%break-vi
 \section{Jingle Bells}
 \label{sec:jingle-bells}
 Faça a brincadeira de descobrir a nota errada.
@@ -1868,7 +1874,9 @@ variação para ela.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+%%break-cv
+%%break-bd
+%%break-va
 \section{Divertindo-se com seis notas}
 \label{sec:divertindo-se-com-seis-notas}
 
@@ -1908,7 +1916,7 @@ variação para ela.
 Harmonize a melodia e as variações.
 
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-018.ly"}
 \end{lilypond}
@@ -1916,7 +1924,7 @@ Harmonize a melodia e as variações.
 
 \subsection*{Variação 1}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-018a.ly"}
 \end{lilypond}
@@ -1924,7 +1932,7 @@ Harmonize a melodia e as variações.
 
 \subsection*{Variação 2}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-018b.ly"}
 \end{lilypond}
@@ -1932,7 +1940,7 @@ Harmonize a melodia e as variações.
 
 \subsection*{Variação 3}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-018c.ly"}
 \end{lilypond}
@@ -1940,7 +1948,7 @@ Harmonize a melodia e as variações.
 
 \subsection*{Variação 4 - Esta você escreve e harmoniza!}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-018d.ly"}
 \end{lilypond}
@@ -1949,7 +1957,7 @@ Harmonize a melodia e as variações.
 \section{Improvisando em A Mucama}
 \label{sec:impr-em-mucama}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-029.ly"}
 \end{lilypond}
@@ -1958,13 +1966,18 @@ Harmonize a melodia e as variações.
 \section{Escolha um dos três finais}
 \label{sec:escolha-um-dos-tres-finais}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c g, {
     \keepWithTag #'cv
     \include "cp-031.ly"
   }
 \end{lilypond}
 
-
+%%break-cv
+%%break-bd
+%%break-va
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Mãos e Pés + O Balão de João}
 \label{sec:maos-e-pes-balao-joao}
 Experimente outras dinâmicas.
@@ -2173,6 +2186,12 @@ Harmonize a melodia.
     \include "cp-040.ly"}
 \end{lilypond}
 
+%%break-cv
+%%break-bd
+%%break-va
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Boiadeiro}
 \label{sec:boiadeiro}
 \subsection*{Toada dos Remeiros}
@@ -2235,6 +2254,7 @@ Coloque as dinâmicas e andamento.
 \section{Transpondo}
 \label{sec:transpondo}
 
+NESTA LIÇÃO AS MELODIAS JÁ ESTÃO EM SOL MAIOR.
 
 Transponha para sol maior as melodias ``\ref{sec:impr-em-margarida} -
 \textit{\nameref{sec:impr-em-margarida}}'', ``\ref{sec:impr-em-mucama} - \textit{\nameref{sec:impr-em-mucama}}'' e
@@ -2462,7 +2482,11 @@ depois \textit{D.C. al fine}.
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+%%break-cv
+%%break-bd
+%%break-va
+%%break-vt
+%%break-vi
 \section{Escala de sol maior}
 \label{sec:escala-sol-maior}
 
@@ -2511,6 +2535,12 @@ Harmonize a melodia.
     \include "cp-053-1.ly"}
 \end{lilypond}
 
+%%break-cv
+%%break-bd
+%%break-va
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Improvisando em Eu Chole, Chole, Lá}
 \label{sec:impr-em-eu-chole-la}
 Explore diferentes dinâmicas.
@@ -2737,7 +2767,9 @@ Harmonize a melodia e as variações.
     \include "cp-056b.ly"}
 \end{lilypond}
 
-
+%%break-cv
+%%break-bd
+%%break-va
 \subsection*{Parte 3 - Improviso com gráficos}
 \begin{lilypond}
   \transpose c c {
@@ -2776,6 +2808,12 @@ Harmonize a melodia.
     \include "cp-054.ly"}
 \end{lilypond}
 
+%%break-cv
+%%break-bd
+%%break-va
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Vamos escrever uma segunda voz para Coelhinho}
 \label{sec:vamos-escrever-segunda-voz-coelhinho}
 Toque esta melodia em Sol maior também, começando com a nota si na
@@ -2802,7 +2840,7 @@ primeira voz.
 \section{Variações sobre Terezinha}
 \label{sec:variacoes-sobre-terezinha}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-066.ly"}
 \end{lilypond}
@@ -2810,7 +2848,7 @@ primeira voz.
 
 \subsection*{Variação 1}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-066a.ly"}
 \end{lilypond}
@@ -2818,7 +2856,7 @@ primeira voz.
 
 \subsection*{Variação 2}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-066b.ly"}
 \end{lilypond}
@@ -2826,7 +2864,7 @@ primeira voz.
 
 \subsection*{Variação 3}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-066c.ly"}
 \end{lilypond}
@@ -2834,7 +2872,7 @@ primeira voz.
 
 \subsection*{Variação 4}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-066d.ly"}
 \end{lilypond}
@@ -2842,7 +2880,7 @@ primeira voz.
 
 \subsection*{Variação 5 - Esta você escreve!}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-066e.ly"}
 \end{lilypond}
@@ -2851,7 +2889,7 @@ primeira voz.
 \section{Improvisando em Terezinha}
 \label{sec:improvisando-em-terezinha}
 \begin{lilypond}
-  \transpose c c {
+  \transpose c d {
     \keepWithTag #'cv
     \include "cp-067.ly"}
 \end{lilypond}
@@ -2874,7 +2912,7 @@ expressão, perde a vez e outro começa. Quando voltar a sua vez,
 recomece da casa 1, ou seja: 1, 1-2-1, 1-2-3-2-1 etc. Vencem aqueles
 que atingirem o céu.
 
-
+\break
 \section{Componha uma música e toque-a para seus colegas}
 \label{sec:comp-toque-colegas}
 \begin{lilypond}

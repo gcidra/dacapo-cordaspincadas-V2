@@ -973,10 +973,6 @@ o site:
 \end{lilypond}
 
 
-\section{Sol e Lá}
-\label{sec:sol-e-la}
-
-
 \section{Berimbau}
 \label{sec:berimbau}
 Aprenda ``de ouvido'' a introdução instrumental da música
@@ -1222,6 +1218,16 @@ variação para ela.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\section{A Barquinha}
+\label{sec:barquinha}
+
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-025.ly"}
+\end{lilypond}
+
+
 \section{Que Belos Castelos}
 \label{sec:que-belos-castelos}
 
@@ -1231,14 +1237,6 @@ variação para ela.
     \include "cp-015.ly"}
 \end{lilypond}
 
-\section{A Barquinha}
-\label{sec:barquinha}
-
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-025.ly"}
-\end{lilypond}
 
 
 \break

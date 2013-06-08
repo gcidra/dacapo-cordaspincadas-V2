@@ -215,7 +215,7 @@ cavaquinho.lytex: $(file) Makefile
 	-e 's/%%break-cv/\\break/g' \
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
-	-e 's/%#nota-03#%/Mi/g' \
+	-e 's/%#nota-03#%/Sol/g' \
 	-e 's/%#nota-04#%/Fá/g' \
 	-e 's/%#nota-05#%/Sol/g' \
 	-e 's/%#nota-06#%//g' \
@@ -254,7 +254,7 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%%break-bd/\\break/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Lá/g' \
-	-e 's/%#nota-03#%/Si/g' \
+	-e 's/%#nota-03#%/Ré/g' \
 	-e 's/%#nota-04#%/Fá/g' \
 	-e 's/%#nota-05#%/Sol/g' \
 	-e 's/%#nota-06#%/Ré/g' \
@@ -293,7 +293,7 @@ viola.lytex: $(file) Makefile
 	-e 's/%%break-va/\\break/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Si/g' \
-	-e 's/%#nota-03#%//g' \
+	-e 's/%#nota-03#%/Sol Sustenido/g' \
 	-e 's/%#nota-04#%/Fá/g' \
 	-e 's/%#nota-05#%/Sol/g' \
 	-e 's/%#nota-06#%/Ré/g' \
@@ -332,7 +332,7 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%%break-vt/\\break/g' \
 	-e 's/%#nota-01#%/Lá/g' \
 	-e 's/%#nota-02#%/Ré/g' \
-	-e 's/%#nota-03#%/Mi/g' \
+	-e 's/%#nota-03#%/Sol/g' \
 	-e 's/%#nota-04#%/Fá/g' \
 	-e 's/%#nota-05#%/Sol/g' \
 	-e 's/%#nota-06#%//g' \
@@ -371,7 +371,7 @@ violao.lytex: $(file) Makefile
 	-e 's/%%break-vi/\\break/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Si/g' \
-	-e 's/%#nota-03#%//g' \
+	-e 's/%#nota-03#%/Sol/g' \
 	-e 's/%#nota-04#%/Fá/g' \
 	-e 's/%#nota-05#%/Sol/g' \
 	-e 's/%#nota-06#%/Ré/g' \
@@ -410,7 +410,7 @@ baixo.lytex: $(file) Makefile
 	-e 's/%%break-bx/\\break/g' \
 	-e 's/%#nota-01#%/Sol/g' \
 	-e 's/%#nota-02#%/Ré/g' \
-	-e 's/%#nota-03#%/Mi/g' \
+	-e 's/%#nota-03#%/Lá/g' \
 	-e 's/%#nota-04#%/Fá/g' \
 	-e 's/%#nota-05#%//g' \
 	-e 's/%#nota-06#%//g' \
@@ -448,7 +448,7 @@ baixo.lytex: $(file) Makefile
 	cp $@ ..
 
 %.tex: %.lytex
-	lilypond-book --pdf -I ly -I ly/reg -I reg -o out $< ;\
+	lilypond-book --pdf -I ./../ly -I ly/reg -I reg -o out $< ;\
 
 cleanall: clean_regencia clean_percussao clean_instrumentos clean
 

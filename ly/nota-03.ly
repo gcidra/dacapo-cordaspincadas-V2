@@ -9,38 +9,35 @@
   <<
     %% CAVAQUINHO - BANJO
     \tag #'cv {
-      e1^\markup \fret-diagram #"f:2;w:4;1-2;"
+      g1^\markup \fret-diagram #"f:2;w:4;3-o;"
     }
 
     %% BANDOLIM
     \tag #'bd {
-      b^\markup \fret-diagram #"f:2;w:4;2-2;"
+      d^\markup \fret-diagram #"f:2;w:4;3-o;"
     }
 
     %% VIOLA
     \tag #'va {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      gis^\markup \fret-diagram #"f:2;w:5;3-o;"
     }
 
     %% VIOLÃO TENOR
     \tag #'vt {
       \clef "G_8"
-      e,^\markup \fret-diagram #"f:2;w:4;2-2;"
+      g,^\markup \fret-diagram #"f:2;w:4;3-o;"
     }
 
     %% VIOLÃO
     \tag #'vi {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      \clef "G_8"
+      g^\markup \fret-diagram #"f:2;w:6;3-o;"
     }
 
     %% BAIXO - BAIXOLÃO
     \tag #'bx {
       \clef bass
-      e,^\markup \fret-diagram #"f:2;w:4;2-2;"
+      a,^\markup \fret-diagram #"f:2;w:4;3-o;"
     }
   >>
 }

@@ -94,148 +94,315 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
-\section{Variações sobre A Mucama}
-\label{sec:vari-sobre-mucama}
-Harmonize a melodia e as variações.
-
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018.ly"}
-\end{lilypond}
-
-
-\subsection*{Variação 1}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018a.ly"}
-\end{lilypond}
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_01}
+  \begin{tabular}[t]{|lll|}
+    \hline
 
 
-\subsection*{Variação 2}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018b.ly"}
-\end{lilypond}
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} & \em & \em
+   
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-01#%}
+    &
+    \quadtitulo{%#nota-02#%}
+    &
+    \quadtitulo{%#nota-03#%}
 
 
-\subsection*{Variação 3}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018c.ly"}
-\end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-03.ly" 
+      }
+    \end{lilypond}
+
+    \\
+  \end{tabular}
+
+  %%% PRÓXIMA TABELA
+
+  \begin{tabular}[t]{|l|l|l|}
+
+    \hline
+    \letraquadrada{B}  & \letraquadrada{C}   &   \letraquadrada{D}
 
 
-\subsection*{Variação 4 - Esta você escreve e harmoniza!}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018d.ly"}
-\end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Compasso}
+    &
+    \quadtitulo{Fórmula de Compasso}
+    &
+    \quadtitulo{Barra de Compasso}
 
 
-% \section{Improvisando em A Mucama}
-% \label{sec:impr-em-mucama}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-029.ly"}
-% \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{compasso-vazio}
+    &
+    \includegraphics[scale=1]{formula-4tempos-por-compasso}
+    &
+    \includegraphics[scale=1]{barra-compasso}
 
 
-% \section{Escolha um dos três finais}
-% \label{sec:escolha-um-dos-tres-finais}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-031.ly"
-%   }
-% \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{D}  & \em & \em
 
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Barra Final}
+    &
+    \quadtitulo{Sinal de Repetição}
+    &
+    \quadtitulo{??}
 
-% \section{Mãos e Pés + O Balão de João}
-% \label{sec:maos-e-pes-balao-joao}
-% Experimente outras dinâmicas.
-
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-032.ly"}
-% \end{lilypond}
-
-
-% Transponha \textit{O Balão de João} para dó maior
-% começando com a nota sol.
-
-
-% \section{Variações sobre De Marré}
-% \label{sec:variacoes-sobre-de-marre}
-% Harmonize a melodia e as variações.
-
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-020.ly"}
-% \end{lilypond}
-
-
-% \subsection*{Variação 1}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-020a.ly"}
-% \end{lilypond}
-
-
-
-% \subsection*{Variação 2}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-020b.ly"}
-% \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{barra-final}
+    &
+    \includegraphics[scale=1]{sinal-repeticao}
+    &
+    \em
 
 
 
-% \subsection*{Variação 3}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-020c.ly"}
-% \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{ \letraquadrada{E} }  & \letraquadrada{G}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{ \em }
+    &
+    \quadtitulo{Técnica}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{1}{|l}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'cv
+          \include "acorde-Em.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{1}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'cv
+          \include "acorde-Am.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \includegraphics[scale=0.7]{mao-i-m}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{G}  & \letraquadrada{H} & \letraquadrada{I}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Mínima}
+    &
+    \quadtitulo{Semínima}
+    &
+    \quadtitulo{Pausa de semibreve}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{minima}
+    &
+    \includegraphics[scale=1]{seminima}
+    &
+    \includegraphics[scale=1]{semibreve-pausa}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-% \subsection*{Variação 4 - Esta você escreve e harmoniza!}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-020d.ly"}
-% \end{lilypond}
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_01}
+  \begin{tabular}[t]{|ll|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{2}{|l|}{ \letraquadrada{A} }    &    \letraquadrada{B}    &    \letraquadrada{C}
 
 
-% \section{Improvisando em A Manquinha}
-% \label{sec:impr-em-manq}
-% \begin{lilypond}
-%   \transpose c c {
-%     \keepWithTag #'cv
-%     \include "cp-036.ly"}
-% \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-01#%}
+    &
+    \quadtitulo{%#nota-02#%}
+    &
+    \quadtitulo{Compasso}
+    &
+    \quadtitulo{Fórmula de compasso}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-01.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-02.ly" 
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{compasso-vazio}
+    &
+    \includegraphics[scale=1]{formula-4tempos-por-compasso}
 
 
-% \section{Marcha soldado}
-% \label{sec:marcha-soldado}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-035.ly"}
-% \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{D}  & \em  & \letraquadrada{E} & \letraquadrada{F}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Barra de Compasso}
+    &
+    \em
+    &
+    \quadtitulo{Barra Final}
+    &
+    \quadtitulo{Sinal de Repetição}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{barra-compasso}
+    &
+    \em
+    &
+    \includegraphics[scale=1]{barra-final}
+    &
+    \includegraphics[scale=1]{sinal-repeticao}
 
 
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{G}  & \em  & \letraquadrada{H} & \letraquadrada{I}
 
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Mínima}
+    &
+    \em
+    &
+    \quadtitulo{Semínima}
+    &
+    \quadtitulo{Pausa de semibreve}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{minima}
+    &
+    \em
+    &
+    \includegraphics[scale=1]{seminima}
+    &
+    \includegraphics[scale=1]{semibreve-pausa}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{J}  & \em  & \letraquadrada{L} & \letraquadrada{M}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \em
+    &
+    \em
+    &
+    \quadtitulo{Técnica}
+    &
+    \quadtitulo{Da Capo al Fine}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Em.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Am.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \includegraphics[scale=0.7]{mao-i-m}
+    &
+    \textit{D.C. al Fine}
+
+
+    %%% FINAL DAS LINHAS
+  \\
+  \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 

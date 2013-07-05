@@ -1,7 +1,7 @@
 %% -*- coding: utf-8 -*-
 \version "2.16.0"
 
-\relative c' {
+\relative c'' {
   \override Staff.TimeSignature #'transparent = ##t
   \override Score.BarNumber #'transparent = ##t
   \override Score.RehearsalMark #'font-size = #-2
@@ -11,39 +11,37 @@
     \tag #'cv {
       \override Staff.Clef #'transparent = ##t
       \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      s1^\markup {\hspace #-7 "Descanso"}
     }
 
     %% BANDOLIM
     \tag #'bd {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      g^\markup \fret-diagram #"f:2;w:4;3-5;"
     }
 
     %% VIOLA
     \tag #'va {
+      g^\markup \fret-diagram #"f:2;w:5;4-3;"
+    }
+
+    %% VIOLÃO TENOR
+    \tag #'vt {
       \override Staff.Clef #'transparent = ##t
       \stopStaff
       s^\markup {\hspace #-7 "Descanso"}
     }
 
-    %% VIOLÃO TENOR
-    \tag #'vt {
-      \clef "G_8"
-      b1^\markup \fret-diagram #"f:2;w:4;3-4;"
-    }
-
     %% VIOLÃO
     \tag #'vi {
-      \clef "G_8"
-      b^\markup \fret-diagram #"f:2;w:6;2-o;"
+      \override Staff.Clef #'transparent = ##t
+      \stopStaff
+      s^\markup {\hspace #-7 "Descanso"}
     }
 
     %% BAIXO - BAIXOLÃO
     \tag #'bx {
       \clef bass
-      b,^\markup \fret-diagram #"f:2;w:4;3-2;"
+      g,,^\markup \fret-diagram #"f:2;w:4;4-3;"
     }
   >>
 }

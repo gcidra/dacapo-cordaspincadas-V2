@@ -259,7 +259,7 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%#nota-05#%//g' \
 	-e 's/%#nota-06#%/Dó/g' \
 	-e 's/%#nota-07#%/Ré/g' \
-	-e 's/%#nota-08#%//g' \
+	-e 's/%#nota-08#%/Sol/g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
 	-e 's/%#nota-11#%/Fá Sustenido/g' \
@@ -298,7 +298,7 @@ viola.lytex: $(file) Makefile
 	-e 's/%#nota-05#%//g' \
 	-e 's/%#nota-06#%/Dó/g' \
 	-e 's/%#nota-07#%/Ré/g' \
-	-e 's/%#nota-08#%//g' \
+	-e 's/%#nota-08#%/Sol/g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
 	-e 's/%#nota-11#%/Fá Sustenido/g' \
@@ -337,7 +337,7 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%#nota-05#%/Si/g' \
 	-e 's/%#nota-06#%/Dó/g' \
 	-e 's/%#nota-07#%//g' \
-	-e 's/%#nota-08#%/Si/g' \
+	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
 	-e 's/%#nota-11#%/Fá Sustenido/g' \
@@ -376,7 +376,7 @@ violao.lytex: $(file) Makefile
 	-e 's/%#nota-05#%//g' \
 	-e 's/%#nota-06#%/Dó/g' \
 	-e 's/%#nota-07#%/Ré/g' \
-	-e 's/%#nota-08#%/Si/g' \
+	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
 	-e 's/%#nota-11#%/Fá Sustenido/g' \
@@ -415,7 +415,7 @@ baixo.lytex: $(file) Makefile
 	-e 's/%#nota-05#%//g' \
 	-e 's/%#nota-06#%/Dó/g' \
 	-e 's/%#nota-07#%//g' \
-	-e 's/%#nota-08#%/Si/g' \
+	-e 's/%#nota-08#%/Sol/g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
 	-e 's/%#nota-11#%/Fá Sustenido/g' \

@@ -218,8 +218,8 @@ cavaquinho.lytex: $(file) Makefile
 	-e 's/%#nota-03#%/Sol/g' \
 	-e 's/%#nota-04#%/Lá/g' \
 	-e 's/%#nota-05#%//g' \
-	-e 's/%#nota-06#%//g' \
-	-e 's/%#nota-07#%/Dó/g' \
+	-e 's/%#nota-06#%/Dó/g' \
+	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
@@ -257,8 +257,8 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%#nota-03#%/Ré/g' \
 	-e 's/%#nota-04#%/Si/g' \
 	-e 's/%#nota-05#%//g' \
-	-e 's/%#nota-06#%/Ré/g' \
-	-e 's/%#nota-07#%/Dó/g' \
+	-e 's/%#nota-06#%/Dó/g' \
+	-e 's/%#nota-07#%/Ré/g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
@@ -296,8 +296,8 @@ viola.lytex: $(file) Makefile
 	-e 's/%#nota-03#%/Sol Sustenido/g' \
 	-e 's/%#nota-04#%/Lá/g' \
 	-e 's/%#nota-05#%//g' \
-	-e 's/%#nota-06#%/Ré/g' \
-	-e 's/%#nota-07#%/Dó/g' \
+	-e 's/%#nota-06#%/Dó/g' \
+	-e 's/%#nota-07#%/Ré/g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
@@ -335,8 +335,8 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%#nota-03#%/Sol/g' \
 	-e 's/%#nota-04#%/Lá/g' \
 	-e 's/%#nota-05#%/Si/g' \
-	-e 's/%#nota-06#%//g' \
-	-e 's/%#nota-07#%/Dó/g' \
+	-e 's/%#nota-06#%/Dó/g' \
+	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%/Si/g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
@@ -374,8 +374,8 @@ violao.lytex: $(file) Makefile
 	-e 's/%#nota-03#%/Sol/g' \
 	-e 's/%#nota-04#%/Lá/g' \
 	-e 's/%#nota-05#%//g' \
-	-e 's/%#nota-06#%/Ré/g' \
-	-e 's/%#nota-07#%/Dó/g' \
+	-e 's/%#nota-06#%/Dó/g' \
+	-e 's/%#nota-07#%/Ré/g' \
 	-e 's/%#nota-08#%/Si/g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \
@@ -413,8 +413,8 @@ baixo.lytex: $(file) Makefile
 	-e 's/%#nota-03#%/Lá/g' \
 	-e 's/%#nota-04#%/Si/g' \
 	-e 's/%#nota-05#%//g' \
-	-e 's/%#nota-06#%//g' \
-	-e 's/%#nota-07#%/Dó/g' \
+	-e 's/%#nota-06#%/Dó/g' \
+	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%/Si/g' \
 	-e 's/%#nota-09#%/Lá/g' \
 	-e 's/%#nota-10#%/Sol/g' \

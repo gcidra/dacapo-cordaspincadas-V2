@@ -880,58 +880,64 @@ o site:
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{%#nota-03#%}
-    &
     \quadtitulo{%#nota-04#%}
     &
-    \quadtitulo{Pausa de Mínima}
+    \quadtitulo{%#nota-05#%}
+    &
+    \quadtitulo{Sol Maior}
 
     %%% PRÓXIMA LINHA
     \\
     \begin[fragment]{lilypond}
       \transpose c c {
         \keepWithTag #'cv
-        \include "nota-03.ly"
+        \include "nota-04.ly"
       }
     \end{lilypond}
     &
     \begin[fragment]{lilypond}
       \transpose c c { 
         \keepWithTag #'cv
-        \include "nota-04.ly" 
+        \include "nota-05.ly" 
       }
     \end{lilypond}
     &
-    \includegraphics[scale=1]{minima-pausa}
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-sol.ly"
+      }
+    \end{lilypond}
 
+    \\
+  \end{tabular}
+  \begin{tabular}[t]{|l|l|l|}
 
     %%% PRÓXIMA LINHA
-    \\
     \hline
-    \multicolumn{2}{|l|}{\letraquadrada{C}} & \letraquadrada{D}
+    \letraquadrada{C} & \letraquadrada{D} & \letraquadrada{E}
 
     %%% PRÓXIMA LINHA
     \\
-    \em
+    \quadtitulo{Fórmula de Compasso}
     &
-    \em
+    \quadtitulo{Acorde}
     &
-    \quadtitulo{Pausa de Semínima}
+    \quadtitulo{Andamento}
 
 
     %%% PRÓXIMA LINHA
     \\
+    \includegraphics[scale=1]{formula-3tempos-por-compasso}
+    &
     \begin[fragment]{lilypond}
       \transpose c c { 
         \keepWithTag #'cv
         \include "acorde-G.ly" 
       }
     \end{lilypond}
-
     &
-    \em
-    &
-    \includegraphics[scale=1]{seminima-pausa}
+    \textit{Allegro}
 
     %%% FINAL DAS LINHAS
   \\
@@ -941,7 +947,6 @@ o site:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 \section{Bambaleando}
@@ -1018,96 +1023,41 @@ variação para ela.
   \renewcommand{\tablename}{Quadro}
   \caption{}
   \label{Quadro_03}
-  \begin{tabular}{|ll|l|l|}
+  \begin{tabular}{|ll|ll|}
     \hline
 
     %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}}   &    \letraquadrada{B}    &   \letraquadrada{C}
+    \multicolumn{2}{|l|}{\letraquadrada{A}}   &  \multicolumn{2}{l|}{\letraquadrada{B}}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \multicolumn{2}{|l|}{\quadtitulo{%#nota-05#%}}
+    \quadtitulo{%#nota-06#%}
     &
-    \quadtitulo{Andamento}
+    \quadtitulo{%#nota-07#%}
     &
-    \quadtitulo{Dinâmica}
+    \multicolumn{2}{l|}{\quadtitulo{Dinâmica}}
 
     %%% PRÓXIMA LINHA
     \\
-    \multicolumn{2}{|l|}{
-      \parbox[c][0.5cm]{3cm}{
-        \begin{lilypond}
-          \transpose c c {
-            \keepWithTag #'cv
-            \include "nota-05.ly"
-          }
-        \end{lilypond}
+    \begin{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-06.ly"
       }
-    }
+    \end{lilypond}
     &
-    &
-
-    %%% PRÓXIMA LINHA
-    \\
-    &
-    &
-    \textit{Allegro}
+    \begin{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
     &
     \textbf{\textit{f}} = forte
-
-    %%% PRÓXIMA LINHA
-    \\
-    &
-    &
-    \textit{Andante}
     &
     \textbf{\textit{p}} = piano
 
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \multicolumn{2}{|l|}{\letraquadrada{D}}  & \letraquadrada{E}  & \letraquadrada{F}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \em
-    &
-    \em
-    &
-    \quadtitulo{Barra Dupla}
-    &
-    \quadtitulo{Teoria}
-
-    %%% PRÓXIMA LINHA
-    \\
-    &
-    &
-    \includegraphics[scale=1]{barra-dupla}
-    &
-    Variação
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \parbox[b][1.4cm]{3cm}{
-    \begin{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-C.ly" 
-      }
-    \end{lilypond}}
-    &
-    \parbox[b][1.4cm]{3.5cm}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-G7.ly" 
-        }
-      \end{lilypond}
-    }
-    &
-    &
 
     %%% FINAL DAS LINHAS
   \\
@@ -1180,63 +1130,101 @@ variação para ela.
   \renewcommand{\tablename}{Quadro}
   \caption{}
   \label{Quadro_04}
-  \begin{tabular}[t]{|l|l|}
+  \begin{tabular}[t]{|l|l|l|}
     \hline
 
     %%% PRÓXIMA LINHA
-    \letraquadrada{A}   &   \letraquadrada{B}
+    \letraquadrada{A}   &   \letraquadrada{B}   &   \letraquadrada{C}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{%#nota-06#%}
-      &
-      \quadtitulo{Fórmula de compasso}
+    \quadtitulo{%#nota-08#%}
+    &
+    \quadtitulo{Lá Menor}
+    &
+    \quadtitulo{Fórmula de Compasso}
 
-      %%% PRÓXIMA LINHA
-      \\
-      \begin[fragment]{lilypond}
-        \transpose c c {
-          \keepWithTag #'cv
-          \include "nota-06.ly"
-        }
-      \end{lilypond}
-      &
-      \includegraphics[scale=1]{formula-3tempos-por-compasso}
-      \\
-      \hline
-
-      %%% PRÓXIMA LINHA
-      \multicolumn{2}{|l|}{\letraquadrada{C}}
-
-
-      %%% PRÓXIMA LINHA
-      \\
-      \multicolumn{1}{|l}{
-        \begin[fragment]{lilypond}
-          \transpose c c { 
-            \keepWithTag #'cv
-            \include "acorde-A7.ly" 
-          }
-        \end{lilypond}
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-08.ly"
       }
-
-      &
-      \multicolumn{1}{l|}{
-        \begin[fragment]{lilypond}
-          \transpose c c { 
-            \keepWithTag #'cv
-            \include "acorde-Dm.ly" 
-          }
-        \end{lilypond}
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-la-menor.ly"
       }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{formula-2tempos-por-compasso}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{D}  &  \letraquadrada{E}  &  \letraquadrada{F}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Andamento}
+    &
+    \quadtitulo{Crescendo}
+    &
+    \quadtitulo{Decrescendo}
 
-      %%% FINAL DAS LINHAS
-      \\
-      \hline
-    \end{tabular}
-  \end{table}    
+    %%% PRÓXIMA LINHA
+    \\
+    \textit{Andante}
+    &
+    \includegraphics[scale=1]{crescendo}
+    &
+    \includegraphics[scale=1]{decrescendo}
 
+    \\
+    \hline
+  \end{tabular}
+  \begin{tabular}[t]{|lll|}
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{G}}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{3}{|l|}{\quadtitulo{Acordes}}
+
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-D7.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Am.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-E7.ly"
+      }
+    \end{lilypond}
+    
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1651,7 +1639,6 @@ Harmonize a melodia.
 
 \end{enumerate}
 
-%%break-bx
 \section{Vamos completar a melodia e harmonizá-la?}
 \label{sec:vamos-completar-a-melodia}
 Coloque as dinâmicas, \textit{\textbf{f}} e \textbf{\textit{p}}, e o
@@ -1665,100 +1652,6 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 \end{lilypond}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_05}
-  \begin{tabular}[t]{|l|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C} 
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-07#%}
-    &
-    \quadtitulo{Crescendo}
-    &
-    \quadtitulo{Decrescendo}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-07.ly"
-      }
-    \end{lilypond}
-    &
-    \includegraphics[scale=1]{crescendo}
-    &
-    \includegraphics[scale=1]{decrescendo}
-
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{D} & \letraquadrada{E} & \letraquadrada{F}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Fórmula de Compasso}
-    &
-    \quadtitulo{Ligadura de Frase}
-    &
-    \quadtitulo{Colcheias}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \includegraphics[scale=1]{formula-2tempos-por-compasso}
-    &
-    \includegraphics[scale=1]{ligadura-frase}
-    &
-    \includegraphics[scale=1]{duas-colcheias}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \multicolumn{2}{|l|}{\letraquadrada{G}} & \letraquadrada{H} 
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{2}{|l|}{\quadtitulo{Anacruse}}
-    &
-    \quadtitulo{Escrita de Acordes}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{2}{|l|}{
-      \parbox[b][1cm]{9cm}{
-        Note que a lição \textit{``\nameref{sec:impr-em-margarida}''} na
-        página \pageref{sec:impr-em-margarida} começa no 4º
-        tempo do compasso.
-      }
-    }
-    &
-    \includegraphics[scale=1]{escrita-acordes}
-
-    %%% FINAL DAS LINHAS
-  \\
-  \hline
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%break-vt
-%%break-vi
 \section{Aquecendo os dedos}
 \label{sec:aquecendo-banda}
 
@@ -1768,9 +1661,6 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
     \include "cp-022.ly"}
 \end{lilypond}
 
-%%break-vt
-%%break-vi
-%%break-bx
 \section{Divertindo-se com cinco notas}
 \label{sec:divertindo-se-com}
 
@@ -1779,6 +1669,70 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
     \keepWithTag #'cv
     \include "cp-023.ly"}
 \end{lilypond}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_05}
+  \begin{tabular}[t]{|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} & \letraquadrada{B}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-09#%}
+    &
+    \quadtitulo{Colcheias}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-09.ly"
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{duas-colcheias}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \letraquadrada{C} & \letraquadrada{D}
+
+    %%% PRÓXIMA LINHA
+    \\
+
+    \quadtitulo{Ligadura de Frase}
+    &
+    \quadtitulo{Anacruse}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{ligadura-frase}
+    &
+    \parbox[b][1cm]{9cm}{
+      Note que a lição \textit{``\nameref{sec:impr-em-margarida}''} na
+      página \pageref{sec:impr-em-margarida} começa no 4º
+      tempo do compasso.
+    }
+    
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Improvisando em A Margarida}
@@ -1807,8 +1761,6 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 
 \end{enumerate}
 
-%%break-vt
-%%break-vi
 \section{Jingle Bells}
 \label{sec:jingle-bells}
 Faça a brincadeira de descobrir a nota errada.
@@ -1895,15 +1847,12 @@ variação para ela.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%break-cv
-%%break-bd
-%%break-va
 \section{Divertindo-se com seis notas}
 \label{sec:divertindo-se-com-seis-notas}
 
 \subsection*{Parte 1}
 \begin{lilypond}
-  \transpose c g, {
+  \transpose c c {
     \keepWithTag #'cv
     \include "cp-030a.ly"}
 \end{lilypond}
@@ -1911,21 +1860,21 @@ variação para ela.
 
 \subsection*{Parte 2}
 \begin{lilypond}
-  \transpose c g, {
+  \transpose c c {
     \keepWithTag #'cv
     \include "cp-030b.ly"}
 \end{lilypond}
 
 \subsection*{Parte 3}
 \begin{lilypond}
-  \transpose c g, {
+  \transpose c c {
     \keepWithTag #'cv
     \include "cp-030c.ly"}
 \end{lilypond}
 
 \subsection*{Parte 4}
 \begin{lilypond}
-  \transpose c g, {
+  \transpose c c {
     \keepWithTag #'cv
     \include "cp-030d.ly"}
 \end{lilypond}
@@ -1993,12 +1942,6 @@ Harmonize a melodia e as variações.
   }
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
-%%break-bx
 \section{Mãos e Pés + O Balão de João}
 \label{sec:maos-e-pes-balao-joao}
 Experimente outras dinâmicas.
@@ -2207,12 +2150,6 @@ Harmonize a melodia.
     \include "cp-040.ly"}
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
-%%break-bx
 \section{Boiadeiro}
 \label{sec:boiadeiro}
 \subsection*{Toada dos Remeiros}
@@ -2503,11 +2440,6 @@ depois \textit{D.C. al fine}.
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
 \section{Escala de sol maior}
 \label{sec:escala-sol-maior}
 
@@ -2556,12 +2488,6 @@ Harmonize a melodia.
     \include "cp-053-1.ly"}
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
-%%break-bx
 \section{Improvisando em Eu Chole, Chole, Lá}
 \label{sec:impr-em-eu-chole-la}
 Explore diferentes dinâmicas.
@@ -2788,9 +2714,6 @@ Harmonize a melodia e as variações.
     \include "cp-056b.ly"}
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
 \subsection*{Parte 3 - Improviso com gráficos}
 \begin{lilypond}
   \transpose c c {
@@ -2829,12 +2752,6 @@ Harmonize a melodia.
     \include "cp-054.ly"}
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
-%%break-bx
 \section{Vamos escrever uma segunda voz para Coelhinho}
 \label{sec:vamos-escrever-segunda-voz-coelhinho}
 Toque esta melodia em Sol maior também, começando com a nota si na

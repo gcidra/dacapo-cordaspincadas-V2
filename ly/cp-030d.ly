@@ -7,273 +7,273 @@
   \override Score.RehearsalMark #'font-size = #-2
   \set Score.markFormatter = #format-mark-numbers %% coloca o default em números
   \time 4/4 
-  \key c \major
+  \key g \major
 
   %% CAVAQUINHO - BANJO
   \tag #'cv {
-    \mark \default f4 f2 f4
+    \mark \default d4 d2 d4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \revert NoteHead #'style
     \revert Stem #'transparent
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default b,4 b2 b4
+    \mark \default g,4 g2 g4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 f' s2
+    \mark \default g4 d' s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b,4 f' s2
+    \mark \default g,4 d' s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default e4 e2 e4
+    \mark \default c4 c2 c4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default c1
+    \mark \default a1
   }
 
   %% BANDOLIM
   \tag #'bd {
-    \mark \default f4 f2 f4
+    \mark \default d4 d2 d4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \revert NoteHead #'style
     \revert Stem #'transparent
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default b,4 b2 b4
+    \mark \default g,4 g2 g4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 f' s2
+    \mark \default g4 d' s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b,4 f' s2
+    \mark \default g,4 d' s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default e4 e2 e4
+    \mark \default c4 c2 c4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default c1
+    \mark \default a1
   }
 
   %% VIOLA
   \tag #'va {
-    \mark \default f4 f2 f4
+    \mark \default d4 d2 d4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \revert NoteHead #'style
     \revert Stem #'transparent
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default b,4 b2 b4
+    \mark \default g,4 g2 g4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 f' s2
+    \mark \default g4 d' s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b,4 f' s2
+    \mark \default g,4 d' s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default e4 e2 e4
+    \mark \default c4 c2 c4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default c1
+    \mark \default a1
   }
 
   %% VIOLÃO TENOR
   \tag #'vt {
     \clef "G_8"
-    \mark \default f,4 f2 f4
+    \mark \default d,4 d2 d4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \revert NoteHead #'style
     \revert Stem #'transparent
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default b,4 b2 b4
+    \mark \default g,4 g2 g4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 f' s2
+    \mark \default g4 d' s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b,4 f' s2
+    \mark \default g,4 d' s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default e4 e2 e4
+    \mark \default c4 c2 c4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default c1
+    \mark \default a1
   }
 
   %% VIOLÃO
   \tag #'vi {
     \clef "G_8"
-    \mark \default f4 f2 f4
+    \mark \default d4 d2 d4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \revert NoteHead #'style
     \revert Stem #'transparent
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default b,4 b2 b4
+    \mark \default g,4 g2 g4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 f' s2
+    \mark \default g4 d' s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b,4 f' s2
+    \mark \default g,4 d' s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default e4 e2 e4
+    \mark \default c4 c2 c4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default c1
+    \mark \default a1
   }
 
   %% BAIXO - BAIXOLÃO
   \tag #'bx {
     \clef bass
-    \mark \default f,4 f2 f4
+    \mark \default d,4 d2 d4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default c4 f s2
+    \mark \default a4 d s2
     \revert NoteHead #'style
     \revert Stem #'transparent
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default b,4 b2 b4
+    \mark \default g,4 g2 g4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 f' s2
+    \mark \default g4 d' s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b,4 f' s2
+    \mark \default g,4 d' s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default e4 e2 e4
+    \mark \default c4 c2 c4
     \override Stem #'transparent = ##t
     \override Beam #'transparent = ##t
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \override NoteHead #'style = #'slash
     \override NoteHead #'font-size = #-6
-    \mark \default b4 e s2
+    \mark \default g4 c s2
     \revert NoteHead #'style
     \revert Stem #'transparent 
     \revert Beam #'transparent
     \revert NoteHead #'font-size
     \bar "||"
 
-    \mark \default c1
+    \mark \default a1
   }
 
   \bar "||"

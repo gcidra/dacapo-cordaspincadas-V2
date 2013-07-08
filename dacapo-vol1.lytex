@@ -1788,65 +1788,6 @@ variação para ela.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_06}
-  \begin{tabular}[t]{|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-08#%}
-    &
-    \quadtitulo{Mínima Pontuada}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-08.ly"
-      }
-    \end{lilypond}
-    &
-    \includegraphics[scale=1]{minima-pontuada}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{C} & \letraquadrada{D}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Andamento}
-    &
-    \quadtitulo{Ligadura de Prolongamento}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \textit{Moderado}
-    &
-    \includegraphics[scale=1]{ligadura-prolongamento}
-
-
-    %%% FINAL DAS LINHAS
-  \\
-  \hline
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \section{Divertindo-se com seis notas}
 \label{sec:divertindo-se-com-seis-notas}
 
@@ -1881,56 +1822,56 @@ variação para ela.
 
 
 
-\section{Variações sobre A Mucama}
-\label{sec:vari-sobre-mucama}
-Harmonize a melodia e as variações.
+% \section{Variações sobre A Mucama}
+% \label{sec:vari-sobre-mucama}
+% Harmonize a melodia e as variações.
 
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018.ly"}
-\end{lilypond}
-
-
-\subsection*{Variação 1}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018a.ly"}
-\end{lilypond}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-018.ly"}
+% \end{lilypond}
 
 
-\subsection*{Variação 2}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018b.ly"}
-\end{lilypond}
+% \subsection*{Variação 1}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-018a.ly"}
+% \end{lilypond}
 
 
-\subsection*{Variação 3}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018c.ly"}
-\end{lilypond}
+% \subsection*{Variação 2}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-018b.ly"}
+% \end{lilypond}
 
 
-\subsection*{Variação 4 - Esta você escreve e harmoniza!}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-018d.ly"}
-\end{lilypond}
+% \subsection*{Variação 3}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-018c.ly"}
+% \end{lilypond}
 
 
-\section{Improvisando em A Mucama}
-\label{sec:impr-em-mucama}
-\begin{lilypond}
-  \transpose c g, {
-    \keepWithTag #'cv
-    \include "cp-029.ly"}
-\end{lilypond}
+% \subsection*{Variação 4 - Esta você escreve e harmoniza!}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-018d.ly"}
+% \end{lilypond}
+
+
+% \section{Improvisando em A Mucama}
+% \label{sec:impr-em-mucama}
+% \begin{lilypond}
+%   \transpose c g, {
+%     \keepWithTag #'cv
+%     \include "cp-029.ly"}
+% \end{lilypond}
 
 
 \section{Escolha um dos três finais}
@@ -2019,98 +1960,6 @@ Harmonize a melodia e as variações.
     \keepWithTag #'cv
     \include "cp-035.ly"}
 \end{lilypond}
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_07}
-  \begin{tabular}[t]{|p{4cm}|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{ \letraquadrada{A} } & \letraquadrada{B}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{1}{|l}{ \quadtitulo{%#nota-09#%} }
-    &
-    \multicolumn{1}{l|}{ \quadtitulo{%#nota-10#%} }
-    &
-    \quadtitulo{Dinâmica}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{1}{|l}{
-      \begin[fragment]{lilypond}
-        \transpose c c {
-          \keepWithTag #'cv
-          \include "nota-09.ly"
-        }
-      \end{lilypond}
-    }
-    &
-    \multicolumn{1}{l|}{
-      \begin[fragment]{lilypond}
-        \transpose c c {
-          \keepWithTag #'cv
-          \include "nota-10.ly"
-        }
-      \end{lilypond}
-    }
-    &
-    \includegraphics[scale=1]{mezzo-forte}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{C} & \letraquadrada{D} & \letraquadrada{E}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Anacruse}
-    &
-    \em
-    &
-    \quadtitulo{Sol Maior}
-  
-    %%% PRÓXIMA LINHA
-    \\
-    \parbox[b][3cm]{4cm}{
-      Note que a lição
-      \textit{``\nameref{sec:variacoes-sobre-de-marre}''} na página
-      \pageref{sec:variacoes-sobre-de-marre} começa com
-      duas colcheias no 2º tempo do compasso.
-    }    
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-D7.ly" 
-      }
-    \end{lilypond}
-    
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-sol.ly"
-      }
-    \end{lilypond}
-
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Escala de sol mixolídio}
@@ -2212,233 +2061,43 @@ Coloque as dinâmicas e andamento.
 \section{Transpondo}
 \label{sec:transpondo}
 
-NESTA LIÇÃO AS MELODIAS JÁ ESTÃO EM SOL MAIOR.
-
-Transponha para sol maior as melodias ``\ref{sec:impr-em-margarida} -
-\textit{\nameref{sec:impr-em-margarida}}'', ``\ref{sec:impr-em-mucama} - \textit{\nameref{sec:impr-em-mucama}}'' e
-``\ref{sec:maos-e-pes-balao-joao} - \textit{\nameref{sec:maos-e-pes-balao-joao}}'',
- começando com a nota sol.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 08 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_08}
-  \begin{tabular}[t]{|l|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-11#%}
-    &
-    \quadtitulo{Seminima Pontuada}
-    &
-    \quadtitulo{Andamento}
-
-    %%% PRÓXIMA LINHA
-    \\
-    &
-    &
-    \textit{Adagio}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \parbox[b][0cm]{3cm}{
-      \begin[fragment]{lilypond}
-        \transpose c c {
-          \keepWithTag #'cv
-          \include "nota-11.ly"
-        }
-      \end{lilypond}
-    }
-    &
-    \parbox[b][2.2cm]{3cm}{
-      \includegraphics[scale=1]{seminima-pontuada}
-    }
-    &
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{D} & \letraquadrada{E} & \letraquadrada{F} 
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Anacruse}
-    &
-    \quadtitulo{Pausa de Colcheia}
-    &
-    \quadtitulo{Fermata}
-  
-    %%% PRÓXIMA LINHA
-    \\
-    \parbox[b][3.5cm]{4cm}{
-      Note que a lição \textit{``\nameref{sec:complete-melodia}''} na
-      página \pageref{sec:complete-melodia} começa com
-      três colcheias no 3º tempo do compasso.
-    }
-    &
-    \includegraphics[scale=1]{colcheia-pausa}
-    &
-    \parbox[b][0cm]{3cm}{
-      \includegraphics[scale=1]{fermata}
-    }
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{G} & \multicolumn{2}{l|}{ \letraquadrada{H} }
-
-    %%% PRÓXIMA LINHA
-    \\
-    \em & \multicolumn{2}{l|}{ \quadtitulo{Dinâmica} }
-  
-    %%% PRÓXIMA LINHA
-    \\
-    &
-    \multicolumn{2}{l|}{ \textit{cresc.} = crescendo }
-    \\
-    &
-    \multicolumn{2}{l|}{ \textit{decresc.} = decrescendo }
-
-    %%% PRÓXIMA LINHA
-    \\
-    \parbox[b][1.5cm]{4cm}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-D.ly" 
-        }
-      \end{lilypond}
-    }
-    &
-    \multicolumn{2}{l|}{}
-
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 08 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\section{Improvisando em O Balão de João}
-\label{sec:improvisando-em-o-balao-de-joao}
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-033.ly"}
-\end{lilypond}
-
-Repita a \textbf{Parte 2} diversas vezes, até que todos improvisem e
-depois \textit{D.C. al fine}.
-
-
-\section{Improvisando em Três Galinhas}
-\label{sec:improvisando-em-tres}
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-037.ly"}
-\end{lilypond}
-
-
-\section{A Viuvinha}
-\label{sec:viuvinha}
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-038.ly"}
-\end{lilypond}
+Transponha para dó maior a melodia ``\ref{sec:impr-em-margarida} -
+\textit{\nameref{sec:impr-em-margarida}}''
+ começando com a nota mi.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_09}
-  \begin{tabular}[t]{|l|l|l|}
-    \hline
+% \section{Improvisando em O Balão de João}
+% \label{sec:improvisando-em-o-balao-de-joao}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-033.ly"}
+% \end{lilypond}
 
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-12#%}
-    &
-    \quadtitulo{Síncopa}
-    &
-    \quadtitulo{Bequadro}
+% Repita a \textbf{Parte 2} diversas vezes, até que todos improvisem e
+% depois \textit{D.C. al fine}.
 
 
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-12.ly"
-      }
-    \end{lilypond}
-    &
-    \includegraphics[scale=1]{ritmo-848}
-    &
-    \includegraphics[scale=1]{bequadro-pre}
+% \section{Improvisando em Três Galinhas}
+% \label{sec:improvisando-em-tres}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-037.ly"}
+% \end{lilypond}
 
 
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{D} & \letraquadrada{E} & \letraquadrada{F}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Anacruse}
-    &
-    \quadtitulo{Cânone}
-    &
-    \quadtitulo{Primeira e Segunda Vez}
+% \section{A Viuvinha}
+% \label{sec:viuvinha}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-038.ly"}
+% \end{lilypond}
 
 
-    %%% PRÓXIMA LINHA
-    \\
-    \parbox[b][1cm]{3cm}{
-      Note que a lição
-      \textit{``\nameref{sec:areia}''} na página \pageref{sec:areia}
-      começa com uma colcheia no 2º tempo do compasso.
-    }
-    &
-    \parbox[b][3.5cm]{5cm}{
-      Gênero musical a duas ou mais vozes. A segunda voz
-      deve começar a tocar quando a primeira estiver no 2. 
-      Ver lição \textit{``\nameref{sec:vari-sobre-zabelinha}''}
-      na página \pageref{sec:vari-sobre-zabelinha}.
-    }
-    &
-    \includegraphics[scale=1]{%#casa1e2#%}
 
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Escala de sol maior}
 \label{sec:escala-sol-maior}
@@ -2541,15 +2200,15 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-\section{Sapatinho branco em trio}
-\label{sec:sapatinho-branco-trio}
-Harmonize a melodia.
+% \section{Sapatinho branco em trio}
+% \label{sec:sapatinho-branco-trio}
+% Harmonize a melodia.
 
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-050.ly"}
-\end{lilypond}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-050.ly"}
+% \end{lilypond}
 
 
 \section{Lê-lê-lê, Juazeiro}
@@ -2599,104 +2258,6 @@ Harmonize a melodia e as variações.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_10}
-  \begin{tabular}[t]{|lll|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \multicolumn{2}{|l|}{\letraquadrada{B}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-13#%}
-    &
-    \multicolumn{1}{|l}{\em}
-    &
-    \em
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-13.ly"
-      }
-    \end{lilypond}
-    &
-    \multicolumn{1}{|l}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-A.ly" 
-        }
-      \end{lilypond}
-    }
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-E7.ly" 
-      }
-    \end{lilypond}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \multicolumn{3}{|l|}{\letraquadrada{C}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtexto{Lá maior}
-    &
-    \quadtexto{Sol lídio}
-    &
-    \quadtexto{Sol lídio-mixolídio}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-la.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-sol-lidio.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-sol-lm.ly"
-      }
-    \end{lilypond}
-
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \section{Escala de sol nos modos lídio e lídio-mixolídio}
 \label{sec:escala-do-modo-lidio-sol}
 
@@ -2741,16 +2302,16 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-\section{Vamos escrever uma segunda voz para Ró-ró-ró}
-\label{sec:vamos-escrever-segunda-voz-ro-ro-ro}
-Harmonize a melodia.
+% \section{Vamos escrever uma segunda voz para Ró-ró-ró}
+% \label{sec:vamos-escrever-segunda-voz-ro-ro-ro}
+% Harmonize a melodia.
 
-\subsection*{Cânone}
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-054.ly"}
-\end{lilypond}
+% \subsection*{Cânone}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-054.ly"}
+% \end{lilypond}
 
 \section{Vamos escrever uma segunda voz para Coelhinho}
 \label{sec:vamos-escrever-segunda-voz-coelhinho}

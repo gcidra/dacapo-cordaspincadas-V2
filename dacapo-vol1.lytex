@@ -1788,6 +1788,90 @@ variação para ela.
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_06}
+  \begin{tabular}{|ll|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{2}{|l|}{\letraquadrada{A}}   &  \letraquadrada{B}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-10#%}
+    &
+    \quadtitulo{%#nota-11#%}
+    &
+    \quadtitulo{Andamento}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-10.ly"
+      }
+    \end{lilypond}
+    &
+    \begin{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-11.ly"
+      }
+    \end{lilypond}
+    &
+    \textit{Moderato}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{C}}   &  \letraquadrada{D}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\quadtitulo{Acordes}}
+    &
+    \quadtitulo{Dinâmica}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-C.ly" 
+      }
+    \end{lilypond}
+
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-G7.ly" 
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{mezzo-forte}
+
+
+
+    %%% FINAL DAS LINHAS
+  \\
+  \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \section{Divertindo-se com seis notas}
 \label{sec:divertindo-se-com-seis-notas}
 

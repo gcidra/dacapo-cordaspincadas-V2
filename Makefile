@@ -213,6 +213,8 @@ cavaquinho.lytex: $(file) Makefile
 	-e 's/%%braco-instrumento/cavaquinho/g' \
 	-e 's/%%braco-nome/do Cavaquinho/g' \
 	-e 's/%%break-cv/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#nota-03#%/Sol/g' \
@@ -222,10 +224,10 @@ cavaquinho.lytex: $(file) Makefile
 	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Ré/g' \
-	-e 's/%#nota-10#%/Sol/g' \
-	-e 's/%#nota-11#%/Fá Sustenido/g' \
-	-e 's/%#nota-12#%/Fá Sustenido/g' \
-	-e 's/%#nota-13#%/Dó Sustenido/g' \
+	-e 's/%#nota-10#%/Mi/g' \
+	-e 's/%#nota-11#%//g' \
+	-e 's/%#nota-12#%/Fá/g' \
+	-e 's/%#nota-13#%/Sol/g' \
 	-e 's/%#nota-14#%/Fá/g' \
 	-e 's/%#nota-15#%/Mi/g' \
 	-e 's/%#nota-16#%/Ré/g' \
@@ -252,6 +254,8 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%%braco-instrumento/bandolim/g' \
 	-e 's/%%braco-nome/do Bandolim/g' \
 	-e 's/%%break-bd/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Lá/g' \
 	-e 's/%#nota-03#%/Ré/g' \
@@ -261,10 +265,10 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%#nota-07#%/Ré/g' \
 	-e 's/%#nota-08#%/Sol/g' \
 	-e 's/%#nota-09#%//g' \
-	-e 's/%#nota-10#%/Sol/g' \
-	-e 's/%#nota-11#%/Fá Sustenido/g' \
-	-e 's/%#nota-12#%/Fá Sustenido/g' \
-	-e 's/%#nota-13#%/Dó Sustenido/g' \
+	-e 's/%#nota-10#%/Dó/g' \
+	-e 's/%#nota-11#%//g' \
+	-e 's/%#nota-12#%/Fá/g' \
+	-e 's/%#nota-13#%/Sol/g' \
 	-e 's/%#nota-14#%/Fá/g' \
 	-e 's/%#nota-15#%/Mi/g' \
 	-e 's/%#nota-16#%/Ré/g' \
@@ -291,6 +295,8 @@ viola.lytex: $(file) Makefile
 	-e 's/%%braco-instrumento/viola/g' \
 	-e 's/%%braco-nome/da Viola/g' \
 	-e 's/%%break-va/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#nota-03#%/Sol Sustenido/g' \
@@ -300,10 +306,10 @@ viola.lytex: $(file) Makefile
 	-e 's/%#nota-07#%/Ré/g' \
 	-e 's/%#nota-08#%/Sol/g' \
 	-e 's/%#nota-09#%/Ré/g' \
-	-e 's/%#nota-10#%/Sol/g' \
-	-e 's/%#nota-11#%/Fá Sustenido/g' \
-	-e 's/%#nota-12#%/Fá Sustenido/g' \
-	-e 's/%#nota-13#%/Dó Sustenido/g' \
+	-e 's/%#nota-10#%/Dó/g' \
+	-e 's/%#nota-11#%//g' \
+	-e 's/%#nota-12#%/Fá/g' \
+	-e 's/%#nota-13#%/Sol/g' \
 	-e 's/%#nota-14#%/Fá/g' \
 	-e 's/%#nota-15#%/Mi/g' \
 	-e 's/%#nota-16#%/Ré/g' \
@@ -330,6 +336,8 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%%braco-instrumento/violaotenor/g' \
 	-e 's/%%braco-nome/do Violão Tenor/g' \
 	-e 's/%%break-vt/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol8}/g' \
 	-e 's/%#nota-01#%/Lá/g' \
 	-e 's/%#nota-02#%/Ré/g' \
 	-e 's/%#nota-03#%/Sol/g' \
@@ -339,10 +347,10 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Ré/g' \
-	-e 's/%#nota-10#%/Sol/g' \
-	-e 's/%#nota-11#%/Fá Sustenido/g' \
-	-e 's/%#nota-12#%/Fá Sustenido/g' \
-	-e 's/%#nota-13#%/Dó Sustenido/g' \
+	-e 's/%#nota-10#%/Mi/g' \
+	-e 's/%#nota-11#%/Dó/g' \
+	-e 's/%#nota-12#%/Fá/g' \
+	-e 's/%#nota-13#%/Sol/g' \
 	-e 's/%#nota-14#%/Fá/g' \
 	-e 's/%#nota-15#%/Mi/g' \
 	-e 's/%#nota-16#%/Ré/g' \
@@ -369,6 +377,8 @@ violao.lytex: $(file) Makefile
 	-e 's/%%braco-instrumento/violao/g' \
 	-e 's/%%braco-nome/do Violão/g' \
 	-e 's/%%break-vi/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol8}/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#nota-03#%/Sol/g' \
@@ -378,10 +388,10 @@ violao.lytex: $(file) Makefile
 	-e 's/%#nota-07#%/Ré/g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Ré/g' \
-	-e 's/%#nota-10#%/Sol/g' \
-	-e 's/%#nota-11#%/Fá Sustenido/g' \
-	-e 's/%#nota-12#%/Fá Sustenido/g' \
-	-e 's/%#nota-13#%/Dó Sustenido/g' \
+	-e 's/%#nota-10#%/Dó/g' \
+	-e 's/%#nota-11#%//g' \
+	-e 's/%#nota-12#%/Fá/g' \
+	-e 's/%#nota-13#%/Sol/g' \
 	-e 's/%#nota-14#%/Fá/g' \
 	-e 's/%#nota-15#%/Mi/g' \
 	-e 's/%#nota-16#%/Ré/g' \
@@ -408,6 +418,8 @@ baixo.lytex: $(file) Makefile
 	-e 's/%%braco-instrumento/baixo/g' \
 	-e 's/%%braco-nome/do Baixo/g' \
 	-e 's/%%break-bx/\\break/g' \
+	-e 's/%#claves#%/Clave de Fá/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-fa}/g' \
 	-e 's/%#nota-01#%/Sol/g' \
 	-e 's/%#nota-02#%/Ré/g' \
 	-e 's/%#nota-03#%/Lá/g' \
@@ -417,10 +429,10 @@ baixo.lytex: $(file) Makefile
 	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%/Sol/g' \
 	-e 's/%#nota-09#%//g' \
-	-e 's/%#nota-10#%/Sol/g' \
-	-e 's/%#nota-11#%/Fá Sustenido/g' \
-	-e 's/%#nota-12#%/Fá Sustenido/g' \
-	-e 's/%#nota-13#%/Dó Sustenido/g' \
+	-e 's/%#nota-10#%/Mi/g' \
+	-e 's/%#nota-11#%//g' \
+	-e 's/%#nota-12#%/Fá/g' \
+	-e 's/%#nota-13#%//g' \
 	-e 's/%#nota-14#%/Fá/g' \
 	-e 's/%#nota-15#%/Mi/g' \
 	-e 's/%#nota-16#%//g' \

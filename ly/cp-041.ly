@@ -19,7 +19,7 @@
             \key f \major
 
             c2\p^\markup {\column {\line {\bold {\italic "Andante"} } \line {\bold {1 \tiny \raise #0.5 "a" voz}}}}
-            d e f g a bes r
+            d e f g a bes c
 
             bes a g f e d c r 
             g'1 c,1
@@ -40,7 +40,7 @@
             \time 4/4 
             \key f \major
             r1^\markup {\bold {2 \tiny \raise #0.5 "a" voz}} 
-            c2\p d e f g a bes r 
+            c2\p d e f g a bes c
             bes a g f e d c r
             c1
             
@@ -56,7 +56,7 @@
             \key f \major
             r1^\markup {\bold {3 \tiny \raise #0.5 "a" voz}} 
             r
-            c2\p d e f g a bes r
+            c2\p d e f g a bes c
             bes a g f e d 
             c1
             
@@ -81,7 +81,7 @@
             \key f \major
 
             c2\p^\markup {\column {\line {\bold {\italic "Andante"} } \line {\bold {1 \tiny \raise #0.5 "a" voz}}}}
-            d e f g a bes r
+            d e f g a bes c
 
             bes a g f e d c r 
             g'1 c,1
@@ -102,7 +102,7 @@
             \time 4/4 
             \key f \major
             r1^\markup {\bold {2 \tiny \raise #0.5 "a" voz}} 
-            c2\p d e f g a bes r 
+            c2\p d e f g a bes c
             bes a g f e d c r
             c1
             
@@ -118,7 +118,7 @@
             \key f \major
             r1^\markup {\bold {3 \tiny \raise #0.5 "a" voz}} 
             r
-            c2\p d e f g a bes r
+            c2\p d e f g a bes c
             bes a g f e d 
             c1
             
@@ -143,7 +143,7 @@
             \key f \major
 
             c2\p^\markup {\column {\line {\bold {\italic "Andante"} } \line {\bold {1 \tiny \raise #0.5 "a" voz}}}}
-            d e f g a bes r
+            d e f g a bes c
 
             bes a g f e d c r 
             g'1 c,1
@@ -164,7 +164,7 @@
             \time 4/4 
             \key f \major
             r1^\markup {\bold {2 \tiny \raise #0.5 "a" voz}} 
-            c2\p d e f g a bes r 
+            c2\p d e f g a bes c
             bes a g f e d c r
             c1
             
@@ -180,7 +180,7 @@
             \key f \major
             r1^\markup {\bold {3 \tiny \raise #0.5 "a" voz}} 
             r
-            c2\p d e f g a bes r
+            c2\p d e f g a bes c
             bes a g f e d 
             c1
             
@@ -206,7 +206,7 @@
             \key f \major
 
             c,2\p^\markup {\column {\line {\bold {\italic "Andante"} } \line {\bold {1 \tiny \raise #0.5 "a" voz}}}}
-            d e f g a bes r
+            d e f g a bes c
 
             bes a g f e d c r 
             g'1 c,1
@@ -228,7 +228,7 @@
             \time 4/4 
             \key f \major
             r1^\markup {\bold {2 \tiny \raise #0.5 "a" voz}} 
-            c2\p d e f g a bes r 
+            c2\p d e f g a bes c
             bes a g f e d c r
             c1
             
@@ -245,7 +245,7 @@
             \key f \major
             r1^\markup {\bold {3 \tiny \raise #0.5 "a" voz}} 
             r
-            c2\p d e f g a bes r
+            c2\p d e f g a bes c
             bes a g f e d 
             c1
             
@@ -271,7 +271,7 @@
             \key f \major
 
             c2\p^\markup {\column {\line {\bold {\italic "Andante"} } \line {\bold {1 \tiny \raise #0.5 "a" voz}}}}
-            d e f g a bes r
+            d e f g a bes c
 
             bes a g f e d c r 
             g'1 c,1
@@ -293,7 +293,7 @@
             \time 4/4 
             \key f \major
             r1^\markup {\bold {2 \tiny \raise #0.5 "a" voz}} 
-            c2\p d e f g a bes r 
+            c2\p d e f g a bes c
             bes a g f e d c r
             c1
             
@@ -310,7 +310,7 @@
             \key f \major
             r1^\markup {\bold {3 \tiny \raise #0.5 "a" voz}} 
             r
-            c2\p d e f g a bes r
+            c2\p d e f g a bes c
             bes a g f e d 
             c1
             
@@ -336,7 +336,7 @@
             \key f \major
 
             c,2\p^\markup {\column {\line {\bold {\italic "Andante"} } \line {\bold {1 \tiny \raise #0.5 "a" voz}}}}
-            d e f g a bes r
+            d e f g a bes c
 
             bes a g f e d c r 
             g'1 c,1
@@ -358,7 +358,7 @@
             \time 4/4 
             \key f \major
             r1^\markup {\bold {2 \tiny \raise #0.5 "a" voz}} 
-            c2\p d e f g a bes r 
+            c2\p d e f g a bes c
             bes a g f e d c r
             c1
             
@@ -375,7 +375,7 @@
             \key f \major
             r1^\markup {\bold {3 \tiny \raise #0.5 "a" voz}} 
             r
-            c2\p d e f g a bes r
+            c2\p d e f g a bes c
             bes a g f e d 
             c1
             

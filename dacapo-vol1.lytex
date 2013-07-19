@@ -627,6 +627,67 @@ o site:
 \newpage
 
 
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Rudimentos de Teoria}
+  \label{Quadro_01}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} \quadtitulo{%#claves#%}
+    &
+    \letraquadrada{B} \quadtitulo{Compasso}
+    & 
+    \letraquadrada{C} \quadtitulo{Barra de Compasso}
+
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "claves.ly" 
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{compasso-vazio}
+    &
+    \includegraphics[scale=1]{barra-compasso}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{D} \quadtitulo{Compasso Quaternário}}
+    &    
+    \letraquadrada{E} \quadtitulo{Barra Final}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\includegraphics[scale=1]{formula-4tempos-por-compasso}}
+    &
+    \includegraphics[scale=1]{barra-final}
+
+
+    %%% FINAL DAS LINHAS
+  \\
+  \hline
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% complemento do QUADRO 01
+\begin{center}
+%#exemplo-01#%
+\end{center}
+
 
 \section{Cordas Primas}
 \label{sec:cordas-primas}

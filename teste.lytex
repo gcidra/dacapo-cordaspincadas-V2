@@ -98,73 +98,30 @@
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
-  \caption{}
+  \caption{Rudimentos de Teoria}
   \label{Quadro_01}
-  \begin{tabular}[t]{|lll|}
-    \hline
-
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \em & \em
-   
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-01#%}
-    &
-    \quadtitulo{%#nota-02#%}
-    &
-    \quadtitulo{%#nota-03#%}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-01.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "nota-03.ly" 
-      }
-    \end{lilypond}
-
-    \\
-  \end{tabular}
-
-  %%% PRÓXIMA TABELA
-
   \begin{tabular}[t]{|l|l|l|}
-
     \hline
-    \letraquadrada{B}  & \letraquadrada{C}   &   \letraquadrada{D}
 
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} \quadtitulo{%#claves#%}
+    &
+    \letraquadrada{B} \quadtitulo{Compasso}
+    & 
+    \letraquadrada{C} \quadtitulo{Barra de Compasso}
+
+    
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{Compasso}
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "claves.ly" 
+      }
+    \end{lilypond}
     &
-    \quadtitulo{Fórmula de Compasso}
-    &
-    \quadtitulo{Barra de Compasso}
-
-
-    %%% PRÓXIMA LINHA
-    \\
     \includegraphics[scale=1]{compasso-vazio}
-    &
-    \includegraphics[scale=1]{formula-4tempos-por-compasso}
     &
     \includegraphics[scale=1]{barra-compasso}
 
@@ -172,227 +129,16 @@
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \letraquadrada{D}  & \em & \em
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Barra Final}
-    &
-    \quadtitulo{Sinal de Repetição}
-    &
-    \quadtitulo{??}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \includegraphics[scale=1]{barra-final}
-    &
-    \includegraphics[scale=1]{sinal-repeticao}
-    &
-    \em
-
+    \multicolumn{2}{|l|}{\letraquadrada{D} \quadtitulo{Compasso Quaternário}}
+    &    
+    \letraquadrada{E} \quadtitulo{Barra Final}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \hline
-    \multicolumn{2}{|l|}{ \letraquadrada{E} }  & \letraquadrada{G}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{2}{|l|}{ \em }
-    &
-    \quadtitulo{Técnica}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{1}{|l}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-Em.ly" 
-        }
-      \end{lilypond}
-    }
-    &
-    \multicolumn{1}{l|}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-Am.ly" 
-        }
-      \end{lilypond}
-    }
-    &
-    \includegraphics[scale=0.7]{mao-i-m}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{G}  & \letraquadrada{H} & \letraquadrada{I}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Mínima}
-    &
-    \quadtitulo{Semínima}
-    &
-    \quadtitulo{Pausa de semibreve}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \includegraphics[scale=1]{minima}
-    &
-    \includegraphics[scale=1]{seminima}
-    &
-    \includegraphics[scale=1]{semibreve-pausa}
-
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_01}
-  \begin{tabular}[t]{|ll|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{ \letraquadrada{A} }    &    \letraquadrada{B}    &    \letraquadrada{C}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-01#%}
-    &
-    \quadtitulo{%#nota-02#%}
-    &
-    \quadtitulo{Compasso}
-    &
-    \quadtitulo{Fórmula de compasso}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-01.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \includegraphics[scale=1]{compasso-vazio}
-    &
-    \includegraphics[scale=1]{formula-4tempos-por-compasso}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{D}  & \em  & \letraquadrada{E} & \letraquadrada{F}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Barra de Compasso}
-    &
-    \em
-    &
-    \quadtitulo{Barra Final}
-    &
-    \quadtitulo{Sinal de Repetição}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \includegraphics[scale=1]{barra-compasso}
-    &
-    \em
+    \multicolumn{2}{|l|}{\includegraphics[scale=1]{formula-4tempos-por-compasso}}
     &
     \includegraphics[scale=1]{barra-final}
-    &
-    \includegraphics[scale=1]{sinal-repeticao}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{G}  & \em  & \letraquadrada{H} & \letraquadrada{I}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Mínima}
-    &
-    \em
-    &
-    \quadtitulo{Semínima}
-    &
-    \quadtitulo{Pausa de semibreve}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \includegraphics[scale=1]{minima}
-    &
-    \em
-    &
-    \includegraphics[scale=1]{seminima}
-    &
-    \includegraphics[scale=1]{semibreve-pausa}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{J}  & \em  & \letraquadrada{L} & \letraquadrada{M}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \em
-    &
-    \em
-    &
-    \quadtitulo{Técnica}
-    &
-    \quadtitulo{Da Capo al Fine}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-Em.ly" 
-      }
-    \end{lilypond}
-
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-Am.ly" 
-      }
-    \end{lilypond}
-
-    &
-    \includegraphics[scale=0.7]{mao-i-m}
-    &
-    \textit{D.C. al Fine}
 
 
     %%% FINAL DAS LINHAS
@@ -402,7 +148,251 @@
 \end{table}    
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% complemento do QUADRO 01
+\begin{center}
+%#exemplo-01#%
+\end{center}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{table}[!ht]
+%   \centering
+%   \renewcommand{\tablename}{Quadro}
+%   \caption{Cordas Soltas}
+%   \label{Quadro_02}
+%   \begin{tabular}[t]{|lll|}
+%     \hline
+
+
+%     %%% PRÓXIMA LINHA
+%     \letraquadrada{A} & \em & \em
+   
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \quadtitulo{%#nota-01#%}
+%     &
+%     \quadtitulo{%#nota-02#%}
+%     &
+%     \quadtitulo{%#nota-03#%}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \begin[fragment]{lilypond}
+%       \transpose c c {
+%         \keepWithTag #'cv
+%         \include "nota-01.ly"
+%       }
+%     \end{lilypond}
+%     &
+%     \begin[fragment]{lilypond}
+%       \transpose c c { 
+%         \keepWithTag #'cv
+%         \include "nota-02.ly" 
+%       }
+%     \end{lilypond}
+%     &
+%     \begin[fragment]{lilypond}
+%       \transpose c c { 
+%         \keepWithTag #'cv
+%         \include "nota-03.ly" 
+%       }
+%     \end{lilypond}
+
+%     \\
+%   \end{tabular}
+
+%   %%% PRÓXIMA TABELA
+
+%   \begin{tabular}[t]{|l|l|l|}
+
+%     \hline
+%     \letraquadrada{B}  & \letraquadrada{C}   &   \letraquadrada{D}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \hline
+%     \letraquadrada{E}  & \letraquadrada{F} &   \letraquadrada{G}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \quadtitulo{}
+%     &
+%     \quadtitulo{Sinal de Repetição}
+%     &
+%     \quadtitulo{Pausa de semibreve}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+
+%     &
+%     \includegraphics[scale=1]{sinal-repeticao}
+%     &
+%     \includegraphics[scale=1]{semibreve-pausa}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \hline
+%     \letraquadrada{H}  & \letraquadrada{I} & \letraquadrada{J}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \quadtitulo{Mínima}
+%     &
+%     \quadtitulo{Semínima}
+%     &
+%     \quadtitulo{Técnica}
+
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \includegraphics[scale=1]{minima}
+%     &
+%     \includegraphics[scale=1]{seminima}
+%     &
+%     \includegraphics[scale=0.7]{mao-i-m}
+
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \hline
+%     \multicolumn{2}{|l|}{ \letraquadrada{L} }  & \letraquadrada{M}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \multicolumn{2}{|l|}{ \em }
+%     &
+%     \quadtitulo{Da Capo al Fine}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \multicolumn{1}{|l}{
+%       \begin[fragment]{lilypond}
+%         \transpose c c { 
+%           \keepWithTag #'cv
+%           \include "acorde-Em.ly" 
+%         }
+%       \end{lilypond}
+%     }
+%     &
+%     \multicolumn{1}{l|}{
+%       \begin[fragment]{lilypond}
+%         \transpose c c { 
+%           \keepWithTag #'cv
+%           \include "acorde-Am.ly" 
+%         }
+%       \end{lilypond}
+%     }
+%     &
+%     \textit{D.C. al Fine}
+
+
+%     %%% FINAL DAS LINHAS
+%     \\
+%     \hline
+%   \end{tabular}
+% \end{table}    
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{table}[!ht]
+%   \centering
+%   \renewcommand{\tablename}{Quadro}
+%   \caption{}
+%   \label{Quadro_07}
+%   \begin{tabular}{|ll|l|}
+%     \hline
+
+%     %%% PRÓXIMA LINHA
+%     \multicolumn{2}{|l|}{\letraquadrada{A}}   &  \letraquadrada{B}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \quadtitulo{%#nota-12#%}
+%     &
+%     \quadtitulo{%#nota-13#%}
+%     &
+%     \quadtitulo{Andamento}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \begin{lilypond}
+%       \transpose c c {
+%         \keepWithTag #'cv
+%         \include "nota-12.ly"
+%       }
+%     \end{lilypond}
+%     &
+%     \begin{lilypond}
+%       \transpose c c {
+%         \keepWithTag #'cv
+%         \include "nota-13.ly"
+%       }
+%     \end{lilypond}
+%     &
+%     \textit{Adagio}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \hline
+%     \multicolumn{2}{|l|}{\letraquadrada{C}}   &  \letraquadrada{D}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \multicolumn{2}{|l|}{\quadtitulo{Acordes}}
+%     &
+%     \quadtitulo{Dinâmica}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \begin[fragment]{lilypond}
+%       \transpose c c { 
+%         \keepWithTag #'cv
+%         \include "acorde-C.ly" 
+%       }
+%     \end{lilypond}
+
+%     &
+%     \begin[fragment]{lilypond}
+%       \transpose c c { 
+%         \keepWithTag #'cv
+%         \include "acorde-G7.ly" 
+%       }
+%     \end{lilypond}
+%     &
+%     \includegraphics[scale=1]{mezzo-forte}
+
+
+
+%     %%% FINAL DAS LINHAS
+%   \\
+%   \hline
+%   \end{tabular}
+% \end{table}    
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 

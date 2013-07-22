@@ -1,7 +1,7 @@
-file = dacapo-vol1.lytex
+# file = dacapo-vol1.lytex
 # file = dacapo-vol2.lytex
 # file = exemplo-dacapo.lytex
-# file = teste.lytex
+file = teste.lytex
 # file-regencia = regencia-dacapo.lytex
 # file-regencia = exemplo-regencia.lytex
 file-regencia = teste.lytex
@@ -347,8 +347,8 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%#nota-07#%//g' \
 	-e 's/%#nota-08#%//g' \
 	-e 's/%#nota-09#%/Ré/g' \
-	-e 's/%#nota-10#%/Mi/g' \
-	-e 's/%#nota-11#%/Dó/g' \
+	-e 's/%#nota-10#%/Dó/g' \
+	-e 's/%#nota-11#%/Mi/g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%/Sol/g' \
 	-e 's/%#nota-14#%/Fá/g' \

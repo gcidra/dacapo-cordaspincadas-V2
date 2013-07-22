@@ -11,7 +11,7 @@
     \tag #'cv {
       \override Staff.Clef #'transparent = ##t
       \stopStaff
-      s1^\markup {\hspace #-7 "Descanso"}
+      s1^\markup {\hspace #-5 "Descanso"}
     }
 
     %% BANDOLIM

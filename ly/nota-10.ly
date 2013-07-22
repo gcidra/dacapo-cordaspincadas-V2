@@ -25,19 +25,19 @@
     %% VIOLÃO TENOR
     \tag #'vt {
       \clef "G_8"
-      c,^\markup \fret-diagram #"f:2;w:4;3-o;"
+      c,^\markup \fret-diagram #"f:2;w:4;4-o;"
     }
 
     %% VIOLÃO
     \tag #'vi {
       \clef "G_8"
-      c^\markup \fret-diagram #"f:2;w:6;4-4;"
+      c^\markup \fret-diagram #"f:2;w:6;5-3;"
     }
 
     %% BAIXO - BAIXOLÃO
     \tag #'bx {
       \clef bass
-      e,^\markup \fret-diagram #"f:2;w:4;4-3;"
+      e,^\markup \fret-diagram #"f:2;w:4;4-o;"
     }
   >>
 }

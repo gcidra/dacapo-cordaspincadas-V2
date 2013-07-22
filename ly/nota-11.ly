@@ -31,7 +31,7 @@
     %% VIOLÃO TENOR
     \tag #'vt {
       \clef "G_8"
-      e^\markup \fret-diagram #"f:2;w:4;4-6;"
+      e^\markup \fret-diagram #"f:2;w:4;2-2;"
     }
 
     %% VIOLÃO

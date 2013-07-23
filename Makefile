@@ -228,8 +228,8 @@ cavaquinho.lytex: $(file) Makefile
 	-e 's/%#nota-11#%//g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%/Sol/g' \
-	-e 's/%#nota-14#%/Fá/g' \
-	-e 's/%#nota-15#%/Mi/g' \
+	-e 's/%#nota-14#%/Fá Sustenido/g' \
+	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Ré/g' \
 	-e 's/%#nota-17#%/Si Bemol/g' \
 	-e 's/%#nota-18#%//g' \
@@ -269,8 +269,8 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%#nota-11#%//g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%/Sol/g' \
-	-e 's/%#nota-14#%/Fá/g' \
-	-e 's/%#nota-15#%/Mi/g' \
+	-e 's/%#nota-14#%/Fá Sustenido/g' \
+	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Ré/g' \
 	-e 's/%#nota-17#%/Si Bemol/g' \
 	-e 's/%#nota-18#%//g' \
@@ -310,8 +310,8 @@ viola.lytex: $(file) Makefile
 	-e 's/%#nota-11#%//g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%/Sol/g' \
-	-e 's/%#nota-14#%/Fá/g' \
-	-e 's/%#nota-15#%/Mi/g' \
+	-e 's/%#nota-14#%/Fá Sustenido/g' \
+	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Ré/g' \
 	-e 's/%#nota-17#%/Si Bemol/g' \
 	-e 's/%#nota-18#%//g' \
@@ -351,8 +351,8 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%#nota-11#%/Mi/g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%/Sol/g' \
-	-e 's/%#nota-14#%/Fá/g' \
-	-e 's/%#nota-15#%/Mi/g' \
+	-e 's/%#nota-14#%/Fá Sustenido/g' \
+	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Ré/g' \
 	-e 's/%#nota-17#%/Si Bemol/g' \
 	-e 's/%#nota-18#%//g' \
@@ -392,8 +392,8 @@ violao.lytex: $(file) Makefile
 	-e 's/%#nota-11#%//g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%/Sol/g' \
-	-e 's/%#nota-14#%/Fá/g' \
-	-e 's/%#nota-15#%/Mi/g' \
+	-e 's/%#nota-14#%/Fá Sustenido/g' \
+	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Ré/g' \
 	-e 's/%#nota-17#%/Si Bemol/g' \
 	-e 's/%#nota-18#%//g' \
@@ -433,8 +433,8 @@ baixo.lytex: $(file) Makefile
 	-e 's/%#nota-11#%//g' \
 	-e 's/%#nota-12#%/Fá/g' \
 	-e 's/%#nota-13#%//g' \
-	-e 's/%#nota-14#%/Fá/g' \
-	-e 's/%#nota-15#%/Mi/g' \
+	-e 's/%#nota-14#%/Fá Sustenido/g' \
+	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%//g' \
 	-e 's/%#nota-17#%/Si Bemol/g' \
 	-e 's/%#nota-18#%/Si/g' \

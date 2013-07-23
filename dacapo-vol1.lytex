@@ -102,7 +102,7 @@
 % \includegraphics[scale=0.5]{logo-keyboard}
 % \vspace*{2ex}
 
-\textbf{\Large{ANO 2012}}
+\textbf{\Large{ANO 2013}}
 \vspace*{4ex}
 
 \textbf{Copyright by Joel L. da Silva Barbosa \\
@@ -140,7 +140,7 @@ BARBOSA, J. L. da Silva \\
 \\
 DA CAPO CORDAS DEDILHADAS \instrumento{Original} Vol. 1. % Jundiaí, São Paulo: \\
 % Keyboard Editora Musical Ltda. 
-2012, p. \pageref{LastPage} \\
+2013, p. \pageref{LastPage} \\
 \\
 Didático/Pedagógico \\
 % ISBN nº %#ISBN-V1#% \\
@@ -960,7 +960,7 @@ o site:
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+%%break-bx
 \section{Bambaleando}
 \label{sec:bambaleando}
 \begin{lilypond}
@@ -1111,7 +1111,7 @@ variação para ela.
 
 
 
-
+%%break-vi
 \section{Variações sobre Dlim-dlim-dlão}
 \label{sec:variacoes-sobre-dlim}
 
@@ -1670,6 +1670,9 @@ Harmonize as outras sequências e escolha suas dinâmincas.
   }
 \end{lilypond}
 
+%%break-cv
+%%break-bd
+%%break-va
 \section{Encontrando as notas erradas e harmonizando}
 \label{sec:encontrando-notas-erradas}
 Harmonize a melodia.
@@ -1696,6 +1699,8 @@ Harmonize a melodia.
 
 \end{enumerate}
 
+
+%%break-bx
 \section{Vamos completar a melodia e harmonizá-la?}
 \label{sec:vamos-completar-a-melodia}
 Coloque as dinâmicas, \textit{\textbf{f}} e \textbf{\textit{p}}, e o
@@ -1718,6 +1723,9 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
     \include "cp-022.ly"}
 \end{lilypond}
 
+%%break-cv
+%%break-bd
+%%break-va
 \section{Divertindo-se com cinco notas}
 \label{sec:divertindo-se-com}
 
@@ -1831,6 +1839,8 @@ Faça a brincadeira de descobrir a nota errada.
 \end{lilypond}
 
 
+%%break-vt
+%%break-vi
 \section{Deus é tão bom}
 \label{sec:deus-e-tao-bom}
 Aprenda ``de ouvido'' a música
@@ -1954,7 +1964,10 @@ variação para ela.
 
 
 
-
+%%break-cv
+%%break-bd
+%%break-va
+%%break-bx
 \section{Divertindo-se com seis notas}
 \label{sec:divertindo-se-com-seis-notas}
 
@@ -2050,6 +2063,10 @@ variação para ela.
   }
 \end{lilypond}
 
+%%break-cv
+%%break-bd
+%%break-va
+%%break-bx
 \section{Mãos e Pés + O Balão de João}
 \label{sec:maos-e-pes-balao-joao}
 Experimente outras dinâmicas.
@@ -2213,6 +2230,7 @@ Harmonize a melodia e as variações.
     \include "cp-041.ly"}
 \end{lilypond}
 
+%%break-cv
 \subsection*{Parte 2}
 \begin{lilypond}
   \transpose c c {
@@ -2221,7 +2239,8 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-
+%%break-vt
+%%break-vi
 \section{Ao passar da barca}
 \label{sec:ao-passar-da-barca}
 Harmonize a melodia.
@@ -2240,6 +2259,8 @@ Harmonize a melodia.
     \include "cp-040.ly"}
 \end{lilypond}
 
+%%break-bd
+%%break-va
 \section{Boiadeiro}
 \label{sec:boiadeiro}
 \subsection*{Toada dos Remeiros}
@@ -2315,7 +2336,7 @@ Faça a brincadeira de descobrir a(s) nota(s) errada(s).
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+%%break-cv
 \section{Atirei no lírio}
 \label{sec:atirei-no-lirio}
 \subsection*{Toada dos Remeiros}
@@ -2362,6 +2383,8 @@ Coloque as dinâmicas e andamento.
 \end{lilypond}
 
 
+%%break-bd
+%%break-vi
 \section{Transpondo}
 \label{sec:transpondo}
 
@@ -2492,7 +2515,8 @@ Transponha para dó maior a melodia ``\ref{sec:impr-em-margarida} -
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+%%break-vt
+%%break-vi
 \section{Escala de sol maior}
 \label{sec:escala-sol-maior}
 
@@ -2541,6 +2565,9 @@ Harmonize a melodia.
     \include "cp-053-1.ly"}
 \end{lilypond}
 
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Improvisando em Eu Chole, Chole, Lá}
 \label{sec:impr-em-eu-chole-la}
 Explore diferentes dinâmicas.
@@ -2552,6 +2579,12 @@ Explore diferentes dinâmicas.
 \end{lilypond}
 
 
+%%break-cv
+%%break-bd
+%%break-va
+%%break-vt
+%%break-vi
+%%break-bx
 \section{Variações sobre Zabelinha}
 \label{sec:vari-sobre-zabelinha}
 Harmonize a melodia e as variações.

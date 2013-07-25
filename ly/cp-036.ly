@@ -163,44 +163,44 @@
             \time 2/4
 
             \repeat volta 2 {		
-              f,4\f^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
+              f4\f^\markup {\bold {3 \tiny \raise #0.5 "a" voz}}
               f r
-              c' r
+              c r
               r c 
-              f, r
+              f r
 
               f r
-              c' r
+              c r
               r c 
-              f, 
+              f 
             }
             
             %% parte 2
             \repeat volta 2 {
               r
               f\p r 
-              c' r
+              c r
               r c 
-              f, r
+              f r
 
               f r
-              c' r
+              c r
               r c
-              f,
+              f
             }
 
             %% parte 3
             \repeat volta 2 {
               r
               f\f r
-              c' r
+              c r
               r c\p
 
-              f, r
+              f r
               f\f r
-              c' r
+              c r
               r c\p
-              f,
+              f
             }
           }
         >>
@@ -218,7 +218,7 @@
               \time 2/4
 
               \repeat volta 2 {
-                c'8\f^\markup {\column {\bold {\line {Parte 1} \line {\italic "Allegro"}} \small \box {A}}} 
+                c8\f^\markup {\column {\bold {\line {Parte 1} \line {\italic "Allegro"}} \small \box {A}}} 
                 c^\markup {\bold {1 \tiny \raise #0.5 "a" voz}} 
                 a' a f f 
                 

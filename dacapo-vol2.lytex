@@ -627,60 +627,6 @@ o site:
 \newpage
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_11}
-  \begin{tabular}[t]{|ll|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}} & \letraquadrada{B}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-14#%}
-    &
-    \quadtitulo{%#nota-15#%}
-    &
-    \em
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-14.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-15.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-F.ly" 
-      }
-    \end{lilypond}
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Improvisando em O Balão de João}
@@ -839,60 +785,7 @@ que não forem eliminados.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_12}
-  \begin{tabular}[t]{|ll|l|}
-    \hline
 
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}} & \letraquadrada{B}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-16#%}
-    &
-    \quadtitulo{%#nota-17#%}
-    &
-    \quadtitulo{Ré Maior}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-16.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-17.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-re.ly"
-      }
-    \end{lilypond}
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -928,63 +821,6 @@ que não forem eliminados.
 \end{lilypond}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_13}
-  \begin{tabular}[t]{|ll|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}} & \letraquadrada{B}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-18#%}
-    &
-    \quadtitulo{%#nota-19#%}
-    &
-    \quadtitulo{Acento}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-18.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-19.ly"
-      }
-    \end{lilypond}
-    &
-    \includegraphics[scale=1]{acento}
-    \parbox[b][2.5cm]{4cm}{
-      Indica que uma nota deverá ser reproduzida com maior intensidade
-      que outras.
-    }
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \section{Improvisando em Atirei o Pau no Gato}
 \label{sec:improvisando-atirei-pau-gato}
 \begin{lilypond}
@@ -1001,102 +837,6 @@ que não forem eliminados.
     \keepWithTag #'cv
     \include "cp-058.ly"}
 \end{lilypond}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_14}
-  \begin{tabular}[t]{|ll|ll|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}} & \multicolumn{2}{|l|}{\letraquadrada{B}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-20#%}
-    &
-    \quadtitulo{%#nota-21#%}
-    &
-    \multicolumn{2}{|l|}{\quadtitulo{Repetição}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-20.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-21.ly"
-      }
-    \end{lilypond}
-    &
-    \multicolumn{2}{|l|}{\includegraphics[scale=1]{sinal-repeticao2}}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \multicolumn{2}{|l|}{\letraquadrada{C}}  & \multicolumn{2}{|l|}{\letraquadrada{D}}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtexto{Mi Maior}
-    &
-    \quadtexto{Mi Menor}
-    &
-    &
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-mi.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-mi-menor.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-Bm.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-E.ly"
-      }
-    \end{lilypond}
-
-
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -1184,86 +924,6 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_15}
-  \begin{tabular}[t]{|l|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-22#%}
-    &
-    \quadtitulo{Fá Maior}
-    &
-    \quadtitulo{Divisi}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-22.ly"
-      }
-    \end{lilypond}
-    
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-fa.ly"
-      }
-    \end{lilypond}
-    
-    &
-    \includegraphics[scale=1]{divisi}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \multicolumn{3}{|l|}{\letraquadrada{D}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \multicolumn{1}{|l}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-B7.ly" 
-        }
-      \end{lilypond}
-    }
-    &
-    \multicolumn{1}{l}{
-      \begin[fragment]{lilypond}
-        \transpose c c { 
-          \keepWithTag #'cv
-          \include "acorde-Fism.ly"
-        }
-      \end{lilypond}
-    }
-    &
-    \em
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Dorme, nenê}
 \label{sec:dorme-nene}
 Experimente outras dinâmicas
@@ -1299,55 +959,6 @@ Experimente outras dinâmicas
     \keepWithTag #'cv
     \include "cp-049-2b.ly"}
 \end{lilypond}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_16}
-  \begin{tabular}[t]{|lll|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{3}{|l|}{\letraquadrada{A}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-Bb.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-C7.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-Gm.ly"
-      }
-    \end{lilypond}
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 
 \section{Capelinha de melão}
@@ -1420,79 +1031,6 @@ Você pode fazer uma ordem assim 1-3-6-8-5-2-1-2-4-7-9.
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_17}
-  \begin{tabular}[t]{|l|l|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-23#%}
-    &
-    \quadtitulo{Sol Menor}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-23.ly"
-      }
-    \end{lilypond}
-    
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-sol-menor.ly"
-      }
-    \end{lilypond}
-    
-
-    %%% PRÓXIMA LINHA
-    \\
-    \hline
-    \letraquadrada{C} & \letraquadrada{D}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \em
-    &
-    \quadtitulo{Bemol}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "acorde-Cm.ly" 
-      }
-    \end{lilypond}
-    &
-    \includegraphics[scale=1]{bemol-pre}
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \section{Escala de sol menor}
 \label{sec:escala-sol-menor}
 
@@ -1531,7 +1069,7 @@ Acrescente suas dinâmicas.
 \end{lilypond}
 
 
-
+\break
 \section{Pata Choca}
 \label{sec:pata-choca}
 
@@ -1578,55 +1116,6 @@ para ela.
 \end{lilypond}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_18}
-  \begin{tabular}[t]{|ll|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-24#%}
-    &
-    \quadtitulo{%#nota-25#%}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-24.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-25.ly"
-      }
-    \end{lilypond}
-    
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \section{Escalas de dó maior}
 \label{sec:escalas-do-maior}
 
@@ -1655,55 +1144,6 @@ para ela.
 \end{lilypond}
 
 Toque esta lição também em ordem inversa (começando pela última nota).
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[!ht]
-  \centering
-  \renewcommand{\tablename}{Quadro}
-  \caption{}
-  \label{Quadro_19}
-  \begin{tabular}[t]{|ll|}
-    \hline
-
-    %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{%#nota-26#%}
-    &
-    \quadtitulo{%#nota-27#%}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-26.ly"
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c {
-        \keepWithTag #'cv
-        \include "nota-27.ly"
-      }
-    \end{lilypond}
-    
-
-    %%% FINAL DAS LINHAS
-    \\
-    \hline
-    
-  \end{tabular}
-\end{table}    
-
-
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 \section{Improvisando em Cachorrinho}

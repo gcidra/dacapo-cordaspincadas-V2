@@ -102,7 +102,7 @@
 % \includegraphics[scale=0.5]{logo-keyboard}
 % \vspace*{2ex}
 
-\textbf{\Large{ANO 2012}}
+\textbf{\Large{ANO 2013}}
 \vspace*{4ex}
 
 \textbf{Copyright by Joel L. da Silva Barbosa \\
@@ -140,7 +140,7 @@ BARBOSA, J. L. da Silva \\
 \\
 DA CAPO CORDAS DEDILHADAS \instrumento{Original} Vol. 2. % Jundiaí, São Paulo: \\
 % Keyboard Editora Musical Ltda. 
-2012, p. \pageref{LastPage} \\
+2013, p. \pageref{LastPage} \\
 \\
 Didático/Pedagógico \\
 % ISBN nº %#ISBN-V1#% \\
@@ -169,9 +169,9 @@ Didático/Pedagógico \\
 \end{flushleft}
 
 \begin{flushleft}
-  % Nº %#ISBN-V1#% \\
+  % Nº %#ISBN-V2#% \\
   Autor: Joel L da Silva Barbosa \\
-  Título da Obra: DA CAPO CORDAS DEDILHADAS \instrumento{Original}\\
+  Título da Obra: DA CAPO CORDAS DEDILHADAS \instrumento{Original} Vol. 2.\\
 \end{flushleft}
 
 % %%%%%%%%%%%% FOLHA DO MAESTRO MARCELO

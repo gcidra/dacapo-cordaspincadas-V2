@@ -16,7 +16,7 @@
 \usepackage{titletoc}
 
 %% novos pacotes
-% \usepackage{lastpage}
+\usepackage{lastpage}
 \usepackage{wrapfig}
 \usepackage{array}
 \usepackage{tabularx}

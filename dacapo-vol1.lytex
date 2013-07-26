@@ -627,7 +627,7 @@ o site:
 \newpage
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -681,7 +681,7 @@ o site:
 \end{table}    
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% complemento do QUADRO 01
 \begin{center}
@@ -689,7 +689,7 @@ o site:
 \end{center}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -793,7 +793,7 @@ o site:
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Cordas Primas}
@@ -870,7 +870,7 @@ o site:
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -957,7 +957,7 @@ o site:
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%break-bx
@@ -1029,7 +1029,7 @@ variação para ela.
 \end{lilypond}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 04 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 04 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -1107,7 +1107,7 @@ variação para ela.
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -1167,7 +1167,7 @@ variação para ela.
 \end{lilypond}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -1282,7 +1282,7 @@ variação para ela.
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -1737,7 +1737,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 06 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -1798,7 +1798,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -1857,7 +1857,7 @@ variação para ela.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -1959,7 +1959,7 @@ variação para ela.
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -2094,7 +2094,7 @@ Harmonize a melodia e as variações.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 08 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 08 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -2163,7 +2163,7 @@ Harmonize a melodia e as variações.
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 08 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 08 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -2221,7 +2221,7 @@ Faça a brincadeira de descobrir a(s) nota(s) errada(s).
 \end{lilypond}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 09 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -2280,7 +2280,7 @@ Faça a brincadeira de descobrir a(s) nota(s) errada(s).
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%break-cv
@@ -2340,7 +2340,7 @@ Transponha para dó maior a melodia ``\ref{sec:impr-em-margarida} -
  começando com a nota mi.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 10 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -2427,7 +2427,7 @@ Transponha para dó maior a melodia ``\ref{sec:impr-em-margarida} -
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 10 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%break-vt
@@ -2589,7 +2589,7 @@ Harmonize a melodia e as variações.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 11 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
@@ -2688,7 +2688,7 @@ Harmonize a melodia e as variações.
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 11 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 

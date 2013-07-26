@@ -683,6 +683,79 @@ o site:
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\section{Improvisando em O Balão de João}
+\label{sec:improvisando-em-o-balao-de-joao}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-033.ly"}
+\end{lilypond}
+
+Repita a \textbf{Parte 2} diversas vezes, até que todos improvisem e
+depois \textit{D.C. al fine}.
+
+
+\section{Improvisando em Três Galinhas}
+\label{sec:improvisando-em-tres}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-037.ly"}
+\end{lilypond}
+
+
+\section{A Viuvinha}
+\label{sec:viuvinha}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-038.ly"}
+\end{lilypond}
+
+
+\section{Variações sobre A Mucama}
+\label{sec:vari-sobre-mucama}
+Harmonize a melodia e as variações.
+
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 1}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018a.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 2}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018b.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 3}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018c.ly"}
+\end{lilypond}
+
+
+\subsection*{Variação 4 - Esta você escreve e harmoniza!}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-018d.ly"}
+\end{lilypond}
+
+
 \section{Palmas, pés e improviso em Carambola}
 \label{sec:palmas-pes-improviso-carambola}
 \begin{lilypond}
@@ -690,6 +763,30 @@ o site:
     \keepWithTag #'cv
     \include "cp-059.ly"}
 \end{lilypond}
+
+
+\section{Sapatinho branco em trio}
+\label{sec:sapatinho-branco-trio}
+Harmonize a melodia.
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-050.ly"}
+\end{lilypond}
+
+
+\section{Vamos escrever uma segunda voz para Ró-ró-ró}
+\label{sec:vamos-escrever-segunda-voz-ro-ro-ro}
+Harmonize a melodia.
+
+\subsection*{Cânone}
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-054.ly"}
+\end{lilypond}
+
 
 \section{A Canoa}
 \label{sec:a-canoa}
@@ -730,6 +827,15 @@ deste número deve interromper o jogo. Se ele não interromper, ele é
 eliminado. Se ele interromper, será eliminado quem estava rodando e
 ele passa a rodar no lugar do eliminado. Vencem, certamente, aqueles
 que não forem eliminados.
+
+
+\section{Improvisando em A Mucama}
+\label{sec:impr-em-mucama}
+\begin{lilypond}
+  \transpose c g, {
+    \keepWithTag #'cv
+    \include "cp-029.ly"}
+\end{lilypond}
 
 
 
@@ -807,9 +913,6 @@ que não forem eliminados.
     \include "cp-060b.ly"}
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
 \subsection*{Parte 3 - Ré maior}
 \begin{lilypond}
   \transpose c c {
@@ -1039,11 +1142,6 @@ que não forem eliminados.
     \include "cp-074.ly"}
 \end{lilypond}
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
 \section{Variações sobre Ciranda, Cirandinha}
 \label{sec:variacoes-ciranda-cirandinha}
 Harmonize a melodia e as variações.
@@ -1166,11 +1264,6 @@ Harmonize a melodia e as variações.
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
 \section{Dorme, nenê}
 \label{sec:dorme-nene}
 Experimente outras dinâmicas
@@ -1419,11 +1512,6 @@ Você pode fazer uma ordem assim 1-3-6-8-5-2-1-2-4-7-9.
 \end{lilypond}
 
 
-%%break-cv
-%%break-bd
-%%break-va
-%%break-vt
-%%break-vi
 \section{Improvisando em A Barata}
 \label{sec:improvisando-em-a-barata}
 Acrescente suas dinâmicas.
@@ -1539,8 +1627,6 @@ para ela.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%%break-vt
-%%break-vi
 \section{Escalas de dó maior}
 \label{sec:escalas-do-maior}
 
@@ -1716,7 +1802,7 @@ harmonize-a e componha uma variação dela.
     \include "cp-pauta.ly"}
 \end{lilypond}
 
-\section{Escreva sua música e toque-a para seus colegas}
+\section{Componha uma música e toque-a para seus colegas}
 \label{sec:comp-toque-colegas}
 \begin{lilypond}
   \transpose c c {
@@ -1733,7 +1819,7 @@ harmonize-a e componha uma variação dela.
 
   \tableofcontents
 
-\newpage
+
 \renewcommand\listtablename{Lista dos Quadros}
   \listoftables
 

@@ -1,5 +1,5 @@
-file = dacapo-vol1.lytex
-# file = dacapo-vol2.lytex
+# file = dacapo-vol1.lytex
+file = dacapo-vol2.lytex
 # file = exemplo-dacapo.lytex
 # file = teste.lytex
 # file-regencia = regencia-dacapo.lytex
@@ -231,17 +231,18 @@ cavaquinho.lytex: $(file) Makefile
 	-e 's/%#nota-14#%/Fá Sustenido/g' \
 	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Dó Sustenido/g' \
-	-e 's/%#nota-17#%/Si Bemol/g' \
-	-e 's/%#nota-18#%//g' \
-	-e 's/%#nota-19#%//g' \
-	-e 's/%#nota-20#%/Sol Sustenido/g' \
-	-e 's/%#nota-21#%/Ré Sustenido/g' \
+	-e 's/%#nota-17#%/Fá/g' \
+	-e 's/%#nota-18#%/Mi/g' \
+	-e 's/%#nota-19#%/Si Bemol/g' \
+	-e 's/%#nota-20#%//g' \
+	-e 's/%#nota-21#%//g' \
 	-e 's/%#nota-22#%/Ré Sustenido/g' \
-	-e 's/%#nota-23#%/Mi Bemol/g' \
-	-e 's/%#nota-24#%//g' \
-	-e 's/%#nota-25#%/Lá Sustenido/g' \
-	-e 's/%#nota-26#%//g' \
+	-e 's/%#nota-23#%/Sol Sustenido/g' \
+	-e 's/%#nota-24#%/Ré Sustenido/g' \
+	-e 's/%#nota-25#%/Mi Bemol/g' \
+	-e 's/%#nota-26#%/Lá Sustenido/g' \
 	-e 's/%#nota-27#%//g' \
+	-e 's/%#nota-28#%//g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
@@ -272,17 +273,18 @@ bandolim.lytex: $(file) Makefile
 	-e 's/%#nota-14#%/Fá Sustenido/g' \
 	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Dó Sustenido/g' \
-	-e 's/%#nota-17#%/Si Bemol/g' \
-	-e 's/%#nota-18#%//g' \
-	-e 's/%#nota-19#%//g' \
-	-e 's/%#nota-20#%/Sol Sustenido/g' \
-	-e 's/%#nota-21#%/Ré Sustenido/g' \
+	-e 's/%#nota-17#%/Fá/g' \
+	-e 's/%#nota-18#%/Mi/g' \
+	-e 's/%#nota-19#%/Si Bemol/g' \
+	-e 's/%#nota-20#%//g' \
+	-e 's/%#nota-21#%//g' \
 	-e 's/%#nota-22#%/Ré Sustenido/g' \
-	-e 's/%#nota-23#%/Mi Bemol/g' \
-	-e 's/%#nota-24#%/Dó/g' \
-	-e 's/%#nota-25#%/Lá Sustenido/g' \
-	-e 's/%#nota-26#%/Si/g' \
-	-e 's/%#nota-27#%/Sol/g' \
+	-e 's/%#nota-23#%/Sol Sustenido/g' \
+	-e 's/%#nota-24#%/Ré Sustenido/g' \
+	-e 's/%#nota-25#%/Mi Bemol/g' \
+	-e 's/%#nota-26#%/Lá Sustenido/g' \
+	-e 's/%#nota-27#%/Si/g' \
+	-e 's/%#nota-28#%/Sol/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
@@ -313,17 +315,18 @@ viola.lytex: $(file) Makefile
 	-e 's/%#nota-14#%/Fá Sustenido/g' \
 	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Dó Sustenido/g' \
-	-e 's/%#nota-17#%/Si Bemol/g' \
-	-e 's/%#nota-18#%//g' \
-	-e 's/%#nota-19#%//g' \
-	-e 's/%#nota-20#%/Sol Sustenido/g' \
-	-e 's/%#nota-21#%/Ré Sustenido/g' \
+	-e 's/%#nota-17#%/Fá/g' \
+	-e 's/%#nota-18#%/Mi/g' \
+	-e 's/%#nota-19#%/Si Bemol/g' \
+	-e 's/%#nota-20#%//g' \
+	-e 's/%#nota-21#%//g' \
 	-e 's/%#nota-22#%/Ré Sustenido/g' \
-	-e 's/%#nota-23#%/Mi Bemol/g' \
-	-e 's/%#nota-24#%/Dó/g' \
-	-e 's/%#nota-25#%/Lá Sustenido/g' \
-	-e 's/%#nota-26#%/Si/g' \
-	-e 's/%#nota-27#%//g' \
+	-e 's/%#nota-23#%//g' \
+	-e 's/%#nota-24#%/Ré Sustenido/g' \
+	-e 's/%#nota-25#%/Mi Bemol/g' \
+	-e 's/%#nota-26#%/Lá Sustenido/g' \
+	-e 's/%#nota-27#%/Si/g' \
+	-e 's/%#nota-28#%//g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
@@ -354,17 +357,18 @@ violaotenor.lytex: $(file) Makefile
 	-e 's/%#nota-14#%/Fá Sustenido/g' \
 	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Dó Sustenido/g' \
-	-e 's/%#nota-17#%/Si Bemol/g' \
-	-e 's/%#nota-18#%//g' \
-	-e 's/%#nota-19#%//g' \
-	-e 's/%#nota-20#%/Sol Sustenido/g' \
-	-e 's/%#nota-21#%/Ré Sustenido/g' \
+	-e 's/%#nota-17#%/Fá/g' \
+	-e 's/%#nota-18#%/Mi/g' \
+	-e 's/%#nota-19#%/Si Bemol/g' \
+	-e 's/%#nota-20#%//g' \
+	-e 's/%#nota-21#%//g' \
 	-e 's/%#nota-22#%/Ré Sustenido/g' \
-	-e 's/%#nota-23#%/Mi Bemol/g' \
-	-e 's/%#nota-24#%/Dó/g' \
-	-e 's/%#nota-25#%/Lá Sustenido/g' \
-	-e 's/%#nota-26#%//g' \
+	-e 's/%#nota-23#%/Sol Sustenido/g' \
+	-e 's/%#nota-24#%/Ré Sustenido/g' \
+	-e 's/%#nota-25#%/Mi Bemol/g' \
+	-e 's/%#nota-26#%/Lá Sustenido/g' \
 	-e 's/%#nota-27#%//g' \
+	-e 's/%#nota-28#%//g' \
 	-e 's/%#casa1e2#%/clave-sol8-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
@@ -395,17 +399,18 @@ violao.lytex: $(file) Makefile
 	-e 's/%#nota-14#%/Fá Sustenido/g' \
 	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Dó Sustenido/g' \
-	-e 's/%#nota-17#%/Si Bemol/g' \
-	-e 's/%#nota-18#%//g' \
-	-e 's/%#nota-19#%//g' \
-	-e 's/%#nota-20#%/Sol Sustenido/g' \
-	-e 's/%#nota-21#%/Ré Sustenido/g' \
+	-e 's/%#nota-17#%/Fá/g' \
+	-e 's/%#nota-18#%/Mi/g' \
+	-e 's/%#nota-19#%/Si Bemol/g' \
+	-e 's/%#nota-20#%//g' \
+	-e 's/%#nota-21#%//g' \
 	-e 's/%#nota-22#%/Ré Sustenido/g' \
-	-e 's/%#nota-23#%/Mi Bemol/g' \
-	-e 's/%#nota-24#%/Dó/g' \
-	-e 's/%#nota-25#%/Lá Sustenido/g' \
-	-e 's/%#nota-26#%/Si/g' \
-	-e 's/%#nota-27#%/Sol/g' \
+	-e 's/%#nota-23#%/Sol Sustenido/g' \
+	-e 's/%#nota-24#%/Ré Sustenido/g' \
+	-e 's/%#nota-25#%/Mi Bemol/g' \
+	-e 's/%#nota-26#%/Lá Sustenido/g' \
+	-e 's/%#nota-27#%/Si/g' \
+	-e 's/%#nota-28#%/Sol/g' \
 	-e 's/%#casa1e2#%/clave-sol8-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
@@ -436,17 +441,18 @@ baixo.lytex: $(file) Makefile
 	-e 's/%#nota-14#%/Fá Sustenido/g' \
 	-e 's/%#nota-15#%/Fá Sustenido/g' \
 	-e 's/%#nota-16#%/Dó Sustenido/g' \
-	-e 's/%#nota-17#%/Si Bemol/g' \
-	-e 's/%#nota-18#%/Si/g' \
-	-e 's/%#nota-19#%/Lá/g' \
-	-e 's/%#nota-20#%/Sol Sustenido/g' \
-	-e 's/%#nota-21#%/Ré Sustenido/g' \
-	-e 's/%#nota-22#%//g' \
-	-e 's/%#nota-23#%/Mi Bemol/g' \
+	-e 's/%#nota-17#%/Fá/g' \
+	-e 's/%#nota-18#%/Mi/g' \
+	-e 's/%#nota-19#%/Si Bemol/g' \
+	-e 's/%#nota-20#%/Si/g' \
+	-e 's/%#nota-21#%/Lá/g' \
+	-e 's/%#nota-22#%/Ré Sustenido/g' \
+	-e 's/%#nota-23#%/Sol Sustenido/g' \
 	-e 's/%#nota-24#%//g' \
-	-e 's/%#nota-25#%/Lá Sustenido/g' \
-	-e 's/%#nota-26#%//g' \
+	-e 's/%#nota-25#%/Mi Bemol/g' \
+	-e 's/%#nota-26#%/Lá Sustenido/g' \
 	-e 's/%#nota-27#%//g' \
+	-e 's/%#nota-28#%//g' \
 	-e 's/%#casa1e2#%/clave-fa-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 

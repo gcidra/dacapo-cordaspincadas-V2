@@ -2001,59 +2001,6 @@ variação para ela.
 \end{lilypond}
 
 
-
-% \section{Variações sobre A Mucama}
-% \label{sec:vari-sobre-mucama}
-% Harmonize a melodia e as variações.
-
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-018.ly"}
-% \end{lilypond}
-
-
-% \subsection*{Variação 1}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-018a.ly"}
-% \end{lilypond}
-
-
-% \subsection*{Variação 2}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-018b.ly"}
-% \end{lilypond}
-
-
-% \subsection*{Variação 3}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-018c.ly"}
-% \end{lilypond}
-
-
-% \subsection*{Variação 4 - Esta você escreve e harmoniza!}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-018d.ly"}
-% \end{lilypond}
-
-
-% \section{Improvisando em A Mucama}
-% \label{sec:impr-em-mucama}
-% \begin{lilypond}
-%   \transpose c g, {
-%     \keepWithTag #'cv
-%     \include "cp-029.ly"}
-% \end{lilypond}
-
-
 \section{Escolha um dos três finais}
 \label{sec:escolha-um-dos-tres-finais}
 \begin{lilypond}
@@ -2393,38 +2340,6 @@ Transponha para dó maior a melodia ``\ref{sec:impr-em-margarida} -
  começando com a nota mi.
 
 
-
-% \section{Improvisando em O Balão de João}
-% \label{sec:improvisando-em-o-balao-de-joao}
-% \begin{lilypond}
-%   \transpose c c {
-%     \keepWithTag #'cv
-%     \include "cp-033.ly"}
-% \end{lilypond}
-
-% Repita a \textbf{Parte 2} diversas vezes, até que todos improvisem e
-% depois \textit{D.C. al fine}.
-
-
-% \section{Improvisando em Três Galinhas}
-% \label{sec:improvisando-em-tres}
-% \begin{lilypond}
-%   \transpose c c {
-%     \keepWithTag #'cv
-%     \include "cp-037.ly"}
-% \end{lilypond}
-
-
-% \section{A Viuvinha}
-% \label{sec:viuvinha}
-% \begin{lilypond}
-%   \transpose c c {
-%     \keepWithTag #'cv
-%     \include "cp-038.ly"}
-% \end{lilypond}
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
@@ -2627,17 +2542,6 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-% \section{Sapatinho branco em trio}
-% \label{sec:sapatinho-branco-trio}
-% Harmonize a melodia.
-
-% \begin{lilypond}
-%   \transpose c c {
-%     \keepWithTag #'cv
-%     \include "cp-050.ly"}
-% \end{lilypond}
-
-
 \section{Lê-lê-lê, Juazeiro}
 \label{sec:le-le-le-juazeiro}
 \subsection*{Samba}
@@ -2832,17 +2736,6 @@ Harmonize a melodia e as variações.
     \include "cp-053.ly"}
 \end{lilypond}
 
-
-% \section{Vamos escrever uma segunda voz para Ró-ró-ró}
-% \label{sec:vamos-escrever-segunda-voz-ro-ro-ro}
-% Harmonize a melodia.
-
-% \subsection*{Cânone}
-% \begin{lilypond}
-%   \transpose c c {
-%     \keepWithTag #'cv
-%     \include "cp-054.ly"}
-% \end{lilypond}
 
 \section{Vamos escrever uma segunda voz para Coelhinho}
 \label{sec:vamos-escrever-segunda-voz-coelhinho}

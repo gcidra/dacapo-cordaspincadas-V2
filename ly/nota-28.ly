@@ -1,7 +1,7 @@
 %% -*- coding: utf-8 -*-
 \version "2.16.0"
 
-\relative c'' {
+\relative c' {
   \override Staff.TimeSignature #'transparent = ##t
   \override Score.BarNumber #'transparent = ##t
   \override Score.RehearsalMark #'font-size = #-2
@@ -9,35 +9,37 @@
   <<
     %% CAVAQUINHO - BANJO
     \tag #'cv {
-      ais1^\markup \fret-diagram #"f:2;w:4;3-3;"
+      \override Staff.Clef #'transparent = ##t
+      \stopStaff
     }
 
     %% BANDOLIM
     \tag #'bd {
-      ais1^\markup \fret-diagram #"f:2;w:4;2-1;"
+      g1^\markup \fret-diagram #"f:2;w:4;4-o;"
     }
 
     %% VIOLA
     \tag #'va {
-      ais^\markup \fret-diagram #"f:2;w:5;3-2;"
+      \override Staff.Clef #'transparent = ##t
+      \stopStaff
     }
 
     %% VIOLÃO TENOR
     \tag #'vt {
-      \clef "G_8"
-      ais,^\markup \fret-diagram #"f:2;w:4;3-3;"
+      \override Staff.Clef #'transparent = ##t
+      \stopStaff
     }
 
     %% VIOLÃO
     \tag #'vi {
       \clef "G_8"
-      ais^\markup \fret-diagram #"f:2;w:6;3-3;"
+      g,^\markup \fret-diagram #"f:2;w:6;6-3;"
     }
 
     %% BAIXO - BAIXOLÃO
     \tag #'bx {
-      \clef bass
-      ais,^\markup \fret-diagram #"f:2;w:4;3-1;"
+      \override Staff.Clef #'transparent = ##t
+      \stopStaff
     }
   >>
 }

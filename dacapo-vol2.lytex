@@ -628,6 +628,53 @@ o site:
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Acorde de Fá Maior}
+  \label{Quadro_01}
+  \begin{tabular}[t]{|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} & \letraquadrada{B}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-17#%}
+    &
+    \quadtitulo{Acorde}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-17.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-F.ly"
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \section{Improvisando em O Balão de João}
 \label{sec:improvisando-em-o-balao-de-joao}
@@ -734,6 +781,45 @@ Harmonize a melodia.
 \end{lilypond}
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Roda e Chicotinho Queimado}
+  \label{Quadro_02}
+  \begin{tabular}[t]{|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-18#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-18.ly"
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \section{A Canoa}
 \label{sec:a-canoa}
 \subsection*{Cânone - Completar a melodia}
@@ -785,6 +871,105 @@ que não forem eliminados.
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Ré Maior e Menor}
+  \label{Quadro_03}
+  \begin{tabular}[t]{|lll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-19#%}
+    &
+    \quadtitulo{%#nota-20#%}
+    &
+    \quadtitulo{%#nota-21#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-19.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-20.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-21.ly"
+      }
+    \end{lilypond}
+
+    \\
+  \end{tabular}
+
+  %%% PRÓXIMA TABELA
+  \begin{tabular}[t]{|ll|l|l|}
+
+    %%% PRÓXIMA LINHA
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{B}}  & \letraquadrada{C}   &   \letraquadrada{D}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Ré Maior}
+    &
+    \quadtitulo{Ré Menor}
+    &
+    \quadtitulo{Bemol}
+    &
+    \quadtitulo{Acento}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-re.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-re-menor.ly" 
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{bemol}
+    &
+    \includegraphics[scale=1]{acento}
+    \parbox[b][2.5cm]{4cm}{
+      Indica que uma nota deverá ser reproduzida com maior intensidade
+      que outras.
+    }
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -837,6 +1022,105 @@ que não forem eliminados.
     \keepWithTag #'cv
     \include "cp-058.ly"}
 \end{lilypond}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 04 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Mi Maior e Menor}
+  \label{Quadro_04}
+  \begin{tabular}[t]{|ll|ll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{2}{|l|}{\letraquadrada{A}} & \multicolumn{2}{l|}{\letraquadrada{B}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-22#%}
+    &
+    \quadtitulo{%#nota-23#%}
+    &
+    \multicolumn{2}{l|}{\quadtitulo{Acordes}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+
+    \\
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{2}{|l|}{\letraquadrada{C}} & \multicolumn{2}{l|}{\letraquadrada{D}}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Mi Maior}
+    &
+    \quadtitulo{Mi Menor}
+    &
+    \multicolumn{2}{l|}{\quadtitulo{Sinal de Repetição}}
+    
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-mi.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "armadura-mi-menor.ly" 
+      }
+    \end{lilypond}
+    &
+    \multicolumn{2}{l|}{\includegraphics[scale=1]{sinal-repeticao2}}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -922,6 +1206,116 @@ Harmonize a melodia e as variações.
     \keepWithTag #'cv
     \include "cp-077d.ly"}
 \end{lilypond}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Fá Maior}
+  \label{Quadro_05}
+  \begin{tabular}[t]{|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} & \letraquadrada{B}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-24#%}
+    &
+    \quadtitulo{Fá Maior}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-24.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-fa.ly"
+      }
+    \end{lilypond}
+
+    \\
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{2}{|l|}{\letraquadrada{C}}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\quadtitulo{Acordes}}
+
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{1}{|l}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'cv
+          \include "acorde-Fism.ly" 
+        }
+      \end{lilypond}
+    }
+    &
+    \multicolumn{1}{l|}{
+      \begin[fragment]{lilypond}
+        \transpose c c { 
+          \keepWithTag #'cv
+          \include "acorde-B7.ly" 
+        }
+      \end{lilypond}
+    }
+
+    \\
+  \end{tabular}
+
+  %%% PRÓXIMA TABELA
+  \begin{tabular}[t]{|lll|}
+
+    %%% PRÓXIMA LINHA
+    \hline
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Bb.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-Gm.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "acorde-C7.ly" 
+      }
+    \end{lilypond}
+    
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 \section{Dorme, nenê}
@@ -1031,6 +1425,60 @@ Você pode fazer uma ordem assim 1-3-6-8-5-2-1-2-4-7-9.
 
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 06 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Sol Menor}
+  \label{Quadro_06}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-25#%}
+    &
+    \quadtitulo{Sol Menor}
+    &
+    \quadtitulo{Bemol}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-25.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "armadura-sol-menor.ly"
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{bemol-pre}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 06 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 \section{Escala de sol menor}
 \label{sec:escala-sol-menor}
 
@@ -1132,6 +1580,65 @@ para ela.
     \keepWithTag #'cv
     \include "cp-087b.ly"}
 \end{lilypond}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Cromatismos}
+  \label{Quadro_07}
+  \begin{tabular}[t]{|lll|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-26#%}
+    &
+    \quadtitulo{%#nota-27#%}
+    &
+    \quadtitulo{%#nota-28#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-27.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-28.ly"
+      }
+    \end{lilypond}
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+    
+  \end{tabular}
+\end{table}    
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 \section{Cromos}

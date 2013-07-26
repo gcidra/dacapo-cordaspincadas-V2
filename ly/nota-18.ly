@@ -9,43 +9,35 @@
   <<
     %% CAVAQUINHO - BANJO
     \tag #'cv {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      e1^\markup \fret-diagram #"f:2;w:4;4-2;"
     }
 
     %% BANDOLIM
     \tag #'bd {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      e1^\markup \fret-diagram #"f:2;w:4;3-2;"
     }
 
     %% VIOLA
     \tag #'va {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      e^\markup \fret-diagram #"f:2;w:5;4-o;"
     }
 
     %% VIOLÃO TENOR
     \tag #'vt {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      \clef "G_8"
+      e,^\markup \fret-diagram #"f:2;w:4;4-4;"
     }
 
     %% VIOLÃO
     \tag #'vi {
-      \override Staff.Clef #'transparent = ##t
-      \stopStaff
-      s^\markup {\hspace #-7 "Descanso"}
+      \clef "G_8"
+      e^\markup \fret-diagram #"f:2;w:6;4-2;"
     }
 
     %% BAIXO - BAIXOLÃO
     \tag #'bx {
       \clef bass
-      b1^\markup \fret-diagram #"f:2;w:4;1-4;"
+      e,^\markup \fret-diagram #"f:2;w:4;4-o;"
     }
   >>
 }

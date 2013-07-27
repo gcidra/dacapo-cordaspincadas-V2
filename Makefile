@@ -473,7 +473,7 @@ baixo.lytex: $(file) Makefile
 	cp $@ ..
 
 %.tex: %.lytex
-	lilypond-book --pdf -I ./../ly -I ly/reg -I reg -o out $< ;\
+	lilypond-book --pdf -I ./../ly -I ly/reg -I ./../reg -o out $< ;\
 
 cleanall: clean_regencia clean_percussao clean_instrumentos clean
 

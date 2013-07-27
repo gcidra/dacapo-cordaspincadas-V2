@@ -1,10 +1,10 @@
 # file = dacapo-vol1.lytex
-file = dacapo-vol2.lytex
+# file = dacapo-vol2.lytex
 # file = exemplo-dacapo.lytex
-# file = teste.lytex
-# file-regencia = regencia-dacapo.lytex
+file = teste.lytex
+file-regencia = regencia-dacapo-vol1.lytex
 # file-regencia = exemplo-regencia.lytex
-file-regencia = teste.lytex
+# file-regencia = teste.lytex
 file-percussao = percussao-dacapo.lytex
 # file-percussao = teste.lytex
 
@@ -31,168 +31,175 @@ regencia.lytex: $(file-regencia)  Makefile arquivos_regencia
 	-e 's/instrumento{InstrCapa}/instrumento{Regência}/g' \
 	-e 's/instrumento{Rodape}/instrumento{Regência}/g' \
 	-e 's/%%jogoregencia/agudos/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
 	-e 's/%#cv-nota-01#%/Ré/g' \
 	-e 's/%#cv-nota-02#%/Si/g' \
-	-e 's/%#cv-nota-03#%/Mi/g' \
-	-e 's/%#cv-nota-04#%/Fá/g' \
-	-e 's/%#cv-nota-05#%/Sol/g' \
-	-e 's/%#cv-nota-06#%//g' \
-	-e 's/%#cv-nota-07#%/Dó/g' \
+	-e 's/%#cv-nota-03#%/Sol/g' \
+	-e 's/%#cv-nota-04#%/Lá/g' \
+	-e 's/%#cv-nota-05#%//g' \
+	-e 's/%#cv-nota-06#%/Dó/g' \
+	-e 's/%#cv-nota-07#%//g' \
 	-e 's/%#cv-nota-08#%//g' \
-	-e 's/%#cv-nota-09#%/Lá/g' \
-	-e 's/%#cv-nota-10#%/Sol/g' \
-	-e 's/%#cv-nota-11#%/Fá Sustenido/g' \
-	-e 's/%#cv-nota-12#%/Fá Sustenido/g' \
-	-e 's/%#cv-nota-13#%/Dó Sustenido/g' \
-	-e 's/%#cv-nota-14#%/Fá/g' \
-	-e 's/%#cv-nota-15#%/Mi/g' \
-	-e 's/%#cv-nota-16#%/Ré/g' \
-	-e 's/%#cv-nota-17#%/Si Bemol/g' \
-	-e 's/%#cv-nota-18#%//g' \
-	-e 's/%#cv-nota-19#%//g' \
-	-e 's/%#cv-nota-20#%/Sol Sustenido/g' \
-	-e 's/%#cv-nota-21#%/Ré Sustenido/g' \
+	-e 's/%#cv-nota-09#%/Ré/g' \
+	-e 's/%#cv-nota-10#%/Mi/g' \
+	-e 's/%#cv-nota-11#%//g' \
+	-e 's/%#cv-nota-12#%/Fá/g' \
+	-e 's/%#cv-nota-13#%/Sol/g' \
+	-e 's/%#cv-nota-14#%/Fá Sustenido/g' \
+	-e 's/%#cv-nota-15#%/Fá Sustenido/g' \
+	-e 's/%#cv-nota-16#%/Dó Sustenido/g' \
+	-e 's/%#cv-nota-17#%/Fá/g' \
+	-e 's/%#cv-nota-18#%/Mi/g' \
+	-e 's/%#cv-nota-19#%/Si Bemol/g' \
+	-e 's/%#cv-nota-20#%//g' \
+	-e 's/%#cv-nota-21#%//g' \
 	-e 's/%#cv-nota-22#%/Ré Sustenido/g' \
-	-e 's/%#cv-nota-23#%/Mi Bemol/g' \
-	-e 's/%#cv-nota-24#%//g' \
-	-e 's/%#cv-nota-25#%/Lá Sustenido/g' \
-	-e 's/%#cv-nota-26#%//g' \
+	-e 's/%#cv-nota-23#%/Sol Sustenido/g' \
+	-e 's/%#cv-nota-24#%/Ré Sustenido/g' \
+	-e 's/%#cv-nota-25#%/Mi Bemol/g' \
+	-e 's/%#cv-nota-26#%/Lá Sustenido/g' \
 	-e 's/%#cv-nota-27#%//g' \
+	-e 's/%#cv-nota-28#%//g' \
 	-e 's/%#bd-nota-01#%/Mi/g' \
 	-e 's/%#bd-nota-02#%/Lá/g' \
-	-e 's/%#bd-nota-03#%/Si/g' \
-	-e 's/%#bd-nota-04#%/Fá/g' \
-	-e 's/%#bd-nota-05#%/Sol/g' \
-	-e 's/%#bd-nota-06#%/Ré/g' \
-	-e 's/%#bd-nota-07#%/Dó/g' \
-	-e 's/%#bd-nota-08#%//g' \
-	-e 's/%#bd-nota-09#%/Lá/g' \
-	-e 's/%#bd-nota-10#%/Sol/g' \
-	-e 's/%#bd-nota-11#%/Fá Sustenido/g' \
-	-e 's/%#bd-nota-12#%/Fá Sustenido/g' \
-	-e 's/%#bd-nota-13#%/Dó Sustenido/g' \
-	-e 's/%#bd-nota-14#%/Fá/g' \
-	-e 's/%#bd-nota-15#%/Mi/g' \
-	-e 's/%#bd-nota-16#%/Ré/g' \
-	-e 's/%#bd-nota-17#%/Si Bemol/g' \
-	-e 's/%#bd-nota-18#%//g' \
-	-e 's/%#bd-nota-19#%//g' \
-	-e 's/%#bd-nota-20#%/Sol Sustenido/g' \
-	-e 's/%#bd-nota-21#%/Ré Sustenido/g' \
+	-e 's/%#bd-nota-03#%/Ré/g' \
+	-e 's/%#bd-nota-04#%/Si/g' \
+	-e 's/%#bd-nota-05#%//g' \
+	-e 's/%#bd-nota-06#%/Dó/g' \
+	-e 's/%#bd-nota-07#%/Ré/g' \
+	-e 's/%#bd-nota-08#%/Sol/g' \
+	-e 's/%#bd-nota-09#%//g' \
+	-e 's/%#bd-nota-10#%/Dó/g' \
+	-e 's/%#bd-nota-11#%//g' \
+	-e 's/%#bd-nota-12#%/Fá/g' \
+	-e 's/%#bd-nota-13#%/Sol/g' \
+	-e 's/%#bd-nota-14#%/Fá Sustenido/g' \
+	-e 's/%#bd-nota-15#%/Fá Sustenido/g' \
+	-e 's/%#bd-nota-16#%/Dó Sustenido/g' \
+	-e 's/%#bd-nota-17#%/Fá/g' \
+	-e 's/%#bd-nota-18#%/Mi/g' \
+	-e 's/%#bd-nota-19#%/Si Bemol/g' \
+	-e 's/%#bd-nota-20#%//g' \
+	-e 's/%#bd-nota-21#%//g' \
 	-e 's/%#bd-nota-22#%/Ré Sustenido/g' \
-	-e 's/%#bd-nota-23#%/Mi Bemol/g' \
-	-e 's/%#bd-nota-24#%/Dó/g' \
-	-e 's/%#bd-nota-25#%/Lá Sustenido/g' \
-	-e 's/%#bd-nota-26#%/Si/g' \
-	-e 's/%#bd-nota-27#%/Sol/g' \
+	-e 's/%#bd-nota-23#%/Sol Sustenido/g' \
+	-e 's/%#bd-nota-24#%/Ré Sustenido/g' \
+	-e 's/%#bd-nota-25#%/Mi Bemol/g' \
+	-e 's/%#bd-nota-26#%/Lá Sustenido/g' \
+	-e 's/%#bd-nota-27#%/Si/g' \
+	-e 's/%#bd-nota-28#%/Sol/g' \
 	-e 's/%#va-nota-01#%/Mi/g' \
 	-e 's/%#va-nota-02#%/Si/g' \
-	-e 's/%#va-nota-03#%//g' \
-	-e 's/%#va-nota-04#%/Fá/g' \
-	-e 's/%#va-nota-05#%/Sol/g' \
-	-e 's/%#va-nota-06#%/Ré/g' \
-	-e 's/%#va-nota-07#%/Dó/g' \
-	-e 's/%#va-nota-08#%//g' \
-	-e 's/%#va-nota-09#%/Lá/g' \
-	-e 's/%#va-nota-10#%/Sol/g' \
-	-e 's/%#va-nota-11#%/Fá Sustenido/g' \
-	-e 's/%#va-nota-12#%/Fá Sustenido/g' \
-	-e 's/%#va-nota-13#%/Dó Sustenido/g' \
-	-e 's/%#va-nota-14#%/Fá/g' \
-	-e 's/%#va-nota-15#%/Mi/g' \
-	-e 's/%#va-nota-16#%/Ré/g' \
-	-e 's/%#va-nota-17#%/Si Bemol/g' \
-	-e 's/%#va-nota-18#%//g' \
-	-e 's/%#va-nota-19#%//g' \
-	-e 's/%#va-nota-20#%/Sol Sustenido/g' \
-	-e 's/%#va-nota-21#%/Ré Sustenido/g' \
+	-e 's/%#va-nota-03#%/Sol Sustenido/g' \
+	-e 's/%#va-nota-04#%/Lá/g' \
+	-e 's/%#va-nota-05#%//g' \
+	-e 's/%#va-nota-06#%/Dó/g' \
+	-e 's/%#va-nota-07#%/Ré/g' \
+	-e 's/%#va-nota-08#%/Sol/g' \
+	-e 's/%#va-nota-09#%/Ré/g' \
+	-e 's/%#va-nota-10#%/Dó/g' \
+	-e 's/%#va-nota-11#%//g' \
+	-e 's/%#va-nota-12#%/Fá/g' \
+	-e 's/%#va-nota-13#%/Sol/g' \
+	-e 's/%#va-nota-14#%/Fá Sustenido/g' \
+	-e 's/%#va-nota-15#%/Fá Sustenido/g' \
+	-e 's/%#va-nota-16#%/Dó Sustenido/g' \
+	-e 's/%#va-nota-17#%/Fá/g' \
+	-e 's/%#va-nota-18#%/Mi/g' \
+	-e 's/%#va-nota-19#%/Si Bemol/g' \
+	-e 's/%#va-nota-20#%//g' \
+	-e 's/%#va-nota-21#%//g' \
 	-e 's/%#va-nota-22#%/Ré Sustenido/g' \
-	-e 's/%#va-nota-23#%/Mi Bemol/g' \
-	-e 's/%#va-nota-24#%/Dó/g' \
-	-e 's/%#va-nota-25#%/Lá Sustenido/g' \
-	-e 's/%#va-nota-26#%/Si/g' \
-	-e 's/%#va-nota-27#%//g' \
+	-e 's/%#va-nota-23#%//g' \
+	-e 's/%#va-nota-24#%/Ré Sustenido/g' \
+	-e 's/%#va-nota-25#%/Mi Bemol/g' \
+	-e 's/%#va-nota-26#%/Lá Sustenido/g' \
+	-e 's/%#va-nota-27#%/Si/g' \
+	-e 's/%#va-nota-28#%//g' \
 	-e 's/%#vt-nota-01#%/Lá/g' \
 	-e 's/%#vt-nota-02#%/Ré/g' \
-	-e 's/%#vt-nota-03#%/Mi/g' \
-	-e 's/%#vt-nota-04#%/Fá/g' \
-	-e 's/%#vt-nota-05#%/Sol/g' \
-	-e 's/%#vt-nota-06#%//g' \
-	-e 's/%#vt-nota-07#%/Dó/g' \
-	-e 's/%#vt-nota-08#%/Si/g' \
-	-e 's/%#vt-nota-09#%/Lá/g' \
-	-e 's/%#vt-nota-10#%/Sol/g' \
-	-e 's/%#vt-nota-11#%/Fá Sustenido/g' \
-	-e 's/%#vt-nota-12#%/Fá Sustenido/g' \
-	-e 's/%#vt-nota-13#%/Dó Sustenido/g' \
-	-e 's/%#vt-nota-14#%/Fá/g' \
-	-e 's/%#vt-nota-15#%/Mi/g' \
-	-e 's/%#vt-nota-16#%/Ré/g' \
-	-e 's/%#vt-nota-17#%/Si Bemol/g' \
-	-e 's/%#vt-nota-18#%//g' \
-	-e 's/%#vt-nota-19#%//g' \
-	-e 's/%#vt-nota-20#%/Sol Sustenido/g' \
-	-e 's/%#vt-nota-21#%/Ré Sustenido/g' \
+	-e 's/%#vt-nota-03#%/Sol/g' \
+	-e 's/%#vt-nota-04#%/Lá/g' \
+	-e 's/%#vt-nota-05#%/Si/g' \
+	-e 's/%#vt-nota-06#%/Dó/g' \
+	-e 's/%#vt-nota-07#%//g' \
+	-e 's/%#vt-nota-08#%//g' \
+	-e 's/%#vt-nota-09#%/Ré/g' \
+	-e 's/%#vt-nota-10#%/Dó/g' \
+	-e 's/%#vt-nota-11#%/Mi/g' \
+	-e 's/%#vt-nota-12#%/Fá/g' \
+	-e 's/%#vt-nota-13#%/Sol/g' \
+	-e 's/%#vt-nota-14#%/Fá Sustenido/g' \
+	-e 's/%#vt-nota-15#%/Fá Sustenido/g' \
+	-e 's/%#vt-nota-16#%/Dó Sustenido/g' \
+	-e 's/%#vt-nota-17#%/Fá/g' \
+	-e 's/%#vt-nota-18#%/Mi/g' \
+	-e 's/%#vt-nota-19#%/Si Bemol/g' \
+	-e 's/%#vt-nota-20#%//g' \
+	-e 's/%#vt-nota-21#%//g' \
 	-e 's/%#vt-nota-22#%/Ré Sustenido/g' \
-	-e 's/%#vt-nota-23#%/Mi Bemol/g' \
-	-e 's/%#vt-nota-24#%/Dó/g' \
-	-e 's/%#vt-nota-25#%/Lá Sustenido/g' \
-	-e 's/%#vt-nota-26#%//g' \
+	-e 's/%#vt-nota-23#%/Sol Sustenido/g' \
+	-e 's/%#vt-nota-24#%/Ré Sustenido/g' \
+	-e 's/%#vt-nota-25#%/Mi Bemol/g' \
+	-e 's/%#vt-nota-26#%/Lá Sustenido/g' \
 	-e 's/%#vt-nota-27#%//g' \
+	-e 's/%#vt-nota-28#%//g' \
 	-e 's/%#vi-nota-01#%/Mi/g' \
 	-e 's/%#vi-nota-02#%/Si/g' \
-	-e 's/%#vi-nota-03#%//g' \
-	-e 's/%#vi-nota-04#%/Fá/g' \
-	-e 's/%#vi-nota-05#%/Sol/g' \
-	-e 's/%#vi-nota-06#%/Ré/g' \
-	-e 's/%#vi-nota-07#%/Dó/g' \
-	-e 's/%#vi-nota-08#%/Si/g' \
-	-e 's/%#vi-nota-09#%/Lá/g' \
-	-e 's/%#vi-nota-10#%/Sol/g' \
-	-e 's/%#vi-nota-11#%/Fá Sustenido/g' \
-	-e 's/%#vi-nota-12#%/Fá Sustenido/g' \
-	-e 's/%#vi-nota-13#%/Dó Sustenido/g' \
-	-e 's/%#vi-nota-14#%/Fá/g' \
-	-e 's/%#vi-nota-15#%/Mi/g' \
-	-e 's/%#vi-nota-16#%/Ré/g' \
-	-e 's/%#vi-nota-17#%/Si Bemol/g' \
-	-e 's/%#vi-nota-18#%//g' \
-	-e 's/%#vi-nota-19#%//g' \
-	-e 's/%#vi-nota-20#%/Sol Sustenido/g' \
-	-e 's/%#vi-nota-21#%/Ré Sustenido/g' \
+	-e 's/%#vi-nota-03#%/Sol/g' \
+	-e 's/%#vi-nota-04#%/Lá/g' \
+	-e 's/%#vi-nota-05#%//g' \
+	-e 's/%#vi-nota-06#%/Dó/g' \
+	-e 's/%#vi-nota-07#%/Ré/g' \
+	-e 's/%#vi-nota-08#%//g' \
+	-e 's/%#vi-nota-09#%/Ré/g' \
+	-e 's/%#vi-nota-10#%/Dó/g' \
+	-e 's/%#vi-nota-11#%//g' \
+	-e 's/%#vi-nota-12#%/Fá/g' \
+	-e 's/%#vi-nota-13#%/Sol/g' \
+	-e 's/%#vi-nota-14#%/Fá Sustenido/g' \
+	-e 's/%#vi-nota-15#%/Fá Sustenido/g' \
+	-e 's/%#vi-nota-16#%/Dó Sustenido/g' \
+	-e 's/%#vi-nota-17#%/Fá/g' \
+	-e 's/%#vi-nota-18#%/Mi/g' \
+	-e 's/%#vi-nota-19#%/Si Bemol/g' \
+	-e 's/%#vi-nota-20#%//g' \
+	-e 's/%#vi-nota-21#%//g' \
 	-e 's/%#vi-nota-22#%/Ré Sustenido/g' \
-	-e 's/%#vi-nota-23#%/Mi Bemol/g' \
-	-e 's/%#vi-nota-24#%/Dó/g' \
-	-e 's/%#vi-nota-25#%/Lá Sustenido/g' \
-	-e 's/%#vi-nota-26#%/Si/g' \
-	-e 's/%#vi-nota-27#%/Sol/g' \
+	-e 's/%#vi-nota-23#%/Sol Sustenido/g' \
+	-e 's/%#vi-nota-24#%/Ré Sustenido/g' \
+	-e 's/%#vi-nota-25#%/Mi Bemol/g' \
+	-e 's/%#vi-nota-26#%/Lá Sustenido/g' \
+	-e 's/%#vi-nota-27#%/Si/g' \
+	-e 's/%#vi-nota-28#%/Sol/g' \
 	-e 's/%#bx-nota-01#%/Sol/g' \
 	-e 's/%#bx-nota-02#%/Ré/g' \
-	-e 's/%#bx-nota-03#%/Mi/g' \
-	-e 's/%#bx-nota-04#%/Fá/g' \
+	-e 's/%#bx-nota-03#%/Lá/g' \
+	-e 's/%#bx-nota-04#%/Si/g' \
 	-e 's/%#bx-nota-05#%//g' \
-	-e 's/%#bx-nota-06#%//g' \
-	-e 's/%#bx-nota-07#%/Dó/g' \
-	-e 's/%#bx-nota-08#%/Si/g' \
-	-e 's/%#bx-nota-09#%/Lá/g' \
-	-e 's/%#bx-nota-10#%/Sol/g' \
-	-e 's/%#bx-nota-11#%/Fá Sustenido/g' \
-	-e 's/%#bx-nota-12#%/Fá Sustenido/g' \
-	-e 's/%#bx-nota-13#%/Dó Sustenido/g' \
-	-e 's/%#bx-nota-14#%/Fá/g' \
-	-e 's/%#bx-nota-15#%/Mi/g' \
-	-e 's/%#bx-nota-16#%//g' \
-	-e 's/%#bx-nota-17#%/Si Bemol/g' \
-	-e 's/%#bx-nota-18#%/Si/g' \
-	-e 's/%#bx-nota-19#%/Lá/g' \
-	-e 's/%#bx-nota-20#%/Sol Sustenido/g' \
-	-e 's/%#bx-nota-21#%/Ré Sustenido/g' \
-	-e 's/%#bx-nota-22#%//g' \
-	-e 's/%#bx-nota-23#%/Mi Bemol/g' \
+	-e 's/%#bx-nota-06#%/Dó/g' \
+	-e 's/%#bx-nota-07#%//g' \
+	-e 's/%#bx-nota-08#%/Sol/g' \
+	-e 's/%#bx-nota-09#%//g' \
+	-e 's/%#bx-nota-10#%/Mi/g' \
+	-e 's/%#bx-nota-11#%//g' \
+	-e 's/%#bx-nota-12#%/Fá/g' \
+	-e 's/%#bx-nota-13#%//g' \
+	-e 's/%#bx-nota-14#%/Fá Sustenido/g' \
+	-e 's/%#bx-nota-15#%/Fá Sustenido/g' \
+	-e 's/%#bx-nota-16#%/Dó Sustenido/g' \
+	-e 's/%#bx-nota-17#%/Fá/g' \
+	-e 's/%#bx-nota-18#%/Mi/g' \
+	-e 's/%#bx-nota-19#%/Si Bemol/g' \
+	-e 's/%#bx-nota-20#%/Si/g' \
+	-e 's/%#bx-nota-21#%/Lá/g' \
+	-e 's/%#bx-nota-22#%/Ré Sustenido/g' \
+	-e 's/%#bx-nota-23#%/Sol Sustenido/g' \
 	-e 's/%#bx-nota-24#%//g' \
-	-e 's/%#bx-nota-25#%/Lá Sustenido/g' \
-	-e 's/%#bx-nota-26#%//g' \
+	-e 's/%#bx-nota-25#%/Mi Bemol/g' \
+	-e 's/%#bx-nota-26#%/Lá Sustenido/g' \
 	-e 's/%#bx-nota-27#%//g' \
+	-e 's/%#bx-nota-28#%//g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
 	-e 's/%%break-reg/\\break/g' $< > $@
 

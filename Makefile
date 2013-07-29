@@ -3,8 +3,9 @@
 # file = exemplo-dacapo.lytex
 file = teste.lytex
 file-regencia = regencia-dacapo-vol1.lytex
+# file-regencia = regencia-dacapo-vol2.lytex
 # file-regencia = exemplo-regencia.lytex
-# file-regencia = teste.lytex
+file-regencia = teste.lytex
 file-percussao = percussao-dacapo.lytex
 # file-percussao = teste.lytex
 
@@ -31,6 +32,7 @@ regencia.lytex: $(file-regencia)  Makefile arquivos_regencia
 	-e 's/instrumento{InstrCapa}/instrumento{Regência}/g' \
 	-e 's/instrumento{Rodape}/instrumento{Regência}/g' \
 	-e 's/%%jogoregencia/agudos/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
 	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
 	-e 's/%#cv-nota-01#%/Ré/g' \
 	-e 's/%#cv-nota-02#%/Si/g' \

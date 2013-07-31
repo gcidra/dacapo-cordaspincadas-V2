@@ -102,7 +102,7 @@
 % \includegraphics[scale=0.5]{logo-keyboard}
 % \vspace*{2ex}
 
-\textbf{\Large{ANO 2011}}
+\textbf{\Large{ANO 2013}}
 \vspace*{4ex}
 
 \textbf{Copyright by Joel L. da Silva Barbosa \\
@@ -140,12 +140,12 @@ BARBOSA, J. L. da Silva \\
 \\
 DA CAPO CORDAS DEDILHADAS \instrumento{Original} Vol. 1. % Jundiaí, São Paulo: \\
 % Keyboard Editora Musical Ltda. 
-2011, p. \pageref{LastPage} \\
+2013, p. \pageref{LastPage} \\
 \\
 Didático/Pedagógico \\
 % ISBN nº %#ISBN-V1#% \\
 \\
-% Copyright 2011 by Keyboard Editora Musical Ltda. \_Todos os direitos reservado\_ \\
+% Copyright 2013 by Keyboard Editora Musical Ltda. \_Todos os direitos reservado\_ \\
 % R: Rangel Pestana 1044 - Jundiaí - São Paulo - CEP 13201-000 \\
 % e-mail: contato@keyboard.art.br \\
 \\
@@ -1399,12 +1399,21 @@ o site:
     \hline
 
     %%% PRÓXIMA LINHA
-    \letraquadrada{A} \quadtitulo{%#claves#%}
-    &
-    \letraquadrada{B} \quadtitulo{Compasso}
-    & 
-    \letraquadrada{C} \quadtitulo{Barra de Compasso}
+    \multicolumn{3}{|l|}{\letraquadrada{A}}
 
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho}
+    &
+    \quadtitulo{Violão Tenor}
+    &
+    \quadtitulo{Baixo}
+
+    \\
+    \quadtitulo{Bandolim} & \quadtitulo{Violão} & \em
+
+    \\
+    \quadtitulo{Viola} & \em & \em
     
 
     %%% PRÓXIMA LINHA
@@ -1416,6 +1425,34 @@ o site:
       }
     \end{lilypond}
     &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'vi
+        \include "claves.ly" 
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'bx
+        \include "claves.ly" 
+      }
+    \end{lilypond}
+
+    \\
+  \end{tabular}
+
+
+  %%% PRÓXIMA LINHA
+  \begin{tabular}[t]{|l|l|}
+    \hline
+    \letraquadrada{B} \quadtitulo{Compasso}
+    & 
+    \letraquadrada{C} \quadtitulo{Barra de Compasso}
+
+
+    %%% PRÓXIMA LINHA
+    \\
     \includegraphics[scale=1]{compasso-vazio}
     &
     \includegraphics[scale=1]{barra-compasso}
@@ -1424,14 +1461,14 @@ o site:
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \multicolumn{2}{|l|}{\letraquadrada{D} \quadtitulo{Compasso Quaternário}}
+    \letraquadrada{D} \quadtitulo{Compasso Quaternário}
     &    
     \letraquadrada{E} \quadtitulo{Barra Final}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \multicolumn{2}{|l|}{\includegraphics[scale=1]{formula-4tempos-por-compasso}}
+    \includegraphics[scale=1]{formula-4tempos-por-compasso}
     &
     \includegraphics[scale=1]{barra-final}
 
@@ -1449,6 +1486,7 @@ o site:
 \begin{center}
 %#exemplo-01#%
 \end{center}
+
 
 \newpage
 

@@ -94,57 +94,62 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 04 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
   \renewcommand{\tablename}{Quadro}
-  \caption{Lídio e Lídio-mixolídio}
-  \label{Quadro_11}
-  \begin{tabular}{|l|lll|}
+  \caption{Dlim-dlim-dlão}
+  \label{Quadro_04}
+  \begin{tabular}[t]{|ll|ll|}
     \hline
 
+
     %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \multicolumn{3}{l|}{\letraquadrada{B}}
+    \multicolumn{4}{|l|}{\letraquadrada{A}}
+   
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\quadtitulo{Cavaquinho}} &    \multicolumn{2}{l|}{\quadtitulo{Bandolim}} 
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#cv-nota-06#%}
+    &
+    \quadtitulo{%#cv-nota-07#%}
+    &
+    \quadtitulo{%#bd-nota-06#%}
+    &
+    \quadtitulo{%#bd-nota-07#%}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{%#nota-16#%}
-    &
-    \quadtitulo{Sol Lídio}
-    &
-    \quadtitulo{Sol Lídio-Mixolídio}
-    &
-    \quadtitulo{Lá Maior}
-
-
-    %%% PRÓXIMA LINHA
-    \\
-    \begin{lilypond}
+    \begin[fragment]{lilypond}
       \transpose c c {
         \keepWithTag #'cv
-        \include "nota-16.ly"
+        \include "nota-06.ly"
       }
     \end{lilypond}
     &
     \begin[fragment]{lilypond}
       \transpose c c {
         \keepWithTag #'cv
-        \include "armadura-sol-lidio.ly"
+        \include "nota-07.ly"
       }
     \end{lilypond}
     &
     \begin[fragment]{lilypond}
       \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-sol-lm.ly"
+        \keepWithTag #'bd
+        \include "nota-06.ly"
       }
     \end{lilypond}
     &
     \begin[fragment]{lilypond}
       \transpose c c {
-        \keepWithTag #'cv
-        \include "armadura-la.ly"
+        \keepWithTag #'bd
+        \include "nota-07.ly"
       }
     \end{lilypond}
 
@@ -152,39 +157,184 @@
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \letraquadrada{C} & \multicolumn{3}{l|}{\letraquadrada{D}}
+    \multicolumn{2}{|l|}{\quadtitulo{Viola}} &    \multicolumn{2}{l|}{\quadtitulo{Violão Tenor}} 
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{Ritmo}
+    \quadtitulo{%#va-nota-06#%}
     &
-    \multicolumn{3}{l|}{\quadtitulo{Acordes}}
+    \quadtitulo{%#va-nota-07#%}
+    &
+    \quadtitulo{%#vt-nota-06#%}
+    &
+    \quadtitulo{%#vt-nota-07#%}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \includegraphics[scale=1]{ritmo-8r}
-    &
     \begin[fragment]{lilypond}
       \transpose c c {
-        \keepWithTag #'cv
-        \include "acorde-A.ly"
+        \keepWithTag #'va
+        \include "nota-06.ly"
       }
     \end{lilypond}
     &
     \begin[fragment]{lilypond}
       \transpose c c {
-        \keepWithTag #'cv
-        \include "acorde-Dm.ly"
+        \keepWithTag #'va
+        \include "nota-07.ly"
       }
     \end{lilypond}
     &
     \begin[fragment]{lilypond}
       \transpose c c {
-        \keepWithTag #'cv
-        \include "acorde-Em.ly"
+        \keepWithTag #'vt
+        \include "nota-06.ly"
       }
     \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\quadtitulo{Violão}} &    \multicolumn{2}{l|}{\quadtitulo{Baixo}} 
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#vi-nota-06#%}
+    &
+    \quadtitulo{%#vi-nota-07#%}
+    &
+    \quadtitulo{%#bx-nota-06#%}
+    &
+    \quadtitulo{%#bx-nota-07#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-06.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-06.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-07.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{\letraquadrada{B} \quadtitulo{Acordes}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho} 
+    & 
+    \multicolumn{1}{l}{\quadtitulo{Bandolim}}
+    &
+    \quadtitulo{Viola} 
+    &
+    \quadtitulo{Violão Tenor}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    &
+    \multicolumn{1}{l}{
+      \begin[fragment]{lilypond}
+        \transpose c c {
+          \keepWithTag #'bd
+          \include "acorde-G.ly"
+        }
+      \end{lilypond}
+    }
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão} 
+    & 
+    \quadtitulo{Baixo}
+    &
+    \multicolumn{2}{l|}{\quadtitulo{Dinâmicas}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "acorde-G.ly"
+      }
+    \end{lilypond}
+    &
+    \multicolumn{2}{l|}{
+      \textbf{\textit{f}} = forte
+    }
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{
+      \em
+    }
+    &
+    \multicolumn{2}{l|}{
+      \textbf{\textit{p}} = piano
+    }
 
 
     %%% FINAL DAS LINHAS
@@ -193,7 +343,9 @@
   \end{tabular}
 \end{table}    
 
-%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 
 
@@ -228,9 +380,12 @@
 
 
 
-\newpage
 
+\newpage
 \tableofcontents
+
+\renewcommand\listtablename{Lista dos Quadros}
+  \listoftables
 
 \end{document}
 

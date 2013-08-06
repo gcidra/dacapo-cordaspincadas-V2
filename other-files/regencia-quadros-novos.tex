@@ -563,52 +563,53 @@
     \end{lilypond}
 
     \\
-    \hline
   \end{tabular}
 
   \begin{tabular}[t]{|l|l|l|}
 
     %%% PRÓXIMA LINHA
-    \letraquadrada{B} & \letraquadrada{C} & \letraquadrada{D}
+    \hline
+    \multicolumn{2}{|l|}{\letraquadrada{B}} & \letraquadrada{C}
 
     %%% PRÓXIMA LINHA
     \\
+    \multicolumn{2}{|l|}{\quadtitulo{Fórmula de Compasso}}
+    &
     \quadtitulo{Sol Maior}
-    &
-    \quadtitulo{Andamento}
-    &
-    \quadtitulo{Pausa de Semínima}
+
 
     %%% PRÓXIMA LINHA
     \\
+    \multicolumn{2}{|l|}{\includegraphics[scale=1]{formula-3tempos-por-compasso}}
+    &
     \begin[fragment]{lilypond}
       \transpose c c {
         \keepWithTag #'cv
         \include "armadura-sol.ly"
       }
     \end{lilypond}
-    &
-    \textit{Allegro}
-    &
-    \includegraphics[scale=1]{seminima-pausa}
-
 
 
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \multicolumn{2}{|l|}{\letraquadrada{E}} & \letraquadrada{F}
+    \letraquadrada{D} & \letraquadrada{E} & \letraquadrada{F}
+
 
     %%% PRÓXIMA LINHA
     \\
-    \multicolumn{2}{|l|}{\quadtitulo{Fórmula de Compasso}}
+    \quadtitulo{Andamento}
+    &
+    \quadtitulo{Pausa de Semínima}
     &
     \quadtitulo{Da Capo ao Fine}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \multicolumn{2}{|l|}{\includegraphics[scale=1]{formula-3tempos-por-compasso}}
+    \textit{Allegro}
+    &
+    \includegraphics[scale=1]{seminima-pausa}
     &
     \textit{D.C. al Fine}
 

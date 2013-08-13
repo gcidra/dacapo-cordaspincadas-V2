@@ -2455,7 +2455,7 @@ variação para ela.
   }
 \end{lilypond}
 
-
+\break
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
@@ -2728,6 +2728,7 @@ variação para ela.
   \end{tabular}
 \end{table}
 
+\break
 %%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
 \begin{table}[!ht]
   \centering
@@ -2858,6 +2859,7 @@ variação para ela.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\break
 \section{A Barquinha}
 \label{sec:barquinha}
 
@@ -3449,6 +3451,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
 
 \end{enumerate}
 
+\break
 \section{Jingle Bells}
 \label{sec:jingle-bells}
 Faça a brincadeira de descobrir a nota errada.
@@ -3829,6 +3832,7 @@ variação para ela.
 
 
 
+\break
 \section{Divertindo-se com seis notas}
 \label{sec:divertindo-se-com-seis-notas}
 
@@ -3871,6 +3875,7 @@ variação para ela.
   }
 \end{lilypond}
 
+\break
 \section{Mãos e Pés + O Balão de João}
 \label{sec:maos-e-pes-balao-joao}
 Experimente outras dinâmicas.
@@ -4596,6 +4601,7 @@ Explore diferentes dinâmicas.
 \end{lilypond}
 
 
+\break
 \section{Variações sobre Zabelinha}
 \label{sec:vari-sobre-zabelinha}
 Harmonize a melodia e as variações.
@@ -4684,7 +4690,7 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-
+\break
 
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 11 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
@@ -4970,6 +4976,7 @@ Harmonize a melodia e as variações.
   \end{tabular}
 \end{table}
 
+\break
 %%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
 \begin{table}[!ht]
   \centering
@@ -5054,7 +5061,7 @@ Harmonize a melodia e as variações.
 
 
 
-
+\break
 \section{Escala de sol nos modos lídio e lídio-mixolídio}
 \label{sec:escala-do-modo-lidio-sol}
 

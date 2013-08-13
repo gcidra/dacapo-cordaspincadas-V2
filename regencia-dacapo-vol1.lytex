@@ -19,9 +19,8 @@
 \usepackage{lastpage}
 \usepackage{wrapfig}
 \usepackage{array}
-\usepackage{tabularx}
-
-
+\usepackage{multirow}
+% \usepackage{tabularx}
 \titlecontents{section}
 [2 em]
 {}

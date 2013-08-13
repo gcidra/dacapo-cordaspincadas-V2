@@ -1398,7 +1398,7 @@ o site:
     \hline
 
     %%% PRÓXIMA LINHA
-    \multicolumn{3}{|l|}{\letraquadrada{A}}
+    \multicolumn{3}{|l|}{\letraquadrada{A} \quadtitulo{Claves}}
 
     %%% PRÓXIMA LINHA
     \\
@@ -1843,7 +1843,7 @@ o site:
 
 
 
-
+\break
 \section{Movimento Contrário}
 \label{sec:a-movimento-contrario}
 
@@ -3851,6 +3851,7 @@ variação para ela.
     \include "cp-030b.ly"}
 \end{lilypond}
 
+\break
 \subsection*{Parte 3}
 \begin{lilypond}
   \transpose c c {
@@ -4256,7 +4257,7 @@ Faça a brincadeira de descobrir a(s) nota(s) errada(s).
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 09 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\break
 \section{Atirei no lírio}
 \label{sec:atirei-no-lirio}
 \subsection*{Toada dos Remeiros}
@@ -4300,6 +4301,7 @@ Coloque as dinâmicas e andamento.
 \lilypondfile{reg-044.ly}
 
 
+\break
 \section{Transpondo}
 \label{sec:transpondo}
 
@@ -4590,6 +4592,8 @@ Harmonize a melodia.
     \include "cp-053-1.ly"}
 \end{lilypond}
 
+
+\break
 \section{Improvisando em Eu Chole, Chole, Lá}
 \label{sec:impr-em-eu-chole-la}
 Explore diferentes dinâmicas.

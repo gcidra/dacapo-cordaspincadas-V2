@@ -1810,11 +1810,15 @@ o site:
 \section{Cordas Primas}
 \label{sec:cordas-primas}
 
+\subsubsection*{Bandolim, Violão Tenor e Baixo = Tacet}
+
 \lilypondfile{reg-01.ly}
 
 
 \section{Duas Cordas Soltas}
 \label{sec:duas-cordas-soltas}
+
+\subsubsection*{Cavaquinho, Viola e Violão = Tacet}
 
 \lilypondfile{reg-02.ly}
 
@@ -1822,11 +1826,15 @@ o site:
 \section{Duas Cores}
 \label{sec:duas-cores}
 
+\subsubsection*{Bandolim, Violão Tenor e Baixo = Tacet}
+
 \lilypondfile{reg-03.ly}
 
 
 \section{Palhetadas}
 \label{sec:palhetadas}
+
+\subsubsection*{Cavaquinho, Viola e Violão = Tacet}
 
 \lilypondfile{reg-04.ly}
 
@@ -1834,36 +1842,25 @@ o site:
 \section{A Máquina}
 \label{sec:a-maquina}
 
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-005.ly"
-  }
-\end{lilypond}
-
+\lilypondfile{reg-05.ly}
 
 
 \break
 \section{Movimento Contrário}
 \label{sec:a-movimento-contrario}
 
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-006.ly"
-  }
-\end{lilypond}
+\subsubsection*{Bandolim, Violão Tenor e Baixo = Tacet}
+
+\lilypondfile{reg-06.ly}
+
 
 
 \section{Sobe e Desce}
 \label{sec:sobe-e-desce}
 
-\begin{lilypond}
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-007.ly"
-  }
-\end{lilypond}
+\subsubsection*{Cavaquinho, Viola e Violão = Tacet}
+
+\lilypondfile{reg-07.ly}
 
 
 

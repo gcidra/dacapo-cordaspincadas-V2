@@ -13,14 +13,14 @@
   \new ChoirStaff<<
     <<
       \chords {
-        a1:m
-        g
-        a:m
-        s2 g
-        s a:m 
-        g a:m
-        a:m g
-        a1:m
+        % a1:m
+        % g
+        % a:m
+        % s2 g
+        % s a:m 
+        % g a:m
+        % a:m g
+        % a1:m
       }
 
       \new Staff <<

@@ -32,7 +32,7 @@
       \tag #'cv {
         <<
           {
-            b8^\markup {\italic {\bold "Moderato"}} d 
+            b8^\markup {\column{\italic {\bold "Moderato"} \italic{\small "Divisi"}}} d 
             f4. e8
             d4 e8 d
             c4. b8

@@ -94,10 +94,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
+\section{Atirei no lírio}
+\label{sec:atirei-no-lirio}
+\subsection*{Toada dos Remeiros}
+
+\begin{lilypond}
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-045.ly"}
+\end{lilypond}
 
 
 
 
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-005.ly"
+%   }
+% \end{lilypond}
+
+
+% \subsection*{Parte 2 - Lídio-mixolídio}
+% \begin{lilypond}
+%   \transpose c c {
+%     \keepWithTag #'cv
+%     \include "cp-teste.ly"}
+% \end{lilypond}
 
 
 

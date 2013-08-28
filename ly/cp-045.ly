@@ -71,7 +71,7 @@
       \tag #'bd {
         <<
           {
-            b8^\markup {\italic {\bold "Moderato"}} d 
+            b8^\markup {\column{\italic {\bold "Moderato"} \italic{\small "Divisi"}}} d 
             f4. e8
             d4 e8 d
             c4. b8
@@ -110,7 +110,7 @@
       \tag #'va {
         <<
           {
-            b8^\markup {\italic {\bold "Moderato"}} d 
+            b8^\markup {\column{\italic {\bold "Moderato"} \italic{\small "Divisi"}}} d 
             f4. e8
             d4 e8 d
             c4. b8
@@ -150,7 +150,7 @@
         \clef "G_8"
         <<
           {
-            b,8^\markup {\italic {\bold "Moderato"}} d 
+            b,8^\markup {\column{\italic {\bold "Moderato"} \italic{\small "Divisi"}}} d 
             f4. e8
             d4 e8 d
             c4. b8
@@ -190,7 +190,7 @@
         \clef "G_8"
         <<
           {
-            b8^\markup {\italic {\bold "Moderato"}} d 
+            b8^\markup {\column{\italic {\bold "Moderato"} \italic{\small "Divisi"}}} d 
             f4. e8
             d4 e8 d
             c4. b8
@@ -230,7 +230,7 @@
         \clef bass
         <<
           {
-            b,8^\markup {\italic {\bold "Moderato"}} d 
+            b,8^\markup {\column{\italic {\bold "Moderato"} \italic{\small "Divisi"}}} d 
             f4. e8
             d4 e8 d
             c4. b8

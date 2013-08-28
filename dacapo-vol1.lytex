@@ -858,6 +858,7 @@ o site:
 \end{lilypond}
 
 
+%%break-vt
 \section{Sobe e Desce}
 \label{sec:sobe-e-desce}
 
@@ -2178,6 +2179,8 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 %%break-cv
+%%break-bd
+%%break-va
 \subsection*{Parte 2}
 \begin{lilypond}
   \transpose c c {

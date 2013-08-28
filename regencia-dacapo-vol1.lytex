@@ -3237,6 +3237,7 @@ Harmonize as outras sequências e escolha suas dinâmincas.
   }
 \end{lilypond}
 
+\break
 \section{Encontrando as notas erradas e harmonizando}
 \label{sec:encontrando-notas-erradas}
 Harmonize a melodia.
@@ -3286,6 +3287,7 @@ andamento, \textbf{\textit{allegro}} ou \textbf{\textit{andante}}.
     \include "cp-022.ly"}
 \end{lilypond}
 
+\break
 \section{Divertindo-se com cinco notas}
 \label{sec:divertindo-se-com}
 
@@ -3950,6 +3952,8 @@ Harmonize a melodia e as variações.
 \lilypondfile{reg-035.ly}
 
 
+\break
+
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 08 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
@@ -4160,6 +4164,7 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
+\break
 \section{Ao passar da barca}
 \label{sec:ao-passar-da-barca}
 Harmonize a melodia.
@@ -5062,7 +5067,7 @@ Harmonize a melodia e as variações.
 
 
 
-\break
+
 \section{Escala de sol nos modos lídio e lídio-mixolídio}
 \label{sec:escala-do-modo-lidio-sol}
 
@@ -5107,6 +5112,7 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
+\break
 \section{Vamos escrever uma segunda voz para Coelhinho}
 \label{sec:vamos-escrever-segunda-voz-coelhinho}
 Toque esta melodia em Sol maior também, começando com a nota si na

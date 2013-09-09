@@ -12,14 +12,14 @@
 
   \new ChoirStaff<<
     <<
-      \chords {
-        \repeat volta 2 {
-          s1 s s s
-        }
-        \repeat volta 2 {
-          e1:m s a:m s
-        }
-      }
+      % \chords {
+      %   \repeat volta 2 {
+      %     s1 s s s
+      %   }
+      %   \repeat volta 2 {
+      %     e1:m s a:m s
+      %   }
+      % }
 
       \new Staff <<
         \set Staff.instrumentName = \markup {\column { "Cavaquinho"} }

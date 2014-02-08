@@ -3146,18 +3146,27 @@ Você pode fazer uma ordem assim 1-3-6-8-5-2-1-2-4-7-9.
   \begin{tabular}[t]{|l|l|l|}
     \hline
 
+
     %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C}
+    \multicolumn{3}{|l|}{\letraquadrada{A}}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{%#nota-25#%}
-    &
-    \quadtitulo{Sol Menor}
-    &
-    \quadtitulo{Bemol}
+    \quadtitulo{Cavaquinho} 
+    & 
+    \quadtitulo{Bandolim} 
+    & 
+    \quadtitulo{Viola}
 
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#cv-nota-25#%}
+    & 
+    \quadtitulo{%#bd-nota-25#%}
+    &
+    \quadtitulo{%#va-nota-25#%}
 
     %%% PRÓXIMA LINHA
     \\
@@ -3170,12 +3179,89 @@ Você pode fazer uma ordem assim 1-3-6-8-5-2-1-2-4-7-9.
     &
     \begin[fragment]{lilypond}
       \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-25.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-25.ly"
+      }
+    \end{lilypond}
+   
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor} 
+    & 
+    \quadtitulo{Violão} 
+    & 
+    \quadtitulo{Baixo}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#vt-nota-25#%}
+    & 
+    \quadtitulo{%#vi-nota-25#%}
+    &
+    \quadtitulo{%#bx-nota-25#%}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-25.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-25.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-25.ly"
+      }
+    \end{lilypond}
+    
+    \\
+    \hline
+  \end{tabular}
+
+  %%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
+  \begin{tabular}[t]{|l|l|}
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{B} & \letraquadrada{C}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Sol Menor}
+    &
+    \quadtitulo{Bemol}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
         \keepWithTag #'cv
         \include "armadura-sol-menor.ly"
       }
     \end{lilypond}
     &
     \includegraphics[scale=1]{bemol-pre}
+
 
     %%% FINAL DAS LINHAS
     \\

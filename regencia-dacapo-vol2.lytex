@@ -1562,6 +1562,7 @@ o site:
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+
 \section{Improvisando em O Balão de João}
 \label{sec:improvisando-em-o-balao-de-joao}
 \begin{lilypond}
@@ -1591,6 +1592,7 @@ depois \textit{D.C. al fine}.
     \include "cp-038.ly"}
 \end{lilypond}
 
+\break
 \section{Variações sobre A Mucama}
 \label{sec:vari-sobre-mucama}
 Harmonize a melodia e as variações.
@@ -1642,6 +1644,7 @@ Harmonize a melodia e as variações.
     \include "cp-059.ly"}
 \end{lilypond}
 
+\break
 \section{Sapatinho branco em trio}
 \label{sec:sapatinho-branco-trio}
 Harmonize a melodia.
@@ -1946,6 +1949,7 @@ que não forem eliminados.
       }
     \end{lilypond}
 
+
     %%% VIOLÃO TENOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% PRÓXIMA LINHA
     \\
@@ -2020,9 +2024,22 @@ que não forem eliminados.
       }
     \end{lilypond}
 
+
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
+\begin{table}[!ht]
+  \centering
+
+  %%% PRÓXIMA TABELA
+  \begin{tabular}[t]{|lll|}
+
     %%% BAIXO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% PRÓXIMA LINHA
-    \\
     \hline
     \quadtitulo{Baixo}    &\em    &\em
 
@@ -2057,11 +2074,11 @@ que não forem eliminados.
       }
     \end{lilypond}
 
-
     \\
   \end{tabular}
 
-  %%% PRÓXIMA TABELA
+
+  %%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
   \begin{tabular}[t]{|ll|l|l|}
 
     %%% PRÓXIMA LINHA
@@ -2115,7 +2132,7 @@ que não forem eliminados.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\break
 
 \section{Escalas de ré maior e ré menor}
 \label{sec:escalas-de-re-maior-menor}
@@ -2579,7 +2596,7 @@ Harmonize a melodia e as variações.
 \end{lilypond}
 
 
-
+\break
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 05 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering

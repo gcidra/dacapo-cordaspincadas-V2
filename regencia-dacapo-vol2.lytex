@@ -3391,14 +3391,18 @@ para ela.
     %%% PRÓXIMA LINHA
     \multicolumn{3}{|l|}{\letraquadrada{A}}
 
+    %%% CAVAQUINHO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{3}{|l|}{\quadtitulo{Cavaquinho}}
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{%#nota-26#%}
+    \quadtitulo{%#cv-nota-26#%}
     &
-    \quadtitulo{%#nota-27#%}
+    \quadtitulo{%#cv-nota-27#%}
     &
-    \quadtitulo{%#nota-28#%}
+    \quadtitulo{%#cv-nota-28#%}
 
 
     %%% PRÓXIMA LINHA
@@ -3423,6 +3427,201 @@ para ela.
         \include "nota-28.ly"
       }
     \end{lilypond}
+
+
+    %%% BANDOLIM %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Bandolim}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#bd-nota-26#%}
+    &
+    \quadtitulo{%#bd-nota-27#%}
+    &
+    \quadtitulo{%#bd-nota-28#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-27.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-28.ly"
+      }
+    \end{lilypond}
+
+
+    %%% VIOLA %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Viola}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#va-nota-26#%}
+    &
+    \quadtitulo{%#va-nota-27#%}
+    &
+    \quadtitulo{%#va-nota-28#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-27.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-28.ly"
+      }
+    \end{lilypond}
+
+
+    %%% VIOLÃO TENOR %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Violão Tenor}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#vt-nota-26#%}
+    &
+    \quadtitulo{%#vt-nota-27#%}
+    &
+    \quadtitulo{%#vt-nota-28#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-27.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-28.ly"
+      }
+    \end{lilypond}
+
+
+    %%% VIOLÃO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Violão}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#vi-nota-26#%}
+    &
+    \quadtitulo{%#vi-nota-27#%}
+    &
+    \quadtitulo{%#vi-nota-28#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-27.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-28.ly"
+      }
+    \end{lilypond}
+
+    %%% BAIXO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{3}{|l|}{\quadtitulo{Baixo}}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#bx-nota-26#%}
+    &
+    \quadtitulo{%#bx-nota-27#%}
+    &
+    \quadtitulo{%#bx-nota-28#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-26.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-27.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-28.ly"
+      }
+    \end{lilypond}
+
 
     %%% FINAL DAS LINHAS
     \\

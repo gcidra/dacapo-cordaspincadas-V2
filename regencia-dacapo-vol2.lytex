@@ -2184,7 +2184,7 @@ que não forem eliminados.
 \end{lilypond}
 
 
-
+\break
 
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 04 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
@@ -2509,7 +2509,7 @@ que não forem eliminados.
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 04 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\break
 
 \section{Escalas de mi maior e mi menor}
 \label{sec:escalas-de-mi-maior-menor}
@@ -2553,6 +2553,8 @@ que não forem eliminados.
     \include "cp-074.ly"}
 \end{lilypond}
 
+
+\break
 
 \section{Variações sobre Ciranda, Cirandinha}
 \label{sec:variacoes-ciranda-cirandinha}
@@ -3045,7 +3047,9 @@ Harmonize a melodia e as variações.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 05 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\break
+.
+\break
 \section{Dorme, nenê}
 \label{sec:dorme-nene}
 Experimente outras dinâmicas
@@ -3311,6 +3315,7 @@ Você pode fazer uma ordem assim 1-3-6-8-5-2-1-2-4-7-9.
     \include "cp-068.ly"}
 \end{lilypond}
 
+\break
 \section{Improvisando em A Barata}
 \label{sec:improvisando-em-a-barata}
 Acrescente suas dinâmicas.
@@ -3394,7 +3399,7 @@ para ela.
 \end{lilypond}
 
 
-
+\break
 
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 07 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
@@ -3651,6 +3656,7 @@ para ela.
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 07 - VOL 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\break
 
 \section{Cromos}
 \label{sec:cromos}
@@ -3747,6 +3753,8 @@ Toque esta lição também em ordem inversa (começando pela última nota).
 %   \includegraphics[scale=1]{espiral-%%jogoregencia}
 % \end{center}
 
+
+\break
 
 \section{Escravo de Jó}
 \label{sec:escravo-de-jo}

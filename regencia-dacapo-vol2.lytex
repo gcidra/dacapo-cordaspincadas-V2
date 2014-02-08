@@ -2179,16 +2179,23 @@ que não forem eliminados.
     \hline
 
     %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{A}} & \multicolumn{2}{l|}{\letraquadrada{B}}
+    \multicolumn{4}{|l|}{\letraquadrada{A}}
 
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{%#nota-22#%}
+    \multicolumn{2}{|l|}{\quadtitulo{Cavaquinho}}    &     \multicolumn{2}{l|}{\quadtitulo{Bandolim}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#cv-nota-22#%}
     &
-    \quadtitulo{%#nota-23#%}
+    \quadtitulo{%#cv-nota-23#%}
     &
-    \multicolumn{2}{l|}{\quadtitulo{Acordes}}
+    \quadtitulo{%#bd-nota-22#%}
+    &
+    \quadtitulo{%#bd-nota-23#%}
 
 
     %%% PRÓXIMA LINHA
@@ -2209,6 +2216,136 @@ que não forem eliminados.
     &
     \begin[fragment]{lilypond}
       \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\quadtitulo{Viola}}    &    \multicolumn{2}{l|}{\quadtitulo{Violão Tenor}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#va-nota-22#%}
+    &
+    \quadtitulo{%#va-nota-23#%}
+    &
+    \quadtitulo{%#vt-nota-22#%}
+    &
+    \quadtitulo{%#vt-nota-23#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\quadtitulo{Violão}}    &     \multicolumn{2}{l|}{\quadtitulo{Baixo}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#vi-nota-22#%}
+    &
+    \quadtitulo{%#vi-nota-23#%}
+    &
+    \quadtitulo{%#bx-nota-22#%}
+    &
+    \quadtitulo{%#bx-nota-23#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-22.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-23.ly"
+      }
+    \end{lilypond}
+
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{4}{|l|}{\letraquadrada{B}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{4}{|l|}{\quadtitulo{Acordes}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \multicolumn{2}{|l|}{\quadtitulo{Cavaquinho}}    &     \multicolumn{2}{l|}{\quadtitulo{Bandolim}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
         \keepWithTag #'cv
         \include "acorde-Bm.ly"
       }
@@ -2220,12 +2357,102 @@ que não forem eliminados.
         \include "acorde-E.ly"
       }
     \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\quadtitulo{Viola}}    &    \multicolumn{2}{l|}{\quadtitulo{Violão Tenor}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \multicolumn{2}{|l|}{\quadtitulo{Violão}}    &     \multicolumn{2}{l|}{\quadtitulo{Baixo}}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "acorde-Bm.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "acorde-E.ly"
+      }
+    \end{lilypond}
 
     \\
     \hline
+  \end{tabular}
+
+%%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
+  \begin{tabular}[t]{|ll|l|}
 
     %%% PRÓXIMA LINHA
-    \multicolumn{2}{|l|}{\letraquadrada{C}} & \multicolumn{2}{l|}{\letraquadrada{D}}
+    \multicolumn{2}{|l|}{\letraquadrada{C}} & \letraquadrada{D}
     
     %%% PRÓXIMA LINHA
     \\
@@ -2233,7 +2460,7 @@ que não forem eliminados.
     &
     \quadtitulo{Mi Menor}
     &
-    \multicolumn{2}{l|}{\quadtitulo{Sinal de Repetição}}
+    \quadtitulo{Sinal de Repetição}
     
     
     %%% PRÓXIMA LINHA
@@ -2252,7 +2479,7 @@ que não forem eliminados.
       }
     \end{lilypond}
     &
-    \multicolumn{2}{l|}{\includegraphics[scale=1]{sinal-repeticao2}}
+    \includegraphics[scale=1]{sinal-repeticao2}
 
 
     %%% FINAL DAS LINHAS

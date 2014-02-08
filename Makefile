@@ -1,9 +1,9 @@
-file = dacapo-vol1.lytex
-# file = dacapo-vol2.lytex
+# file = dacapo-vol1.lytex
+file = dacapo-vol2.lytex
 # file = exemplo-dacapo.lytex
 # file = teste.lytex
-file-regencia = regencia-dacapo-vol1.lytex
-# file-regencia = regencia-dacapo-vol2.lytex
+# file-regencia = regencia-dacapo-vol1.lytex
+file-regencia = regencia-dacapo-vol2.lytex
 # file-regencia = exemplo-regencia.lytex
 # file-regencia = teste.lytex
 file-percussao = percussao-dacapo.lytex

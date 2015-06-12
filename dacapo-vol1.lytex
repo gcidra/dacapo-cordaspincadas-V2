@@ -626,52 +626,6 @@ o site:
 
 \newpage
 
-\section{Primeira nota}
-\label{sec:primeira-nota}
-
-\begin{lilypond}[line-width=17cm]
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-001-do.ly"
-  }
-\end{lilypond}
-
-
-\section{Segunda nota}
-\label{sec:seminimas}
-
-\begin{lilypond}[line-width=17cm]
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-002-do.ly"
-  }
-\end{lilypond}
-
-
-\section{Mínimas e semínimas}
-\label{sec:minimas}
-
-\begin{lilypond}[line-width=17cm]
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-003-do.ly"
-  }
-\end{lilypond}
-
-Algumas maneiras de se tocar este número e os semelhantes a ele: 
-
-\begin{enumerate}
-
-\item Toque cada uma das duas notas da melodia com um grupo diferente de
-  instrumentos, um para a nota mais aguda e outro para a
-  mais grave.
-  
-\item Toque cada uma das duas notas da melodia com um instrumentista
-  diferente, um para a nota mais aguda e outro para a
-  mais grave.
-  
-\end{enumerate}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]

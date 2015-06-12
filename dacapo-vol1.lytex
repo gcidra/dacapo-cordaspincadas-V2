@@ -771,7 +771,8 @@ o site:
 
 %%%%% INÍCIO DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Primeira nota}
+\section{Corda Prima}
+% \section{Primeira nota}
 \label{sec:primeira-nota}
 
 \begin{lilypond}[line-width=17\cm]
@@ -782,7 +783,8 @@ o site:
 \end{lilypond}
 
 
-\section{Segunda nota}
+\section{Corda Vizinha}
+% \section{Segunda nota}
 \label{sec:seminimas}
 
 \begin{lilypond}[line-width=17\cm]
@@ -793,7 +795,8 @@ o site:
 \end{lilypond}
 
 
-\section{Mínimas e semínimas}
+\section{Duas Cordas Soltas}
+% \section{Mínimas e semínimas}
 \label{sec:minimas}
 
 \begin{lilypond}[line-width=17\cm]
@@ -820,6 +823,18 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
 
 %%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+
+\section{Duas Notas Contra Uma}
+% \section{Cordas Primas}
+\label{sec:cordas-primas}
+\begin{lilypond}[line-width=17\cm]
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-001.ly"
+  }
+\end{lilypond}
 
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
@@ -867,17 +882,8 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Cordas Primas}
-\label{sec:cordas-primas}
-\begin{lilypond}[line-width=17\cm]
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-001.ly"
-  }
-\end{lilypond}
-
-
-\section{Duas Cordas Soltas}
+\section{Homofonia}
+% \section{Duas Cordas Soltas}
 \label{sec:duas-cordas-soltas}
 \begin{lilypond}[line-width=17\cm]
   \transpose c c {

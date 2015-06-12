@@ -741,13 +741,12 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
   \renewcommand{\tablename}{Quadro}
   \caption{Cordas Soltas}
   \label{Quadro_02}
-  \begin{tabular}[t]{|lll|}
+  \begin{tabular}[t]{|ll|l|l|}
     \hline
 
-
     %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \em & \em
-   
+    \multicolumn{2}{|l|}{ \letraquadrada{A} }    &    \letraquadrada{B}    &    \letraquadrada{C}
+
 
     %%% PRÓXIMA LINHA
     \\
@@ -755,8 +754,9 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
     &
     \quadtitulo{%#nota-02#%}
     &
-    \quadtitulo{%#nota-03#%}
-
+    \quadtitulo{Mínima}
+    &
+    \quadtitulo{Semínima}
 
     %%% PRÓXIMA LINHA
     \\
@@ -774,72 +774,47 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
       }
     \end{lilypond}
     &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "nota-03.ly" 
-      }
-    \end{lilypond}
-
-    \\
-  \end{tabular}
-
-  %%% PRÓXIMA TABELA
-  \begin{tabular}[t]{|l|l|l|}
-
-    %%% PRÓXIMA LINHA
-    \hline
-    \letraquadrada{B}  & \letraquadrada{C}   &   \letraquadrada{D}
-
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Mínima}
-    &
-    \quadtitulo{Semínima}
-    &
-    \quadtitulo{Técnica}
-
-
-    %%% PRÓXIMA LINHA
-    \\
     \includegraphics[scale=1]{minima}
     &
     \includegraphics[scale=1]{seminima}
-    &
-    \includegraphics[scale=0.7]{mao-i-m}
 
 
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \letraquadrada{E}  & \letraquadrada{F} &   \letraquadrada{G}
+    \letraquadrada{D}  & \em  & \letraquadrada{E} & \letraquadrada{F}
 
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{Pausa de semibreve}
-    &
-    \quadtitulo{Pausa de mínima}
-    &
     \quadtitulo{Sinal de Repetição}
-    
-
+    &
+    \em
+    &
+    \quadtitulo{Técnica}
+    &
+    \quadtitulo{Pausa de Semibreve}
 
     %%% PRÓXIMA LINHA
     \\
-    \includegraphics[scale=1]{semibreve-pausa}
-    &
-    \includegraphics[scale=1]{minima-pausa}
-    &
     \includegraphics[scale=1]{sinal-repeticao}
+    &
+    \em
+    &
+    \includegraphics[scale=0.7]{mao-i-m}
+    &
+    \includegraphics[scale=1]{semibreve-pausa}
+
 
 
     %%% FINAL DAS LINHAS
-    \\
-    \hline
+  \\
+  \hline
   \end{tabular}
 \end{table}    
 
+
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 \section{Cordas Primas}

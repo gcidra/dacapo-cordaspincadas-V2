@@ -866,6 +866,53 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
 
 %%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{}
+  \label{Quadro_03}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{A} & \letraquadrada{B} & \letraquadrada{C}
+   
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#nota-03#%}
+    &
+    \quadtitulo{Pausa de mínima}
+    &
+    \quadtitulo{Tacet}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c { 
+        \keepWithTag #'cv
+        \include "nota-03.ly" 
+      }
+    \end{lilypond}
+    &
+    \includegraphics[scale=1]{minima-pausa}
+    &
+    \includegraphics[scale=1]{tacet}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \section{Cordas Primas}
 \label{sec:cordas-primas}
 \begin{lilypond}[line-width=17cm]

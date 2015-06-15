@@ -824,18 +824,6 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
 %%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
-
-\section{Duas Notas Contra Uma}
-% \section{Cordas Primas}
-\label{sec:cordas-primas}
-\begin{lilypond}[line-width=17\cm]
-  \transpose c c {
-    \keepWithTag #'cv
-    \include "cp-001.ly"
-  }
-\end{lilypond}
-
 %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[!ht]
   \centering
@@ -880,6 +868,18 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
 \end{table}    
 
 %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Duas Notas Contra Uma}
+% \section{Cordas Primas}
+\label{sec:cordas-primas}
+\begin{lilypond}[line-width=17\cm]
+  \transpose c c {
+    \keepWithTag #'cv
+    \include "cp-001.ly"
+  }
+\end{lilypond}
+
 
 
 \section{Homofonia}

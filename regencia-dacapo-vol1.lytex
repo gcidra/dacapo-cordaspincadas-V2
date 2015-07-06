@@ -1499,18 +1499,18 @@ o site:
   \renewcommand{\tablename}{Quadro}
   \caption{Cordas Soltas}
   \label{Quadro_02}
-  \begin{tabular}[t]{|lll|}
+  \begin{tabular}[t]{|ll|}
     \hline
 
 
     %%% PRÓXIMA LINHA
-    \letraquadrada{A} & \em & \em
+    \letraquadrada{A} & \em
    
 
     %%% CAVAQUINHO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% PRÓXIMA LINHA
     \\
-    \quadtitulo{Cavaquinho}    &\em    &\em
+    \quadtitulo{Cavaquinho}    &\em
 
 
     %%% PRÓXIMA LINHA
@@ -1518,8 +1518,6 @@ o site:
     \quadtitulo{%#cv-nota-01#%}
     &
     \quadtitulo{%#cv-nota-02#%}
-    &
-    \quadtitulo{%#cv-nota-03#%}
 
 
     %%% PRÓXIMA LINHA
@@ -1535,13 +1533,6 @@ o site:
       \transpose c c { 
         \keepWithTag #'cv
         \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'cv
-        \include "nota-03.ly" 
       }
     \end{lilypond}
 
@@ -1549,7 +1540,7 @@ o site:
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \quadtitulo{Bandolim}    &\em    &\em
+    \quadtitulo{Bandolim}    &\em    
 
 
     %%% PRÓXIMA LINHA
@@ -1557,8 +1548,6 @@ o site:
     \quadtitulo{%#bd-nota-01#%}
     &
     \quadtitulo{%#bd-nota-02#%}
-    &
-    \quadtitulo{%#bd-nota-03#%}
 
 
     %%% PRÓXIMA LINHA
@@ -1574,13 +1563,6 @@ o site:
       \transpose c c { 
         \keepWithTag #'bd
         \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'bd
-        \include "nota-03.ly" 
       }
     \end{lilypond}
 
@@ -1588,7 +1570,7 @@ o site:
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \quadtitulo{Viola}    &\em    &\em
+    \quadtitulo{Viola}    &\em    
 
 
     %%% PRÓXIMA LINHA
@@ -1596,8 +1578,6 @@ o site:
     \quadtitulo{%#va-nota-01#%}
     &
     \quadtitulo{%#va-nota-02#%}
-    &
-    \quadtitulo{%#va-nota-03#%}
 
 
     %%% PRÓXIMA LINHA
@@ -1613,13 +1593,6 @@ o site:
       \transpose c c { 
         \keepWithTag #'va
         \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'va
-        \include "nota-03.ly" 
       }
     \end{lilypond}
 
@@ -1627,7 +1600,7 @@ o site:
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \quadtitulo{Violão Tenor}    &\em    &\em
+    \quadtitulo{Violão Tenor}    &\em  
 
 
     %%% PRÓXIMA LINHA
@@ -1635,8 +1608,6 @@ o site:
     \quadtitulo{%#vt-nota-01#%}
     &
     \quadtitulo{%#vt-nota-02#%}
-    &
-    \quadtitulo{%#vt-nota-03#%}
 
 
     %%% PRÓXIMA LINHA
@@ -1652,13 +1623,6 @@ o site:
       \transpose c c { 
         \keepWithTag #'vt
         \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'vt
-        \include "nota-03.ly" 
       }
     \end{lilypond}
 
@@ -1666,7 +1630,7 @@ o site:
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \quadtitulo{Violão}    &\em    &\em
+    \quadtitulo{Violão}    &\em    
 
 
     %%% PRÓXIMA LINHA
@@ -1674,8 +1638,6 @@ o site:
     \quadtitulo{%#vi-nota-01#%}
     &
     \quadtitulo{%#vi-nota-02#%}
-    &
-    \quadtitulo{%#vi-nota-03#%}
 
 
     %%% PRÓXIMA LINHA
@@ -1693,19 +1655,13 @@ o site:
         \include "nota-02.ly" 
       }
     \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'vi
-        \include "nota-03.ly" 
-      }
-    \end{lilypond}
+
 
     %%% BAIXO %%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%% PRÓXIMA LINHA
     \\
     \hline
-    \quadtitulo{Baixo}    &\em    &\em
+    \quadtitulo{Baixo}    &\em 
 
 
     %%% PRÓXIMA LINHA
@@ -1713,8 +1669,6 @@ o site:
     \quadtitulo{%#bx-nota-01#%}
     &
     \quadtitulo{%#bx-nota-02#%}
-    &
-    \quadtitulo{%#bx-nota-03#%}
 
 
     %%% PRÓXIMA LINHA
@@ -1730,13 +1684,6 @@ o site:
       \transpose c c { 
         \keepWithTag #'bx
         \include "nota-02.ly" 
-      }
-    \end{lilypond}
-    &
-    \begin[fragment]{lilypond}
-      \transpose c c { 
-        \keepWithTag #'bx
-        \include "nota-03.ly" 
       }
     \end{lilypond}
 
@@ -1761,7 +1708,7 @@ o site:
     &
     \quadtitulo{Semínima}
     &
-    \quadtitulo{Técnica}
+    \quadtitulo{Sinal de Repetição}
 
 
     %%% PRÓXIMA LINHA
@@ -1770,31 +1717,34 @@ o site:
     &
     \includegraphics[scale=1]{seminima}
     &
-    \includegraphics[scale=0.7]{mao-i-m}
+    \includegraphics[scale=1]{sinal-repeticao}
 
 
-    %%% PRÓXIMA LINHA
     \\
     \hline
-    \letraquadrada{E}  & \letraquadrada{F} &   \letraquadrada{G}
+  \end{tabular}
 
-    %%% PRÓXIMA LINHA
-    \\
-    \quadtitulo{Pausa de semibreve}
-    &
-    \quadtitulo{Pausa de mínima}
-    &
-    \quadtitulo{Sinal de Repetição}
-    
+
+%%%%%%%%%%%%%% CONTINUAÇÃO DA TABELA
+  \begin{tabular}[t]{|l|l|}
 
 
     %%% PRÓXIMA LINHA
+    \letraquadrada{E}  & \letraquadrada{F}
+
+    %%% PRÓXIMA LINHA
     \\
+    \quadtitulo{Técnica}
+    &
+    \quadtitulo{Pausa de Semibreve}
+
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=0.7]{mao-i-m}
+    &
     \includegraphics[scale=1]{semibreve-pausa}
-    &
-    \includegraphics[scale=1]{minima-pausa}
-    &
-    \includegraphics[scale=1]{sinal-repeticao}
 
 
     %%% FINAL DAS LINHAS

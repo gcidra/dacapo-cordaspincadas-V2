@@ -1757,16 +1757,58 @@ o site:
 
 
 
-\section{Cordas Primas}
-\label{sec:cordas-primas}
+%%%%% INÍCIO DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Corda Prima}
+\label{sec:Corda-Prima}
+
+\lilypondfile{reg-01-do.ly}
+
+\section{Corda Vizinha}
+\label{sec:Corda-Vizinha}
+
+\lilypondfile{reg-02-do.ly}
+
+
+\section{Duas Cordas Soltas}
+\label{sec:Duas-Cordas-Soltas}
+
+\lilypondfile{reg-03-do.ly}
+
+
+Algumas maneiras de se tocar este número e os semelhantes a ele: 
+
+\begin{enumerate}
+
+\item Toque cada uma das duas notas da melodia com um grupo diferente de
+  instrumentos, um para a nota mais aguda e outro para a
+  mais grave.
+  
+\item Toque cada uma das duas notas da melodia com um instrumentista
+  diferente, um para a nota mais aguda e outro para a
+  mais grave.
+  
+\end{enumerate}
+
+
+%%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+\section{Duas Por Uma}
+\label{sec:Duas-Por-Uma}
 
 \subsubsection*{Bandolim, Violão Tenor e Baixo = Tacet}
 
 \lilypondfile{reg-01.ly}
 
 
-\section{Duas Cordas Soltas}
-\label{sec:duas-cordas-soltas}
+\section{Homofonia}
+\label{sec:homofonia}
 
 \subsubsection*{Cavaquinho, Viola e Violão = Tacet}
 

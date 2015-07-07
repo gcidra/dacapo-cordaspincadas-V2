@@ -1795,6 +1795,121 @@ Algumas maneiras de se tocar este número e os semelhantes a ele:
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[!ht]
+  \centering
+  \renewcommand{\tablename}{Quadro}
+  \caption{Mais Uma Corda Solta}
+  \label{Quadro_03}
+  \begin{tabular}[t]{|l|l|l|}
+    \hline
+
+    %%% PRÓXIMA LINHA
+    \multicolumn{3}{|l|}{\letraquadrada{A}}
+   
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Cavaquinho} &  \quadtitulo{Bandolim} & \quadtitulo{Viola}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#cv-nota-03#%}
+    &
+    \quadtitulo{%#bd-nota-03#%}
+    &
+    \quadtitulo{%#va-nota-03#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'cv
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bd
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'va
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \hline
+    \quadtitulo{Violão Tenor} &  \quadtitulo{Violão} & \quadtitulo{Baixo}
+
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{%#vt-nota-03#%}
+    &
+    \quadtitulo{%#vi-nota-03#%}
+    &
+    \quadtitulo{%#bx-nota-03#%}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vt
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'vi
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    &
+    \begin[fragment]{lilypond}
+      \transpose c c {
+        \keepWithTag #'bx
+        \include "nota-03.ly"
+      }
+    \end{lilypond}
+    \\
+    \hline
+  \end{tabular}
+
+  \begin{tabular}[t]{|l|l|}
+
+    %%% PRÓXIMA LINHA
+    \letraquadrada{B}  & \letraquadrada{C}
+    
+    %%% PRÓXIMA LINHA
+    \\
+    \quadtitulo{Pausa de Mínima}
+    &
+    \quadtitulo{Tacet}
+
+
+    %%% PRÓXIMA LINHA
+    \\
+    \includegraphics[scale=1]{minima-pausa}
+    &
+    \includegraphics[scale=1]{tacet}
+
+
+    %%% FINAL DAS LINHAS
+    \\
+    \hline
+  \end{tabular}
+\end{table}    
+
+%%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 03 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 

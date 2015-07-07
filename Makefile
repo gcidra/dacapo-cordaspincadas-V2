@@ -1,9 +1,9 @@
-file = dacapo-vol1.lytex
+# file = dacapo-vol1.lytex
 # file = dacapo-vol2.lytex
 # file = exemplo-dacapo.lytex
-# file = teste.lytex
-# file-regencia = regencia-dacapo-vol1.lytex
-file-regencia = regencia-dacapo-vol2.lytex
+file = teste.lytex
+file-regencia = regencia-dacapo-vol1.lytex
+# file-regencia = regencia-dacapo-vol2.lytex
 # file-regencia = exemplo-regencia.lytex
 # file-regencia = teste.lytex
 file-percussao = percussao-dacapo.lytex
@@ -475,7 +475,7 @@ baixo.lytex: $(file) Makefile
 	cp $@ ..
 
 %.tex: %.lytex
-	lilypond-book --pdf -I ./../ly -I ly/reg -I ./../reg -o out $< ;\
+	lilypond-book --pdf -I ./../ly -I ly/regly -I ./../reg -o out $< ;\
 
 cleanall: clean_regencia clean_percussao clean_instrumentos clean
 
